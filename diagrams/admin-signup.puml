@@ -1,0 +1,40 @@
+@startuml admin-signup
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/aws-orange-light/puml-theme-aws-orange-light.puml
+
+
+title Admin Sign-up
+note over Client
+Web SSH Client
+end note
+activate Client
+Client->TideButton: Press Buttton
+activate TideButton
+
+note over TideButton, Enclave
+Enclave requested from Home ORK
+end note
+TideButton->Enclave: request enclave 
+activate Enclave
+
+Enclave->Enclave: sign-up
+
+alt existing user == yes?
+    Enclave->Enclave: sign-in flow
+    else
+    Enclave->Enclave: sign-up flow
+end
+Enclave->Enclave: create new cvk/ssh key
+Enclave->Enclave: validate
+
+alt sign && valid ?
+    Enclave->TideButton:OK(jwt)
+    else
+    Enclave->Client:401()
+end
+deactivate Enclave
+
+TideButton->Client: CVK public
+
+deactivate TideButton
+deactivate Client
+@enduml
