@@ -1,0 +1,51 @@
+@startuml admin-signin
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/aws-orange-light/puml-theme-aws-orange-light.puml
+
+
+title Admin Sign-in
+note over Client
+Web SSH Client
+end note
+activate Client
+Client->TideButton: Press Buttton
+activate TideButton
+
+note over TideButton, Enclave
+Enclave requested from Home ORK
+end note
+TideButton->Enclave: request enclave 
+activate Enclave
+
+Enclave->Enclave: sign-in
+Enclave->Enclave: validate
+
+alt sign && valid ?
+    Enclave->TideButton:OK(jwt)
+    else
+    Enclave->Client:401()
+end
+deactivate Enclave
+
+TideButton->Server:authenticate(jwt,cvk.pub)
+    
+activate Server
+Server->Server: verify(jwt,cvk.pub)
+alt isValid ?
+  
+  Server->TideButton:OK(vendorJwt)
+  TideButton->TideButton:setHeader(vendorJwt)
+  note over TideButton
+    headers.auth = vendorJwt
+  end note
+    else
+  Server->Client:401()
+  deactivate Server
+end
+TideButton->Client:OK()
+deactivate TideButton
+
+TideButton->Client: CVK public
+
+deactivate TideButton
+deactivate Client
+@enduml
