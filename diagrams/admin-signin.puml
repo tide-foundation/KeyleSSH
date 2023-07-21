@@ -1,12 +1,18 @@
-@startuml admin-signin
+@startuml Sign-in
 !include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/aws-orange-light/puml-theme-aws-orange-light.puml
 
 
-title Admin Sign-in
+title Sign-in
 note over Client
 Web SSH Client
 end note
 activate Client
+activate Server
+Client->Server: client key exchange init
+Server->Client: server key exchange init
+Client->Client: match encryption and hashing with server
+Client<->Server: Diffie-Hellman Key exchange
+
 Client->TideButton: Press Buttton
 activate TideButton
 
@@ -14,38 +20,25 @@ note over TideButton, Enclave
 Enclave requested from Home ORK
 end note
 TideButton->Enclave: request enclave 
-activate Enclave
+deactivate TideButton
 
+activate Enclave
 Enclave->Enclave: sign-in
 Enclave->Enclave: validate
 
+
 alt sign && valid ?
-    Enclave->TideButton:OK(jwt)
+    Enclave->Client:cvk.pub, signature
     else
     Enclave->Client:401()
+    deactivate Enclave
 end
-deactivate Enclave
 
-TideButton->Server:authenticate(jwt,cvk.pub)
-    
-activate Server
-Server->Server: verify(jwt,cvk.pub)
-alt isValid ?
-  
-  Server->TideButton:OK(vendorJwt)
-  TideButton->TideButton:setHeader(vendorJwt)
-  note over TideButton
-    headers.auth = vendorJwt
-  end note
-    else
-  Server->Client:401()
-  deactivate Server
-end
-TideButton->Client:OK()
-deactivate TideButton
+Client->Server: ssh-userauth (cvk.pub, signature)
+Server->Server: Compare received keys for authority
+Server->Client: userauth success
+deactivate Server
 
-TideButton->Client: CVK public
 
-deactivate TideButton
 deactivate Client
 @enduml

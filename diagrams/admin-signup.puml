@@ -14,8 +14,9 @@ note over TideButton, Enclave
 Enclave requested from Home ORK
 end note
 TideButton->Enclave: request enclave 
-activate Enclave
+deactivate TideButton
 
+activate Enclave
 Enclave->Enclave: sign-up
 
 alt existing user == yes?
@@ -27,14 +28,11 @@ Enclave->Enclave: create new cvk/ssh key
 Enclave->Enclave: validate
 
 alt sign && valid ?
-    Enclave->TideButton:OK(jwt)
+    Enclave->Client:cvk.pub
     else
     Enclave->Client:401()
 end
 deactivate Enclave
 
-TideButton->Client: CVK public
-
-deactivate TideButton
 deactivate Client
 @enduml
