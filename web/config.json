@@ -1,0 +1,80 @@
+{
+  "listen": {
+    "ip": "0.0.0.0",
+    "port": 8000
+  },
+  "http": {
+    "origins": ["*:*"]
+  },
+  "user": {
+    "name": "user",
+    "password": null,
+    "privatekey": "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCeu7seP0wix1jQgNfk8Ylu6zmiwMW7cgyiuErHLuGhQQAAAKB+GXh3fhl4\ndwAAAAtzc2gtZWQyNTUxOQAAACCeu7seP0wix1jQgNfk8Ylu6zmiwMW7cgyiuErHLuGhQQ\nAAAEC++u+tHP6/qHvkJ689V2XOlK6XRD2W61oATMfYKlhEnJ67ux4/TCLHWNCA1+TxiW7r\nOaLAxbtyDKK4Sscu4aFBAAAAFnRlc3RpbmctZG9ja2VyLXNlcnZlcjEBAgMEBQYH\n-----END OPENSSH PRIVATE KEY-----",
+    "overridebasic": false
+  },
+  "ssh": {
+    "host": "localhost",
+    "port": 2222,
+    "localAddress": null,
+    "localPort": null,
+    "term": "xterm-color",
+    "readyTimeout": 20000,
+    "keepaliveInterval": 120000,
+    "keepaliveCountMax": 10,
+    "allowedSubnets": []
+  },
+  "terminal": {
+    "cursorBlink": true,
+    "scrollback": 10000,
+    "tabStopWidth": 8,
+    "bellStyle": "sound"
+  },
+  "header": {
+    "text": null,
+    "background": "green"
+  },
+  "session": {
+    "name": "WebSSH2",
+    "secret": "mysecret"
+  },
+  "options": {
+    "challengeButton": true,
+    "allowreauth": false
+  },
+  "algorithms": {
+    "kex": [
+      "ecdh-sha2-nistp256",
+      "ecdh-sha2-nistp384",
+      "ecdh-sha2-nistp521",
+      "diffie-hellman-group-exchange-sha256",
+      "diffie-hellman-group14-sha1"
+    ],
+    "cipher": [
+      "aes128-ctr",
+      "aes192-ctr",
+      "aes256-ctr",
+      "aes128-gcm",
+      "aes128-gcm@openssh.com",
+      "aes256-gcm",
+      "aes256-gcm@openssh.com",
+      "aes256-cbc"
+    ],
+    "hmac": [
+      "hmac-sha2-256",
+      "hmac-sha2-512",
+      "hmac-sha1"
+    ],
+    "compress": [
+      "none",
+      "zlib@openssh.com",
+      "zlib"
+    ]
+  },
+  "serverlog": {
+    "client": false,
+    "server": false
+  },
+  "accesslog": false,
+  "verify": false,
+  "safeShutdownDuration": 300
+}
