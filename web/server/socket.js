@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable complexity */
 /* eslint no-unused-expressions: ["error", { "allowShortCircuit": true, "allowTernary": true }],
    no-console: ["error", { allow: ["warn", "error"] }] */
@@ -234,6 +235,7 @@ module.exports = function appSocket(socket) {
         keepaliveInterval: socket.request.session.ssh.keepaliveInterval,
         keepaliveCountMax: socket.request.session.ssh.keepaliveCountMax,
         debug: debug('ssh2'),
+        clientSocket: socket,
       });
     } else {
       debugWebSSH2(

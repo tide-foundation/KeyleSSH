@@ -621,7 +621,13 @@ class Protocol {
 
     sendPacket(this, this._packetRW.write.finalize(packet));
   }
-  authPK(username, pubKey, keyAlgo, cbSign) {
+  authPK(x, username, pubKey, keyAlgo, cbSign) {
+    // get pubKey from await socket here
+    
+    // definitly change this so pubKey is just bytes, not wierd object
+
+
+    console.log(x);
     if (this._server)
       throw new Error('Client-only method called in server mode');
 
@@ -631,6 +637,7 @@ class Protocol {
 
     const keyType = pubKey.type;
     pubKey = pubKey.getPublicSSH();
+    
 
     if (typeof keyAlgo === 'function') {
       cbSign = keyAlgo;

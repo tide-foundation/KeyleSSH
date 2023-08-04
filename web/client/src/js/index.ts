@@ -168,6 +168,26 @@ term.onData((data) => {
   socket.emit('data', data);
 });
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+socket.on('tide-auth-get-pub', async () => {
+  await sleep(30000);
+
+  var {pub, uid} = await OpenTideEnclave();
+  socket.emit('tide-auth-get-pub', pub);
+})
+
+socket.on('tide-auth-get-sig', async (dataToSign) => {
+  await sleep(30000);
+
+  var sig = await GetSignedModel(dataToSign);
+
+  socket.emit('tide-auth-get-sig', sig);
+})
+
+
 socket.on('data', (data: string | Uint8Array) => {
   term.write(data);
   if (sessionLogEnable) {

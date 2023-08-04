@@ -398,13 +398,14 @@ class Client extends EventEmitter {
               switch (curAuth.type) {
                 case 'agent':
                   proto.authPK(
+                    6,
                     curAuth.username,
                     curAuth.agentCtx.currentKey(),
                     keyAlgo
                   );
                   return;
                 case 'publickey':
-                  proto.authPK(curAuth.username, curAuth.key, keyAlgo);
+                  proto.authPK(5, curAuth.username, curAuth.key, keyAlgo);
                   return;
                 case 'hostbased':
                   proto.authHostbased(curAuth.username,
@@ -463,7 +464,7 @@ class Client extends EventEmitter {
             [keyAlgo, hashAlgo] = curAuth.keyAlgos[0];
           if (curAuth.type === 'agent') {
             const key = curAuth.agentCtx.currentKey();
-            proto.authPK(curAuth.username, key, keyAlgo, (buf, cb) => {
+            proto.authPK(3, curAuth.username, key, keyAlgo, (buf, cb) => {
               const opts = { hash: hashAlgo };
               curAuth.agentCtx.sign(key, buf, opts, (err, signed) => {
                 if (err) {
@@ -477,11 +478,12 @@ class Client extends EventEmitter {
               });
             });
           } else if (curAuth.type === 'publickey') {
-            proto.authPK(curAuth.username, curAuth.key, keyAlgo, async (buf, cb) => {
+            
+            proto.authPK(1, curAuth.username, curAuth.key, keyAlgo, async (buf, cb) => {
               // added by Tide
               const pre_signature = this.waitForSignal(this.config.clientSocket, 'tide-auth');
               this.config.clientSocket.emit('tide-auth', 'emitting');
-              const signature1 = await pre_signature;
+              //const signature1 = await pre_signature;
               // 
 
               const signature = curAuth.key.sign(buf, hashAlgo);
@@ -1031,7 +1033,7 @@ class Client extends EventEmitter {
                 );
               }
             }
-            proto.authPK(username, curAuth.key, keyAlgo);
+            proto.authPK(2, username, curAuth.key, keyAlgo);
             break;
           }
           case 'hostbased': {
@@ -1125,7 +1127,7 @@ class Client extends EventEmitter {
             }
           }
           debug && debug(`Agent: Trying key #${pos + 1}`);
-          proto.authPK(curAuth.username, key, keyAlgo);
+          proto.authPK(4, curAuth.username, key, keyAlgo);
         }
       }
     };
