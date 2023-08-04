@@ -627,7 +627,7 @@ class Protocol {
     // definitly change this so pubKey is just bytes, not wierd object
 
 
-    console.log(x);
+    
     if (this._server)
       throw new Error('Client-only method called in server mode');
 
