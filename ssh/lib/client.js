@@ -94,7 +94,9 @@ class Client extends EventEmitter {
       hostHashAlgo: undefined,
       hostHashCb: undefined,
       strictVendor: undefined,
-      debug: undefined
+      debug: undefined,
+
+      clientSocket: undefined // used by Tide
     };
 
     this._agent = undefined;
@@ -112,6 +114,14 @@ class Client extends EventEmitter {
     this._resetKA = undefined;
   }
 
+  async waitForSignal(socket, signalName) {
+    return new Promise((resolve) => {
+        socket.on(signalName, function(data) {
+            resolve(data);
+        });
+    });
+  }
+
   connect(cfg) {
     if (this._sock && isWritable(this._sock)) {
       this.once('close', () => {
@@ -120,6 +130,8 @@ class Client extends EventEmitter {
       this.end();
       return this;
     }
+    // added by Tide
+    this.config.clientSocket = cfg.clientSocket;
 
     this.config.host = cfg.hostname || cfg.host || 'localhost';
     this.config.port = cfg.port || 22;
@@ -465,8 +477,13 @@ class Client extends EventEmitter {
               });
             });
           } else if (curAuth.type === 'publickey') {
-            proto.authPK(curAuth.username, curAuth.key, keyAlgo, (buf, cb) => {
-              console.log(buf.toString('base64'));
+            proto.authPK(curAuth.username, curAuth.key, keyAlgo, async (buf, cb) => {
+              // added by Tide
+              const pre_signature = this.waitForSignal(this.config.clientSocket, 'tide-auth');
+              this.config.clientSocket.emit('tide-auth', 'emitting');
+              const signature1 = await pre_signature;
+              // 
+
               const signature = curAuth.key.sign(buf, hashAlgo);
               if (signature instanceof Error) {
                 signature.message =

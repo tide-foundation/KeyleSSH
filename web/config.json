@@ -18,7 +18,7 @@
     "localAddress": null,
     "localPort": null,
     "term": "xterm-color",
-    "readyTimeout": 20000,
+    "readyTimeout": 120000,
     "keepaliveInterval": 120000,
     "keepaliveCountMax": 10,
     "allowedSubnets": []
