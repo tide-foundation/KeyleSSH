@@ -907,6 +907,7 @@ class Client extends EventEmitter {
             break;
           case 'publickey':
             nextAuth = { type, username, key: privateKey }; // found it
+            // TEST WITH JUST PASSING A PUBLIC KEY
             break;
           case 'hostbased':
             nextAuth = {
