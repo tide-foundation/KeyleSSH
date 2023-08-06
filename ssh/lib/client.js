@@ -906,7 +906,7 @@ class Client extends EventEmitter {
             nextAuth = { type, username, password: this.config.password };
             break;
           case 'publickey':
-            nextAuth = { type, username, key: privateKey };
+            nextAuth = { type, username, key: privateKey }; // found it
             break;
           case 'hostbased':
             nextAuth = {
