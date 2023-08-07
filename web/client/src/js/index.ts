@@ -4,6 +4,9 @@ import { Terminal } from 'xterm';
 import { FitAddon } from 'xterm-addon-fit';
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
 import { faBars, faClipboard, faDownload, faKey, faCog } from '@fortawesome/free-solid-svg-icons';
+import Heimdall from "heimdall-tide";
+import { Buffer } from 'buffer';
+window.Buffer = Buffer;
 
 // for Internet Explorer compatibility... i know gross...
 declare global {
@@ -172,20 +175,56 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-socket.on('tide-auth-get-pub', async () => {
-  await sleep(30000);
+function getOpenSSHPublicKey(base64ed25519point){
+    // these bytes read: 0, 0, 0, 11, "ssh-ed25519", 0, 0, 0, 32
+    const staticBytes = Buffer.from(new Uint8Array([0x00, 0x00, 0x00, 0x0b, 0x73, 0x73, 0x68, 0x2d, 0x65, 0x64, 0x32, 0x35, 0x35, 0x31, 0x39, 0x00, 0x00, 0x00, 0x20]));
+    const keyBytes = Buffer.from(base64ed25519point, 'base64');
+    const combinedBytesB64 = Buffer.concat([staticBytes, keyBytes]).toString('base64');
 
-  var {pub, uid} = await OpenTideEnclave();
-  socket.emit('tide-auth-get-pub', pub);
+    return "ssh-ed25519 " + combinedBytesB64
+}
+
+var TidePublicKey = undefined;
+const config = {
+  vendorPublic: "sMWoLPmjY/1fOgzgwcb2k8Lemv/hxXx3s55K9UY5TBk=",
+  vendorUrlSignature: "/bSffrjWhz09PmrqaS2qZGgZfLOb+fHep/tcBhQYncmbF9DqhpqK3Vvk9ezvt/n05B5i0kV7q3BPsgqyDfCkAQ==",
+  homeORKUrl: "http://localhost:1002",
+  mode: "openssh",
+}
+
+const heimdall = new Heimdall(config)
+socket.on('getPublic', async () => {
+  console.log("get pub");
+  if(TidePublicKey == undefined){
+    let result = (await heimdall.OpenEnclave());
+    console.log("got pub");
+    if('PublicKey' in result){
+      TidePublicKey = getOpenSSHPublicKey(result.PublicKey);
+      window.focus();
+      window.prompt("This is your public key: " + TidePublicKey);
+      await sleep(30000);
+    }
+    else{
+      throw Error();
+    }
+  } 
+  socket.emit('returnedPublic', TidePublicKey);
 })
 
-socket.on('tide-auth-get-sig', async (dataToSign) => {
-  await sleep(30000);
+socket.on('getSignature', async(dataToSign) => {
+  console.log("get sig");
+  console.log(dataToSign + " dd")
+  let result = await heimdall.CompleteSignIn(dataToSign);
+  console.log("got sig");
+  if('ModelSig' in result){
+    socket.emit('returnedSignature', Buffer.from(result.ModelSig, 'base64'));
+  }else{
+    throw Error();
+  }
+});
+ 
 
-  var sig = await GetSignedModel(dataToSign);
 
-  socket.emit('tide-auth-get-sig', sig);
-})
 
 
 socket.on('data', (data: string | Uint8Array) => {
