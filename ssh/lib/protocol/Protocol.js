@@ -621,14 +621,7 @@ class Protocol {
 
     sendPacket(this, this._packetRW.write.finalize(packet));
   }
-  authPK(x, username, pubKey, keyAlgo, cbSign) {
-    console.log("polo " + x.toString());
-    // get pubKey from await socket here
-    
-    // definitly change this so pubKey is just bytes, not wierd object
-
-
-    
+  authPK(username, pubKey, keyAlgo, cbSign) {    
     if (this._server)
       throw new Error('Client-only method called in server mode');
 
@@ -693,13 +686,11 @@ class Protocol {
       this._debug && this._debug(
         'Outbound: Sending USERAUTH_REQUEST (publickey -- check)'
       );
-      console.log(packet.toString('base64') + " auth");
       sendPacket(this, this._packetRW.write.finalize(packet));
       return;
     }
 
     cbSign(packet, (signature) => {
-      console.log("cb " + x.toString())
       signature = convertSignature(signature, keyType);
       if (signature === false)
         throw new Error('Error while converting handshake signature');
@@ -747,7 +738,6 @@ class Protocol {
       this._debug && this._debug(
         'Outbound: Sending USERAUTH_REQUEST (publickey)'
       );
-      console.log(packet.toString('base64') + " signed");
       sendPacket(this, this._packetRW.write.finalize(packet));
     });
   }

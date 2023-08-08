@@ -270,18 +270,14 @@ class Client extends EventEmitter {
     this._agent = (this.config.agent ? this.config.agent : undefined);
     this._remoteVer = undefined;
 
-    console.log("hey! 1");
-
     // added by Tide
     const pre_publickey = this.waitForSignal(this.config.clientSocket, 'returnedPublic');
     this.config.clientSocket.emit('getPublic', '');
     const publicKey = await pre_publickey;
     //use publicKey from here
-    console.log(publicKey);
     
     this.config.privateKey = publicKey; // lol!
     
-    console.log("hey! 2");
     let privateKey;
 
     if (this.config.privateKey) {
@@ -301,7 +297,6 @@ class Client extends EventEmitter {
        */
       
     }
-    console.log(privateKey);
       
      
     
@@ -420,14 +415,13 @@ class Client extends EventEmitter {
               switch (curAuth.type) {
                 case 'agent':
                   proto.authPK(
-                    6,
                     curAuth.username,
                     curAuth.agentCtx.currentKey(),
                     keyAlgo
                   );
                   return;
                 case 'publickey':
-                  proto.authPK(5, curAuth.username, curAuth.key, keyAlgo);
+                  proto.authPK(curAuth.username, curAuth.key, keyAlgo);
                   return;
                 case 'hostbased':
                   proto.authHostbased(curAuth.username,
@@ -486,7 +480,7 @@ class Client extends EventEmitter {
             [keyAlgo, hashAlgo] = curAuth.keyAlgos[0];
           if (curAuth.type === 'agent') {
             const key = curAuth.agentCtx.currentKey();
-            proto.authPK(3, curAuth.username, key, keyAlgo, (buf, cb) => {
+            proto.authPK(curAuth.username, key, keyAlgo, (buf, cb) => {
               const opts = { hash: hashAlgo };
               curAuth.agentCtx.sign(key, buf, opts, (err, signed) => {
                 if (err) {
@@ -508,8 +502,7 @@ class Client extends EventEmitter {
             const publicKey = parseKey(await pre_publickey);
             //use publicKey from here
             
-            proto.authPK(1, curAuth.username, publicKey, keyAlgo, async (buf, cb) => {
-              console.log(buf.toString('base64') + " tosign");
+            proto.authPK(curAuth.username, publicKey, keyAlgo, async (buf, cb) => {
               // added by Tide
               const pre_signature = this.waitForSignal(this.config.clientSocket, 'returnedSignature');
               this.config.clientSocket.emit('getSignature', buf.toString('base64'));
@@ -1067,7 +1060,7 @@ class Client extends EventEmitter {
             this.config.clientSocket.emit('getPublic', '');
             const publicKey = parseKey(await pre_publickey);
             //use publicKey from here
-            proto.authPK(2, username, publicKey, keyAlgo);
+            proto.authPK(username, publicKey, keyAlgo);
             break;
           }
           case 'hostbased': {
@@ -1161,7 +1154,7 @@ class Client extends EventEmitter {
             }
           }
           debug && debug(`Agent: Trying key #${pos + 1}`);
-          proto.authPK(4, curAuth.username, key, keyAlgo);
+          proto.authPK(curAuth.username, key, keyAlgo);
         }
       }
     };
