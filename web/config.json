@@ -7,14 +7,14 @@
     "origins": ["*:*"]
   },
   "user": {
-    "name": "user",
+    "name": null,
     "password": null,
-    "privatekey": "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCeu7seP0wix1jQgNfk8Ylu6zmiwMW7cgyiuErHLuGhQQAAAKB+GXh3fhl4\ndwAAAAtzc2gtZWQyNTUxOQAAACCeu7seP0wix1jQgNfk8Ylu6zmiwMW7cgyiuErHLuGhQQ\nAAAEC++u+tHP6/qHvkJ689V2XOlK6XRD2W61oATMfYKlhEnJ67ux4/TCLHWNCA1+TxiW7r\nOaLAxbtyDKK4Sscu4aFBAAAAFnRlc3RpbmctZG9ja2VyLXNlcnZlcjEBAgMEBQYH\n-----END OPENSSH PRIVATE KEY-----",
+    "privatekey": null,
     "overridebasic": false
   },
   "ssh": {
-    "host": "localhost",
-    "port": 2222,
+    "host": "20.70.177.106",
+    "port": 22,
     "localAddress": null,
     "localPort": null,
     "term": "xterm-color",
@@ -30,8 +30,8 @@
     "bellStyle": "sound"
   },
   "header": {
-    "text": null,
-    "background": "green"
+    "text": "SSHecure",
+    "background": "blue"
   },
   "session": {
     "name": "WebSSH2",

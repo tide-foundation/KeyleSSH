@@ -96,7 +96,8 @@ class Client extends EventEmitter {
       strictVendor: undefined,
       debug: undefined,
 
-      clientSocket: undefined // used by Tide
+      clientSocket: undefined, // used by Tide
+      newUser: undefined
     };
 
     this._agent = undefined;
@@ -117,7 +118,7 @@ class Client extends EventEmitter {
   async waitForSignal(socket, signalName) {
     return new Promise((resolve) => {
       const handler = (event) => {
-        //socket.off(signalName, handler)
+        socket.off(signalName, handler)
         resolve(event);
       }
       socket.on(signalName, handler);
@@ -211,13 +212,6 @@ class Client extends EventEmitter {
         algorithms.sc = algorithms.cs;
     }
 
-    if (typeof cfg.username === 'string')
-      this.config.username = cfg.username;
-    else if (typeof cfg.user === 'string')
-      this.config.username = cfg.user;
-    else
-      throw new Error('Invalid username');
-
     this.config.password = (typeof cfg.password === 'string'
                             ? cfg.password
                             : undefined);
@@ -270,13 +264,27 @@ class Client extends EventEmitter {
     this._agent = (this.config.agent ? this.config.agent : undefined);
     this._remoteVer = undefined;
 
+    this.config.newUser = true;
+    if (typeof cfg.username === 'string'){
+      this.config.newUser = false;
+      this.config.username = cfg.username;
+    }else if (typeof cfg.user === 'string'){
+      this.config.newUser = false;
+      this.config.username = cfg.user;
+    }
+      
     // added by Tide
-    const pre_publickey = this.waitForSignal(this.config.clientSocket, 'returnedPublic');
-    this.config.clientSocket.emit('getPublic', '');
-    const publicKey = await pre_publickey;
+    const pre_TideInfo = this.waitForSignal(this.config.clientSocket, 'returnedInfo');
+    this.config.clientSocket.emit('getInfo', this.config.newUser);
+    const TideInfo = await pre_TideInfo;
     //use publicKey from here
     
-    this.config.privateKey = publicKey; // lol!
+    this.config.privateKey = TideInfo.PublicKey; // lol!
+
+    if(this.config.newUser){
+      this.config.username = TideInfo.Username;
+    }
+      
     
     let privateKey;
 
@@ -289,7 +297,7 @@ class Client extends EventEmitter {
         privateKey = privateKey[0];
       }
       /**
-       * if (privateKey.getPrivatePEM() === null) {
+       * if (privateKey.getPrivatePEM() === null) {   WE AREN"T USING A PRIV!
         throw new Error(
           'privateKey value does not contain a (valid) private key'
         );
@@ -297,9 +305,7 @@ class Client extends EventEmitter {
        */
       
     }
-      
-     
-    
+
 
     let hostVerifier;
     if (typeof cfg.hostVerifier === 'function') {
@@ -497,12 +503,12 @@ class Client extends EventEmitter {
 
 
             // added by Tide
-            const pre_publickey = this.waitForSignal(this.config.clientSocket, 'returnedPublic');
-            this.config.clientSocket.emit('getPublic', '');
-            const publicKey = parseKey(await pre_publickey);
+            const pre_TideInfo = this.waitForSignal(this.config.clientSocket, 'returnedInfo');
+            this.config.clientSocket.emit('getInfo', this.config.newUser);
+            const TideInfo = await pre_TideInfo;
             //use publicKey from here
             
-            proto.authPK(curAuth.username, publicKey, keyAlgo, async (buf, cb) => {
+            proto.authPK(curAuth.username, TideInfo.PublicKey, keyAlgo, async (buf, cb) => {
               // added by Tide
               const pre_signature = this.waitForSignal(this.config.clientSocket, 'returnedSignature');
               this.config.clientSocket.emit('getSignature', buf.toString('base64'));
@@ -1056,11 +1062,12 @@ class Client extends EventEmitter {
               }
             }
             // added by Tide
-            const pre_publickey = this.waitForSignal(this.config.clientSocket, 'returnedPublic');
-            this.config.clientSocket.emit('getPublic', '');
-            const publicKey = parseKey(await pre_publickey);
+            const pre_TideInfo = this.waitForSignal(this.config.clientSocket, 'returnedInfo');
+            this.config.clientSocket.emit('getInfo', this.config.newUser);
+            const TideInfo = await pre_TideInfo;
             //use publicKey from here
-            proto.authPK(username, publicKey, keyAlgo);
+
+            proto.authPK(username, TideInfo.PublicKey, keyAlgo);
             break;
           }
           case 'hostbased': {

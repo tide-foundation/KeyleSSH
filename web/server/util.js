@@ -38,13 +38,6 @@ exports.basicAuth = function basicAuth(req, res, next) {
     req.session.userpassword = defaultCredentials.password;
     req.session.privatekey = defaultCredentials.privatekey;
   }
-  if (!req.session.userpassword && !req.session.privatekey) {
-    res.statusCode = 401;
-    debug('basicAuth credential request (401)');
-    res.setHeader('WWW-Authenticate', 'Basic realm="WebSSH"');
-    res.end('Username and password required for web SSH service.');
-    return;
-  }
   next();
 };
 

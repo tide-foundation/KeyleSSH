@@ -1,12 +1,12 @@
 {
-  "name": "webssh2",
+  "name": "tide-ssh",
   "version": "0.4.6",
   "ignore": [
     ".gitignore"
   ],
   "bin": "./index.js",
   "description": "A Websocket to SSH2 gateway using term.js, socket.io, ssh2, and express",
-  "homepage": "https://github.com/billchurch/WebSSH2",
+  "homepage": "https://github.com/tide-foundation/Tide-SSH",
   "keywords": [
     "ssh",
     "webssh",
@@ -17,19 +17,23 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/billchurch/WebSSH2.git"
+    "url": "git+https://github.com/tide-foundation/Tide-SSH.git"
   },
   "contributors": [
     {
       "name": "Bill Church",
       "email": "wmchurch@gmail.com"
+    },
+    {
+      "name": "Julio Medeiros",
+      "email": "julio@tide.org"
     }
   ],
   "engines": {
     "node": ">= 14"
   },
   "bugs": {
-    "url": "https://github.com/billchurch/WebSSH2/issues"
+    "url": "https://github.com/tide-foundation/Tide-SSH/issues"
   },
   "dependencies": {
     "basic-auth": "~2.0.1",
@@ -39,7 +43,7 @@
     "debug": "^4.3.2",
     "express": "~4.17.1",
     "express-session": "~1.17.1",
-    "heimdall-tide": "^0.0.14",
+    "heimdall-tide": "^0.0.15",
     "morgan": "~1.10.0",
     "read-config-ng": "^3.0.5",
     "serve-favicon": "^2.5.0",

@@ -183,8 +183,12 @@ function getOpenSSHPublicKey(base64ed25519point){
 
     return "ssh-ed25519 " + combinedBytesB64
 }
+function getUsername(hex){
+  const num = BigInt("0x" + hex);
+  return "user" + num.toString().slice(0, 10);
+}
 
-var TidePublicKey = undefined;
+var TideInfo = undefined;
 const config = {
   vendorPublic: "sMWoLPmjY/1fOgzgwcb2k8Lemv/hxXx3s55K9UY5TBk=",
   vendorUrlSignature: "/bSffrjWhz09PmrqaS2qZGgZfLOb+fHep/tcBhQYncmbF9DqhpqK3Vvk9ezvt/n05B5i0kV7q3BPsgqyDfCkAQ==",
@@ -193,29 +197,29 @@ const config = {
 }
 
 const heimdall = new Heimdall(config)
-socket.on('getPublic', async () => {
-  console.log("get pub");
-  if(TidePublicKey == undefined){
+socket.on('getInfo', async (createUser) => {
+  if(TideInfo == undefined){
     let result = (await heimdall.OpenEnclave());
-    console.log("got pub");
     if('PublicKey' in result){
-      TidePublicKey = getOpenSSHPublicKey(result.PublicKey);
-      window.focus();
-      window.prompt("This is your public key: " + TidePublicKey);
-      await sleep(30000);
+      TideInfo = {
+        Username: getUsername(result.UID),
+        PublicKey: getOpenSSHPublicKey(result.PublicKey)
+      };
+      if(result.NewAccount){
+        term.write(`Provide this info to this system's administrator: \r\n==============================================================================================\r\n ${createUser ? "Username: " + TideInfo.Username + "\r\n" : ``} Public Key: ` + TideInfo.PublicKey + "\r\n" + "==============================================================================================\r\n"); 
+        await heimdall.CompleteSignIn(); // user will fail to login in this event, but we want to complete their sign in process and show their public key for admin to add
+        return;
+      }
     }
     else{
       throw Error();
     }
   } 
-  socket.emit('returnedPublic', TidePublicKey);
+  socket.emit('returnedInfo', TideInfo);
 })
 
 socket.on('getSignature', async(dataToSign) => {
-  console.log("get sig");
-  console.log(dataToSign + " dd")
   let result = await heimdall.CompleteSignIn(dataToSign);
-  console.log("got sig");
   if('ModelSig' in result){
     socket.emit('returnedSignature', Buffer.from(result.ModelSig, 'base64'));
   }else{

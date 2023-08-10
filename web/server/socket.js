@@ -46,7 +46,7 @@ module.exports = function appSocket(socket) {
         if (err && err.level === 'client-authentication') {
           console.error(
             `WebSSH2 ${'error: Authentication failure'.red.bold} user=${
-              socket.request.session.username.yellow.bold.underline
+              socket.request.session.username
             } from=${socket.handshake.address.yellow.bold.underline}`
           );
           socket.emit('allowreauth', socket.request.session.ssh.allowreauth);
@@ -216,8 +216,6 @@ module.exports = function appSocket(socket) {
       finish([socket.request.session.userpassword]);
     });
     if (
-      socket.request.session.username &&
-      (socket.request.session.userpassword || socket.request.session.privatekey) &&
       socket.request.session.ssh
     ) {
       // console.log('hostkeys: ' + hostkeys[0].[0])
