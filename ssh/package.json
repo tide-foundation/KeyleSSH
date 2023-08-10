@@ -1,8 +1,14 @@
 {
-  "name": "ssh2",
-  "version": "1.14.0",
+  "name": "tide-ssh2",
+  "version": "1.0.0",
   "author": "Brian White <mscdex@mscdex.net>",
-  "description": "SSH2 client and server modules written in pure JavaScript for node.js",
+  "contributors": [
+    {
+      "name": "Julio Medeiros",
+      "email": "julio@tide.org"
+    }
+  ],
+  "description": "SSH2 client and server modules for tide-ssh project",
   "main": "./lib/index.js",
   "engines": {
     "node": ">=10.16.0"
