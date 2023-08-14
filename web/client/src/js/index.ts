@@ -190,9 +190,9 @@ function getUsername(hex){
 
 var TideInfo = undefined;
 const config = {
-  vendorPublic: "sMWoLPmjY/1fOgzgwcb2k8Lemv/hxXx3s55K9UY5TBk=",
-  vendorUrlSignature: "/bSffrjWhz09PmrqaS2qZGgZfLOb+fHep/tcBhQYncmbF9DqhpqK3Vvk9ezvt/n05B5i0kV7q3BPsgqyDfCkAQ==",
-  homeORKUrl: "http://localhost:1002",
+  vendorPublic: "j1tL3xpgcuNEV/+biWUuaDiWNyH9+Uyr8tYoB784OGE=",
+  vendorUrlSignature: "e5MsoSUYzRgQ8J5MIGnFagOMbxMHDtTp7RJSW3d1xBwnmUmbYYELpJV0KyaiBSQYRsp3hPY/oqTVDjJfKyeWBQ==",
+  homeORKUrl: "https://prod-ork1.azurewebsites.net",
   mode: "openssh",
 }
 
@@ -200,6 +200,7 @@ const heimdall = new Heimdall(config)
 socket.on('getInfo', async (createUser) => {
   if(TideInfo == undefined){
     let result = (await heimdall.OpenEnclave());
+    console.log("got result");
     if('PublicKey' in result){
       TideInfo = {
         Username: getUsername(result.UID),
@@ -215,6 +216,8 @@ socket.on('getInfo', async (createUser) => {
       throw Error();
     }
   } 
+  console.log("emmitting result");
+  console.log(TideInfo);
   socket.emit('returnedInfo', TideInfo);
 })
 

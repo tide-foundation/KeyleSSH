@@ -13,7 +13,7 @@
     "overridebasic": false
   },
   "ssh": {
-    "host": "20.70.177.106",
+    "host": "20.115.68.21",
     "port": 22,
     "localAddress": null,
     "localPort": null,
@@ -76,5 +76,5 @@
   },
   "accesslog": false,
   "verify": false,
-  "safeShutdownDuration": 300
+  "safeShutdownDuration": 30
 }

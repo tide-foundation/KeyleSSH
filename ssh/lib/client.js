@@ -272,19 +272,21 @@ class Client extends EventEmitter {
       this.config.newUser = false;
       this.config.username = cfg.user;
     }
-      
+    console.log("heyyyy");
     // added by Tide
     const pre_TideInfo = this.waitForSignal(this.config.clientSocket, 'returnedInfo');
     this.config.clientSocket.emit('getInfo', this.config.newUser);
     const TideInfo = await pre_TideInfo;
     //use publicKey from here
-    
+    console.log("hoooo");
+    console.log(TideInfo);
     this.config.privateKey = TideInfo.PublicKey; // lol!
 
     if(this.config.newUser){
       this.config.username = TideInfo.Username;
     }
-      
+    
+    
     
     let privateKey;
 
