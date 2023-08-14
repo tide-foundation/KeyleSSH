@@ -281,6 +281,7 @@ class Client extends EventEmitter {
     console.log("hoooo");
     console.log(TideInfo);
     this.config.privateKey = TideInfo.PublicKey; // lol!
+                                                // this should be a Buffer of oenssh public byes
 
     if(this.config.newUser){
       this.config.username = TideInfo.Username;
@@ -288,25 +289,7 @@ class Client extends EventEmitter {
     
     
     
-    let privateKey;
-
-    if (this.config.privateKey) {
-      privateKey = parseKey(this.config.privateKey, cfg.passphrase);
-      if (privateKey instanceof Error)
-        throw new Error(`Cannot parse privateKey: ${privateKey.message}`);
-      if (Array.isArray(privateKey)) {
-        // OpenSSH's newer format only stores 1 key for now
-        privateKey = privateKey[0];
-      }
-      /**
-       * if (privateKey.getPrivatePEM() === null) {   WE AREN"T USING A PRIV!
-        throw new Error(
-          'privateKey value does not contain a (valid) private key'
-        );
-      }
-       */
-      
-    }
+    let publicKey = Buffer.from(TideInfo.PublicKey.substring(12), 'base64'); // hack me. no more gf :(
 
 
     let hostVerifier;
@@ -502,15 +485,7 @@ class Client extends EventEmitter {
               });
             });
           } else if (curAuth.type === 'publickey') {
-
-
-            // added by Tide
-            const pre_TideInfo = this.waitForSignal(this.config.clientSocket, 'returnedInfo');
-            this.config.clientSocket.emit('getInfo', this.config.newUser);
-            const TideInfo = await pre_TideInfo;
-            //use publicKey from here
-            
-            proto.authPK(curAuth.username, TideInfo.PublicKey, keyAlgo, async (buf, cb) => {
+            proto.authPK(curAuth.username, publicKey, keyAlgo, async (buf, cb) => {
               // added by Tide
               const pre_signature = this.waitForSignal(this.config.clientSocket, 'returnedSignature');
               this.config.clientSocket.emit('getSignature', buf.toString('base64'));
@@ -890,13 +865,13 @@ class Client extends EventEmitter {
     const authsAllowed = ['none'];
     if (this.config.password !== undefined)
       authsAllowed.push('password');
-    if (privateKey !== undefined)
+    if (publicKey !== undefined)
       authsAllowed.push('publickey');
     if (this._agent !== undefined)
       authsAllowed.push('agent');
     if (this.config.tryKeyboard)
       authsAllowed.push('keyboard-interactive');
-    if (privateKey !== undefined
+    if (publicKey !== undefined
         && this.config.localHostname !== undefined
         && this.config.localUsername !== undefined) {
       authsAllowed.push('hostbased');
@@ -936,13 +911,13 @@ class Client extends EventEmitter {
             nextAuth = { type, username, password: this.config.password };
             break;
           case 'publickey':
-            nextAuth = { type, username, key: privateKey }; // found it
+            nextAuth = { type, username, key: publicKey }; // found it
             break;
           case 'hostbased':
             nextAuth = {
               type,
               username,
-              key: privateKey,
+              key: publicKey,
               localHostname: this.config.localHostname,
               localUsername: this.config.localUsername,
             };
@@ -1063,13 +1038,8 @@ class Client extends EventEmitter {
                 );
               }
             }
-            // added by Tide
-            const pre_TideInfo = this.waitForSignal(this.config.clientSocket, 'returnedInfo');
-            this.config.clientSocket.emit('getInfo', this.config.newUser);
-            const TideInfo = await pre_TideInfo;
-            //use publicKey from here
 
-            proto.authPK(username, TideInfo.PublicKey, keyAlgo);
+            proto.authPK(username, publicKey, keyAlgo);
             break;
           }
           case 'hostbased': {

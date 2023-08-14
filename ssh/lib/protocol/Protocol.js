@@ -625,12 +625,9 @@ class Protocol {
     if (this._server)
       throw new Error('Client-only method called in server mode');
 
-    pubKey = parseKey(pubKey);
-    if (pubKey instanceof Error)
-      throw new Error('Invalid key');
+    //pubkey is openssh public bytes
 
-    const keyType = pubKey.type;
-    pubKey = pubKey.getPublicSSH();
+    const keyType = "ssh-ed25519";
     
 
     if (typeof keyAlgo === 'function') {
