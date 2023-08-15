@@ -33,7 +33,7 @@ jobs:
 #      - name: Process Diagrams png
 #        run: java -jar /opt/plantuml/plantuml-1.2022.13.jar -v -tpng -r -o "./png" "src/tide/current/**.puml"
       - name: Display Diagrams
-        run: pwd &&  ls src/tide/current/** | grep \.svg$
+        run: pwd &&  ls src/diagrams/** | grep \.svg$
       - name: Commit Diagrams
         run: |
           git config --local user.email "action@github.com"
