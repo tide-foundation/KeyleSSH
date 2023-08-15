@@ -198,27 +198,51 @@ const config = {
 
 const heimdall = new Heimdall(config)
 socket.on('getInfo', async (createUser) => {
-  if(TideInfo == undefined){
-    let result = (await heimdall.OpenEnclave());
-    console.log("got result");
-    if('PublicKey' in result){
-      TideInfo = {
-        Username: getUsername(result.UID),
-        PublicKey: getOpenSSHPublicKey(result.PublicKey)
-      };
-      if(result.NewAccount){
-        term.write(`Provide this info to this system's administrator: \r\n==============================================================================================\r\n ${createUser ? "Username: " + TideInfo.Username + "\r\n" : ``} Public Key: ` + TideInfo.PublicKey + "\r\n" + "==============================================================================================\r\n"); 
-        await heimdall.CompleteSignIn(); // user will fail to login in this event, but we want to complete their sign in process and show their public key for admin to add
-        return;
+  const container = document.createElement('div');
+  container.style.position = 'fixed';
+  container.style.top = '0';
+  container.style.right = '0';
+  container.style.bottom = '0';
+  container.style.left = '0';
+  container.style.display = 'flex';
+  container.style.alignItems = 'center';
+  container.style.justifyContent = 'center';
+  container.style.zIndex = '1000'; // Ensure the container is above other elements
+
+  // Create the button element
+  const button = document.createElement('button');
+
+  // Set the button text
+  button.innerHTML = 'Lets go!';
+
+  // Add a click event listener to the button
+  button.addEventListener('click', async function() {
+    document.body.removeChild(container);
+    if(TideInfo == undefined){
+      let result = (await heimdall.OpenEnclave());
+      if('PublicKey' in result){
+        TideInfo = {
+          Username: getUsername(result.UID),
+          PublicKey: getOpenSSHPublicKey(result.PublicKey)
+        };
+        if(result.NewAccount){
+          term.write(`Provide this info to this system's administrator: \r\n==============================================================================================\r\n ${createUser ? "Username: " + TideInfo.Username + "\r\n" : ``} Public Key: ` + TideInfo.PublicKey + "\r\n" + "==============================================================================================\r\n"); 
+          await heimdall.CompleteSignIn(); // user will fail to login in this event, but we want to complete their sign in process and show their public key for admin to add
+          return;
+        }
       }
-    }
-    else{
-      throw Error();
-    }
-  } 
-  console.log("emmitting result");
-  console.log(TideInfo);
-  socket.emit('returnedInfo', TideInfo);
+      else{
+        throw Error();
+      }
+    } 
+    socket.emit('returnedInfo', TideInfo);
+  });
+
+  // Append the button to the container
+  container.appendChild(button);
+
+  // Append the container to the body of the document
+  document.body.appendChild(container);
 })
 
 socket.on('getSignature', async(dataToSign) => {
