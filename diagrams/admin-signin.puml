@@ -25,13 +25,13 @@ Enclave->Enclave: validate
 
 
 alt sign && valid ?
-    Enclave->Client:cvk.pub, signature
+    Enclave->Client:userid, cvk.pub, signature
     else
     Enclave->Client:401()
     deactivate Enclave
 end
 
-Client->Server: ssh-userauth (cvk.pub, signature)
+Client->Server: ssh-userauth (userid, cvk.pub, signature)
 Server->Server: Compare received keys for authority
 Server->Client: userauth success
 deactivate Server

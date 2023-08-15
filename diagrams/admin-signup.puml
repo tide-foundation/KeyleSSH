@@ -24,11 +24,14 @@ alt existing user == yes?
     else
     Enclave->Enclave: sign-up flow
 end
-Enclave->Enclave: create new cvk/ssh key
+Enclave->Enclave: create userid and new cvk/ssh key
+note over Enclave
+    userid = hash(gUserCMK) for first 32 bytes
+end note
 Enclave->Enclave: validate
 
 alt sign && valid ?
-    Enclave->Client:cvk.pub
+    Enclave->Client:cvk.pub, userid
     else
     Enclave->Client:401()
 end
