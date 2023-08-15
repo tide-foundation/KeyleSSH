@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="855.2083px" preserveAspectRatio="none" style="width:887px;height:855px;" version="1.1" viewBox="0 0 887 855" width="887.5px" zoomAndPan="magnify"><defs><linearGradient id="g1rrwnkpts59bi0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#CCCCCC"/></linearGradient><linearGradient id="g1rrwnkpts59bi1" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#F08E41"/><stop offset="100%" stop-color="#EC7211"/></linearGradient></defs><g><rect fill="url(#g1rrwnkpts59bi0)" height="45.0846" id="_title" rx="4.1667" ry="4.1667" style="stroke:#FFFFFF;stroke-width:1.0416666666666667;" width="102.0833" x="391.1458" y="10.4167"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="20.8333" font-weight="bold" lengthAdjust="spacing" textLength="81.25" x="401.5625" y="40.1713">Sign-in</text><rect fill="#BCC5CE" height="679.6549" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="158.8542" y="112.7604"/><rect fill="#BCC5CE" height="679.6549" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="475.5208" y="112.7604"/><rect fill="#BCC5CE" height="276.8555" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="746.3542" y="376.0742"/><rect fill="none" height="117.5781" rx="4.1667" ry="4.1667" style="stroke:#4E5D6C;stroke-width:1.5625;" width="759.8958" x="81.25" y="543.6849"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="163.5417" x2="163.5417" y1="102.3438" y2="811.1654"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="480.7292" x2="480.7292" y1="102.3438" y2="811.1654"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="751.5625" x2="751.5625" y1="102.3438" y2="811.1654"/><rect fill="url(#g1rrwnkpts59bi1)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="61.4583" x="133.3333" y="61.7513"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="36.4583" x="145.8333" y="85.8541">Client</text><rect fill="url(#g1rrwnkpts59bi1)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="61.4583" x="133.3333" y="810.1237"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="36.4583" x="145.8333" y="834.2265">Client</text><rect fill="url(#g1rrwnkpts59bi1)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="66.6667" x="447.3958" y="61.7513"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="41.6667" x="459.8958" y="85.8541">Server</text><rect fill="url(#g1rrwnkpts59bi1)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="66.6667" x="447.3958" y="810.1237"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="41.6667" x="459.8958" y="834.2265">Server</text><rect fill="url(#g1rrwnkpts59bi1)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="75" x="714.0625" y="61.7513"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="50" x="726.5625" y="85.8541">Enclave</text><rect fill="url(#g1rrwnkpts59bi1)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="75" x="714.0625" y="810.1237"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="50" x="726.5625" y="834.2265">Enclave</text><rect fill="#BCC5CE" height="679.6549" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="158.8542" y="112.7604"/><rect fill="#BCC5CE" height="679.6549" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="475.5208" y="112.7604"/><rect fill="#BCC5CE" height="276.8555" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="746.3542" y="376.0742"/><path d="M5.2083,122.1354 L5.2083,162.7604 A4.1667,4.1667 0 0 0 9.375,166.9271 L319.7917,166.9271 A4.1667,4.1667 0 0 0 323.9583,162.7604 L323.9583,128.3854 L313.5417,117.9688 L9.375,117.9688 A4.1667,4.1667 0 0 0 5.2083,122.1354 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><path d="M313.5417,117.9688 L313.5417,126.3021 A2.0833,2.0833 0 0 0 315.625,128.3854 L323.9583,128.3854 L313.5417,117.9688 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="286.4583" x="16.6667" y="139.9882">Web SSH Client with pre-configured settings</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="78.125" x="16.6667" y="154.539">(ssh server)</text><polygon fill="#EC7211" points="463.0208,200.1628,473.4375,204.3294,463.0208,208.4961,467.1875,204.3294" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="169.2708" x2="469.2708" y1="204.3294" y2="204.3294"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="153.125" x="181.7708" y="194.0898">client key exchange init</text><polygon fill="#EC7211" points="180.7292,239.7135,170.3125,243.8802,180.7292,248.0469,176.5625,243.8802" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="174.4792" x2="474.4792" y1="243.8802" y2="243.8802"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="158.3333" x="192.1875" y="233.6405">server key exchange init</text><line style="stroke:#EC7211;stroke-width:3.125;" x1="169.2708" x2="213.0208" y1="283.431" y2="283.431"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="213.0208" x2="213.0208" y1="283.431" y2="296.9727"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="170.3125" x2="213.0208" y1="296.9727" y2="296.9727"/><polygon fill="#EC7211" points="180.7292,292.806,170.3125,296.9727,180.7292,301.1393,176.5625,296.9727" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="273.9583" x="181.7708" y="273.1913">match encryption and hashing with server</text><polygon fill="#EC7211" points="180.7292,332.3568,170.3125,336.5234,180.7292,340.6901,176.5625,336.5234" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><polygon fill="#EC7211" points="463.0208,332.3568,473.4375,336.5234,463.0208,340.6901,467.1875,336.5234" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="174.4792" x2="469.2708" y1="336.5234" y2="336.5234"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="182.2917" x="192.1875" y="326.2838">Diffie-Hellman Key exchange</text><polygon fill="#EC7211" points="733.8542,371.9076,744.2708,376.0742,733.8542,380.2409,738.0208,376.0742" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="169.2708" x2="740.1042" y1="376.0742" y2="376.0742"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="105.2083" x="181.7708" y="365.8346">request enclave</text><path d="M621.875,393.7826 L621.875,419.8242 A4.1667,4.1667 0 0 0 626.0417,423.9909 L876.0417,423.9909 A4.1667,4.1667 0 0 0 880.2083,419.8242 L880.2083,400.0326 L869.7917,389.6159 L626.0417,389.6159 A4.1667,4.1667 0 0 0 621.875,393.7826 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><path d="M869.7917,389.6159 L869.7917,397.9492 A2.0833,2.0833 0 0 0 871.875,400.0326 L880.2083,400.0326 L869.7917,389.6159 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="226.0417" x="633.3333" y="411.6353">Enclave requested from Home ORK</text><line style="stroke:#EC7211;stroke-width:3.125;" x1="756.7708" x2="800.5208" y1="461.4258" y2="461.4258"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="800.5208" x2="800.5208" y1="461.4258" y2="474.9674"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="757.8125" x2="800.5208" y1="474.9674" y2="474.9674"/><polygon fill="#EC7211" points="768.2292,470.8008,757.8125,474.9674,768.2292,479.1341,764.0625,474.9674" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="42.7083" x="769.2708" y="451.1861">sign-in</text><line style="stroke:#EC7211;stroke-width:3.125;" x1="756.7708" x2="800.5208" y1="514.5182" y2="514.5182"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="800.5208" x2="800.5208" y1="514.5182" y2="528.0599"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="757.8125" x2="800.5208" y1="528.0599" y2="528.0599"/><polygon fill="#EC7211" points="768.2292,523.8932,757.8125,528.0599,768.2292,532.2266,764.0625,528.0599" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="51.0417" x="769.2708" y="504.2786">validate</text><path d="M85.4167,543.6849 L158.3333,543.6849 L158.3333,560.319 L147.9167,570.7357 L81.25,570.7357 L81.25,547.8516 A4.1667,4.1667 0 0 1 85.4167,543.6849 " fill="#FFFFFF" style="stroke:#4E5D6C;stroke-width:1.5625;"/><rect fill="none" height="117.5781" rx="4.1667" ry="4.1667" style="stroke:#4E5D6C;stroke-width:1.5625;" width="759.8958" x="81.25" y="543.6849"/><text fill="#0073BB" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="19.7917" x="102.0833" y="561.5377">alt</text><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="116.6667" x="179.1667" y="562.5793">[sign &amp;&amp; valid ?]</text><polygon fill="#EC7211" points="180.7292,607.1289,170.3125,611.2956,180.7292,615.4622,176.5625,611.2956" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="174.4792" x2="745.3125" y1="611.2956" y2="611.2956"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="169.7917" x="192.1875" y="601.0559">userid, cvk.pub, signature</text><line style="stroke:#4E5D6C;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" x1="81.25" x2="841.1458" y1="620.6706" y2="620.6706"/><polygon fill="#EC7211" points="180.7292,648.763,170.3125,652.9297,180.7292,657.0964,176.5625,652.9297" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="174.4792" x2="750.5208" y1="652.9297" y2="652.9297"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="35.4167" x="192.1875" y="642.69">401()</text><polygon fill="#EC7211" points="463.0208,695.6055,473.4375,699.7721,463.0208,703.9388,467.1875,699.7721" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="169.2708" x2="469.2708" y1="699.7721" y2="699.7721"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="270.8333" x="181.7708" y="689.5325">ssh-userauth (userid, cvk.pub, signature)</text><line style="stroke:#EC7211;stroke-width:3.125;" x1="485.9375" x2="529.6875" y1="739.3229" y2="739.3229"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="529.6875" x2="529.6875" y1="739.3229" y2="752.8646"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="486.9792" x2="529.6875" y1="752.8646" y2="752.8646"/><polygon fill="#EC7211" points="497.3958,748.6979,486.9792,752.8646,497.3958,757.0313,493.2292,752.8646" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="235.4167" x="498.4375" y="729.0833">Compare received keys for authority</text><polygon fill="#EC7211" points="175.5208,788.2487,165.1042,792.4154,175.5208,796.582,171.3542,792.4154" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="169.2708" x2="479.6875" y1="792.4154" y2="792.4154"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="116.6667" x="186.9792" y="782.1757">userauth success</text><!--MD5=[75f0707185d5d7c8909de2b23f3f2b19]
+@startuml Sign-in
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/aws-orange-light/puml-theme-aws-orange-light.puml
+
+
+title Sign-in
+note over Client
+Web SSH Client with pre-configured settings
+(ssh server)
+end note
+activate Client
+activate Server
+Client->Server: client key exchange init
+Server->Client: server key exchange init
+Client->Client: match encryption and hashing with server
+Client<->Server: Diffie-Hellman Key exchange
+
+Client->Enclave: request enclave 
+note over Enclave
+Enclave requested from Home ORK
+end note
+
+activate Enclave
+Enclave->Enclave: sign-in
+Enclave->Enclave: validate
+
+
+alt sign && valid ?
+    Enclave->Client:userid, cvk.pub, signature
+    else
+    Enclave->Client:401()
+    deactivate Enclave
+end
+
+Client->Server: ssh-userauth (userid, cvk.pub, signature)
+Server->Server: Compare received keys for authority
+Server->Client: userauth success
+deactivate Server
+
+
+deactivate Client
+@enduml
+
+@startuml Sign-in
+
+
+
+skinparam backgroundColor transparent
+
+
+
+
+
+
+
+
+
+
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               5
+skinparam ArrowColor            #4E5D6C
+skinparam stereotype {
+    CBackgroundColor #ffffff
+    CBorderColor #cccccc
+    ABackgroundColor #4a9a35
+    ABorderColor #176702
+    IBackgroundColor #da5b41
+    IBorderColor #a7280e
+    EBackgroundColor #f08e41
+    EBorderColor #bd5b0e
+    NBackgroundColor #338fc9
+    NBorderColor #005c96
+}
+skinparam title {
+	FontColor	                 #4E5D6C
+	BorderColor	                 #FFFFFF
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              #FFFFFF-#cccccc
+}
+
+skinparam legend {
+	BackgroundColor #FFFFFF
+	BorderColor #cccccc
+	FontColor #abb6c2
+}
+
+skinparam swimlane {
+	BorderColor #0073bb
+	BorderThickness 2
+	TitleBackgroundColor  #FFFFFF-#cccccc
+	TitleFontColor #EC7211
+}
+
+
+skinparam activity {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	BarColor #1D8102
+	StartColor #0073bb
+	EndColor #0073bb
+	DiamondBackgroundColor #ffffff
+  	DiamondBorderColor #cccccc
+  	DiamondFontColor #4E5D6C
+}
+
+skinparam participant {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	ParticipantBorderThickness 2
+}
+
+skinparam actor {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam arrow {
+	Thickness 3
+	Color #EC7211
+	FontColor #4E5D6C
+}
+
+skinparam sequence {
+	ArrowThickness 3
+	BorderColor #EC7211
+	TitleFontColor #EC7211
+	BackgroundColor transparent
+	StartColor #EC7211
+	EndColor #EC7211
+	BoxBackgroundColor transparent
+	BoxBorderColor #4E5D6C
+	BoxFontColor #4E5D6C
+	DelayFontColor #4E5D6C
+	LifeLineBorderColor #abb6c2
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #bcc5ce
+	GroupBorderColor #4E5D6C
+	GroupFontColor #4E5D6C
+	GroupHeaderFontColor #0073bb
+	GroupBackgroundColor #FFFFFF
+	GroupBodyBackgroundColor transparent
+	GroupHeaderBackgroundColor transparent
+	DividerBackgroundColor #4E5D6C
+    DividerBorderColor #4E5D6C
+    DividerBorderThickness 2
+    DividerFontColor #abb6c2
+	ReferenceBackgroundColor transparent
+	ReferenceBorderColor #4E5D6C
+	ReferenceFontColor #4E5D6C
+	ReferenceHeaderFontColor #0073bb
+	ReferenceHeaderBackgroundColor #FFFFFF
+	StereotypeFontColor #FFF
+}
+
+skinparam partition {
+	BorderColor #EC7211
+	FontColor #EC7211
+	BackgroundColor transparent
+}
+
+skinparam collections {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+}
+
+skinparam control {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam entity {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam boundary {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam agent {
+	BackgroundColor #EC7211
+	BorderColor #f08e41
+	FontColor #4E5D6C
+}
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #0073bb
+	BorderColor #005c96
+	FontColor #FFF
+}
+
+skinparam artifact {
+	BackgroundColor #4E5D6C
+	BorderColor #717d89
+	FontColor #abb6c2
+}
+
+skinparam component {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+}
+
+skinparam interface {
+	BackgroundColor  #a7280e
+	BorderColor  #d13212
+	FontColor #4E5D6C
+}
+
+skinparam storage {
+	BackgroundColor #EC7211
+  	BorderColor #bd5b0e
+	FontColor #FFF
+}
+
+skinparam node {
+	BackgroundColor  transparent
+	BorderColor #abb6c2
+	FontColor #abb6c2
+}
+
+skinparam cloud {
+	BackgroundColor transparent
+	BorderColor #4E5D6C
+	FontColor #abb6c2
+}
+
+skinparam database {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam class {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	HeaderBackgroundColor #f08e41
+	StereotypeFontColor #4E5D6C
+	BorderThickness 1
+	AttributeFontColor #FFF
+	AttributeFontSize 11
+}
+
+skinparam object {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	StereotypeFontColor #4E5D6C
+	BorderThickness 1
+	AttributeFontColor #FFF
+	AttributeFontSize 11
+}
+
+skinparam usecase {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	BorderThickness 2
+	StereotypeFontColor #EC7211
+}
+
+skinparam rectangle {
+	BackgroundColor transparent
+	FontColor #4E5D6C
+	BorderColor #4E5D6C
+	BorderThickness 2
+	StereotypeFontColor #abb6c2
+}
+
+skinparam package {
+	BackgroundColor #FFFFFF
+  	BorderColor #4E5D6C
+	FontColor #4E5D6C
+	BorderThickness 2
+}
+
+skinparam folder {
+	BackgroundColor #ffffff
+  	BorderColor #EC7211
+	FontColor #EC7211
+	BorderThickness 2
+}
+
+skinparam frame {
+	BackgroundColor #ffffff
+  	BorderColor #0073bb
+	FontColor #0073bb
+	BorderThickness 2
+}
+
+skinparam state {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	StartColor #0073bb
+	EndColor #0073bb
+	AttributeFontColor #4E5D6C
+	AttributeFontSize 11
+}
+
+skinparam queue {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+}
+
+skinparam card {
+	BackgroundColor #0073bb
+	BorderColor #005c96
+	FontColor #FFF
+}
+
+skinparam file {
+	BackgroundColor #cccccc
+	BorderColor #abb6c2
+	FontColor #4E5D6C
+}
+
+
+skinparam stack {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+}
+
+
+
+title Sign-in
+note over Client
+Web SSH Client with pre-configured settings
+(ssh server)
+end note
+activate Client
+activate Server
+Client->Server: client key exchange init
+Server->Client: server key exchange init
+Client->Client: match encryption and hashing with server
+Client<->Server: Diffie-Hellman Key exchange
+
+Client->Enclave: request enclave 
+note over Enclave
+Enclave requested from Home ORK
+end note
+
+activate Enclave
+Enclave->Enclave: sign-in
+Enclave->Enclave: validate
+
+
+alt sign && valid ?
+    Enclave->Client:userid, cvk.pub, signature
+    else
+    Enclave->Client:401()
+    deactivate Enclave
+end
+
+Client->Server: ssh-userauth (userid, cvk.pub, signature)
+Server->Server: Compare received keys for authority
+Server->Client: userauth success
+deactivate Server
+
+
+deactivate Client
+@enduml
+
+PlantUML version 1.2022.13(Sat Nov 19 13:22:17 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

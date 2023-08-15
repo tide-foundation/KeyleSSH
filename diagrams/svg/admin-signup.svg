@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="834.375px" preserveAspectRatio="none" style="width:694px;height:834px;" version="1.1" viewBox="0 0 694 834" width="694.7917px" zoomAndPan="magnify"><defs><linearGradient id="g1x1wav33zfdz90" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#CCCCCC"/></linearGradient><linearGradient id="g1x1wav33zfdz91" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#F08E41"/><stop offset="100%" stop-color="#EC7211"/></linearGradient></defs><g><rect fill="url(#g1x1wav33zfdz90)" height="45.0846" id="_title" rx="4.1667" ry="4.1667" style="stroke:#FFFFFF;stroke-width:1.0416666666666667;" width="190.625" x="256.7708" y="10.4167"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="20.8333" font-weight="bold" lengthAdjust="spacing" textLength="169.7917" x="267.1875" y="40.1713">Admin Sign-up</text><rect fill="#BCC5CE" height="667.1875" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="88.0208" y="112.7604"/><rect fill="#BCC5CE" height="85.3516" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="260.4167" y="189.7786"/><rect fill="#BCC5CE" height="504.8177" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="439.5833" y="275.1302"/><rect fill="none" height="144.6615" rx="4.1667" ry="4.1667" style="stroke:#4E5D6C;stroke-width:1.5625;" width="277.0833" x="355.2083" y="343.8477"/><rect fill="none" height="117.5781" rx="4.1667" ry="4.1667" style="stroke:#4E5D6C;stroke-width:1.5625;" width="523.9583" x="10.4167" y="655.0781"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="92.7083" x2="92.7083" y1="102.3438" y2="790.3646"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="265.625" x2="265.625" y1="102.3438" y2="790.3646"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="444.7917" x2="444.7917" y1="102.3438" y2="790.3646"/><rect fill="url(#g1x1wav33zfdz91)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="61.4583" x="62.5" y="61.7513"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="36.4583" x="75" y="85.8541">Client</text><rect fill="url(#g1x1wav33zfdz91)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="61.4583" x="62.5" y="789.3229"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="36.4583" x="75" y="813.4257">Client</text><rect fill="url(#g1x1wav33zfdz91)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="95.8333" x="217.7083" y="61.7513"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="70.8333" x="230.2083" y="85.8541">TideButton</text><rect fill="url(#g1x1wav33zfdz91)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="95.8333" x="217.7083" y="789.3229"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="70.8333" x="230.2083" y="813.4257">TideButton</text><rect fill="url(#g1x1wav33zfdz91)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="75" x="407.2917" y="61.7513"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="50" x="419.7917" y="85.8541">Enclave</text><rect fill="url(#g1x1wav33zfdz91)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="75" x="407.2917" y="789.3229"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="50" x="419.7917" y="813.4257">Enclave</text><rect fill="#BCC5CE" height="667.1875" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="88.0208" y="112.7604"/><rect fill="#BCC5CE" height="85.3516" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="260.4167" y="189.7786"/><rect fill="#BCC5CE" height="504.8177" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="439.5833" y="275.1302"/><path d="M27.0833,122.1354 L27.0833,148.1771 A4.1667,4.1667 0 0 0 31.25,152.3438 L154.1667,152.3438 A4.1667,4.1667 0 0 0 158.3333,148.1771 L158.3333,128.3854 L147.9167,117.9688 L31.25,117.9688 A4.1667,4.1667 0 0 0 27.0833,122.1354 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><path d="M147.9167,117.9688 L147.9167,126.3021 A2.0833,2.0833 0 0 0 150,128.3854 L158.3333,128.3854 L147.9167,117.9688 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="98.9583" x="38.5417" y="139.9882">Web SSH Client</text><polygon fill="#EC7211" points="247.9167,185.612,258.3333,189.7786,247.9167,193.9453,252.0833,189.7786" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="98.4375" x2="254.1667" y1="189.7786" y2="189.7786"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="89.5833" x="110.9375" y="179.539">Press Buttton</text><path d="M183.3333,207.487 L183.3333,233.5286 A4.1667,4.1667 0 0 0 187.5,237.6953 L521.875,237.6953 A4.1667,4.1667 0 0 0 526.0417,233.5286 L526.0417,213.737 L515.625,203.3203 L187.5,203.3203 A4.1667,4.1667 0 0 0 183.3333,207.487 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><path d="M515.625,203.3203 L515.625,211.6536 A2.0833,2.0833 0 0 0 517.7083,213.737 L526.0417,213.737 L515.625,203.3203 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="226.0417" x="236.9792" y="225.3398">Enclave requested from Home ORK</text><polygon fill="#EC7211" points="427.0833,270.9635,437.5,275.1302,427.0833,279.2969,431.25,275.1302" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="265.625" x2="433.3333" y1="275.1302" y2="275.1302"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="105.2083" x="278.125" y="264.8905">request enclave</text><line style="stroke:#EC7211;stroke-width:3.125;" x1="450" x2="493.75" y1="314.681" y2="314.681"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="493.75" x2="493.75" y1="314.681" y2="328.2227"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="451.0417" x2="493.75" y1="328.2227" y2="328.2227"/><polygon fill="#EC7211" points="461.4583,324.056,451.0417,328.2227,461.4583,332.3893,457.2917,328.2227" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="47.9167" x="462.5" y="304.4413">sign-up</text><path d="M359.375,343.8477 L432.2917,343.8477 L432.2917,360.4818 L421.875,370.8984 L355.2083,370.8984 L355.2083,348.0143 A4.1667,4.1667 0 0 1 359.375,343.8477 " fill="#FFFFFF" style="stroke:#4E5D6C;stroke-width:1.5625;"/><rect fill="none" height="144.6615" rx="4.1667" ry="4.1667" style="stroke:#4E5D6C;stroke-width:1.5625;" width="277.0833" x="355.2083" y="343.8477"/><text fill="#0073BB" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="19.7917" x="376.0417" y="361.7004">alt</text><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="168.75" x="453.125" y="362.7421">[existing user == yes?]</text><line style="stroke:#EC7211;stroke-width:3.125;" x1="450" x2="493.75" y1="411.4583" y2="411.4583"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="493.75" x2="493.75" y1="411.4583" y2="425"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="451.0417" x2="493.75" y1="425" y2="425"/><polygon fill="#EC7211" points="461.4583,420.8333,451.0417,425,461.4583,429.1667,457.2917,425" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="71.875" x="462.5" y="401.2187">sign-in flow</text><line style="stroke:#4E5D6C;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" x1="355.2083" x2="632.2917" y1="434.375" y2="434.375"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="450" x2="493.75" y1="466.6341" y2="466.6341"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="493.75" x2="493.75" y1="466.6341" y2="480.1758"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="451.0417" x2="493.75" y1="480.1758" y2="480.1758"/><polygon fill="#EC7211" points="461.4583,476.0091,451.0417,480.1758,461.4583,484.3424,457.2917,480.1758" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="77.0833" x="462.5" y="456.3944">sign-up flow</text><line style="stroke:#EC7211;stroke-width:3.125;" x1="450" x2="493.75" y1="527.0182" y2="527.0182"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="493.75" x2="493.75" y1="527.0182" y2="540.5599"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="451.0417" x2="493.75" y1="540.5599" y2="540.5599"/><polygon fill="#EC7211" points="461.4583,536.3932,451.0417,540.5599,461.4583,544.7266,457.2917,540.5599" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="225" x="462.5" y="516.7786">create userid and new cvk/ssh key</text><path d="M289.5833,558.2682 L289.5833,584.3099 A4.1667,4.1667 0 0 0 293.75,588.4766 L595.8333,588.4766 A4.1667,4.1667 0 0 0 600,584.3099 L600,564.5182 L589.5833,554.1016 L293.75,554.1016 A4.1667,4.1667 0 0 0 289.5833,558.2682 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><path d="M589.5833,554.1016 L589.5833,562.4349 A2.0833,2.0833 0 0 0 591.6667,564.5182 L600,564.5182 L589.5833,554.1016 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="278.125" x="301.0417" y="576.121">userid = hash(gUserCMK) for first 32 bytes</text><line style="stroke:#EC7211;stroke-width:3.125;" x1="450" x2="493.75" y1="625.9115" y2="625.9115"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="493.75" x2="493.75" y1="625.9115" y2="639.4531"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="451.0417" x2="493.75" y1="639.4531" y2="639.4531"/><polygon fill="#EC7211" points="461.4583,635.2865,451.0417,639.4531,461.4583,643.6198,457.2917,639.4531" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="51.0417" x="462.5" y="615.6718">validate</text><path d="M14.5833,655.0781 L87.5,655.0781 L87.5,671.7122 L77.0833,682.1289 L10.4167,682.1289 L10.4167,659.2448 A4.1667,4.1667 0 0 1 14.5833,655.0781 " fill="#FFFFFF" style="stroke:#4E5D6C;stroke-width:1.5625;"/><rect fill="none" height="117.5781" rx="4.1667" ry="4.1667" style="stroke:#4E5D6C;stroke-width:1.5625;" width="523.9583" x="10.4167" y="655.0781"/><text fill="#0073BB" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="19.7917" x="31.25" y="672.9309">alt</text><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="116.6667" x="108.3333" y="673.9726">[sign &amp;&amp; valid ?]</text><polygon fill="#EC7211" points="109.8958,718.5221,99.4792,722.6888,109.8958,726.8555,105.7292,722.6888" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="103.6458" x2="438.5417" y1="722.6888" y2="722.6888"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="98.9583" x="121.3542" y="712.4491">cvk.pub, userid</text><line style="stroke:#4E5D6C;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" x1="10.4167" x2="534.375" y1="732.0638" y2="732.0638"/><polygon fill="#EC7211" points="109.8958,760.1563,99.4792,764.3229,109.8958,768.4896,105.7292,764.3229" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="103.6458" x2="438.5417" y1="764.3229" y2="764.3229"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="35.4167" x="121.3542" y="754.0833">401()</text><!--MD5=[cae1f57b5934cafe6bf1a3e27a53603f]
+@startuml admin-signup
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/aws-orange-light/puml-theme-aws-orange-light.puml
+
+
+title Admin Sign-up
+note over Client
+Web SSH Client
+end note
+activate Client
+Client->TideButton: Press Buttton
+activate TideButton
+
+note over TideButton, Enclave
+Enclave requested from Home ORK
+end note
+TideButton->Enclave: request enclave 
+deactivate TideButton
+
+activate Enclave
+Enclave->Enclave: sign-up
+
+alt existing user == yes?
+    Enclave->Enclave: sign-in flow
+    else
+    Enclave->Enclave: sign-up flow
+end
+Enclave->Enclave: create userid and new cvk/ssh key
+note over Enclave
+    userid = hash(gUserCMK) for first 32 bytes
+end note
+Enclave->Enclave: validate
+
+alt sign && valid ?
+    Enclave->Client:cvk.pub, userid
+    else
+    Enclave->Client:401()
+end
+deactivate Enclave
+
+deactivate Client
+@enduml
+
+@startuml admin-signup
+
+
+
+skinparam backgroundColor transparent
+
+
+
+
+
+
+
+
+
+
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               5
+skinparam ArrowColor            #4E5D6C
+skinparam stereotype {
+    CBackgroundColor #ffffff
+    CBorderColor #cccccc
+    ABackgroundColor #4a9a35
+    ABorderColor #176702
+    IBackgroundColor #da5b41
+    IBorderColor #a7280e
+    EBackgroundColor #f08e41
+    EBorderColor #bd5b0e
+    NBackgroundColor #338fc9
+    NBorderColor #005c96
+}
+skinparam title {
+	FontColor	                 #4E5D6C
+	BorderColor	                 #FFFFFF
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              #FFFFFF-#cccccc
+}
+
+skinparam legend {
+	BackgroundColor #FFFFFF
+	BorderColor #cccccc
+	FontColor #abb6c2
+}
+
+skinparam swimlane {
+	BorderColor #0073bb
+	BorderThickness 2
+	TitleBackgroundColor  #FFFFFF-#cccccc
+	TitleFontColor #EC7211
+}
+
+
+skinparam activity {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	BarColor #1D8102
+	StartColor #0073bb
+	EndColor #0073bb
+	DiamondBackgroundColor #ffffff
+  	DiamondBorderColor #cccccc
+  	DiamondFontColor #4E5D6C
+}
+
+skinparam participant {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	ParticipantBorderThickness 2
+}
+
+skinparam actor {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam arrow {
+	Thickness 3
+	Color #EC7211
+	FontColor #4E5D6C
+}
+
+skinparam sequence {
+	ArrowThickness 3
+	BorderColor #EC7211
+	TitleFontColor #EC7211
+	BackgroundColor transparent
+	StartColor #EC7211
+	EndColor #EC7211
+	BoxBackgroundColor transparent
+	BoxBorderColor #4E5D6C
+	BoxFontColor #4E5D6C
+	DelayFontColor #4E5D6C
+	LifeLineBorderColor #abb6c2
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #bcc5ce
+	GroupBorderColor #4E5D6C
+	GroupFontColor #4E5D6C
+	GroupHeaderFontColor #0073bb
+	GroupBackgroundColor #FFFFFF
+	GroupBodyBackgroundColor transparent
+	GroupHeaderBackgroundColor transparent
+	DividerBackgroundColor #4E5D6C
+    DividerBorderColor #4E5D6C
+    DividerBorderThickness 2
+    DividerFontColor #abb6c2
+	ReferenceBackgroundColor transparent
+	ReferenceBorderColor #4E5D6C
+	ReferenceFontColor #4E5D6C
+	ReferenceHeaderFontColor #0073bb
+	ReferenceHeaderBackgroundColor #FFFFFF
+	StereotypeFontColor #FFF
+}
+
+skinparam partition {
+	BorderColor #EC7211
+	FontColor #EC7211
+	BackgroundColor transparent
+}
+
+skinparam collections {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+}
+
+skinparam control {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam entity {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam boundary {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam agent {
+	BackgroundColor #EC7211
+	BorderColor #f08e41
+	FontColor #4E5D6C
+}
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #0073bb
+	BorderColor #005c96
+	FontColor #FFF
+}
+
+skinparam artifact {
+	BackgroundColor #4E5D6C
+	BorderColor #717d89
+	FontColor #abb6c2
+}
+
+skinparam component {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+}
+
+skinparam interface {
+	BackgroundColor  #a7280e
+	BorderColor  #d13212
+	FontColor #4E5D6C
+}
+
+skinparam storage {
+	BackgroundColor #EC7211
+  	BorderColor #bd5b0e
+	FontColor #FFF
+}
+
+skinparam node {
+	BackgroundColor  transparent
+	BorderColor #abb6c2
+	FontColor #abb6c2
+}
+
+skinparam cloud {
+	BackgroundColor transparent
+	BorderColor #4E5D6C
+	FontColor #abb6c2
+}
+
+skinparam database {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam class {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	HeaderBackgroundColor #f08e41
+	StereotypeFontColor #4E5D6C
+	BorderThickness 1
+	AttributeFontColor #FFF
+	AttributeFontSize 11
+}
+
+skinparam object {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	StereotypeFontColor #4E5D6C
+	BorderThickness 1
+	AttributeFontColor #FFF
+	AttributeFontSize 11
+}
+
+skinparam usecase {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	BorderThickness 2
+	StereotypeFontColor #EC7211
+}
+
+skinparam rectangle {
+	BackgroundColor transparent
+	FontColor #4E5D6C
+	BorderColor #4E5D6C
+	BorderThickness 2
+	StereotypeFontColor #abb6c2
+}
+
+skinparam package {
+	BackgroundColor #FFFFFF
+  	BorderColor #4E5D6C
+	FontColor #4E5D6C
+	BorderThickness 2
+}
+
+skinparam folder {
+	BackgroundColor #ffffff
+  	BorderColor #EC7211
+	FontColor #EC7211
+	BorderThickness 2
+}
+
+skinparam frame {
+	BackgroundColor #ffffff
+  	BorderColor #0073bb
+	FontColor #0073bb
+	BorderThickness 2
+}
+
+skinparam state {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	StartColor #0073bb
+	EndColor #0073bb
+	AttributeFontColor #4E5D6C
+	AttributeFontSize 11
+}
+
+skinparam queue {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+}
+
+skinparam card {
+	BackgroundColor #0073bb
+	BorderColor #005c96
+	FontColor #FFF
+}
+
+skinparam file {
+	BackgroundColor #cccccc
+	BorderColor #abb6c2
+	FontColor #4E5D6C
+}
+
+
+skinparam stack {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+}
+
+
+
+title Admin Sign-up
+note over Client
+Web SSH Client
+end note
+activate Client
+Client->TideButton: Press Buttton
+activate TideButton
+
+note over TideButton, Enclave
+Enclave requested from Home ORK
+end note
+TideButton->Enclave: request enclave 
+deactivate TideButton
+
+activate Enclave
+Enclave->Enclave: sign-up
+
+alt existing user == yes?
+    Enclave->Enclave: sign-in flow
+    else
+    Enclave->Enclave: sign-up flow
+end
+Enclave->Enclave: create userid and new cvk/ssh key
+note over Enclave
+    userid = hash(gUserCMK) for first 32 bytes
+end note
+Enclave->Enclave: validate
+
+alt sign && valid ?
+    Enclave->Client:cvk.pub, userid
+    else
+    Enclave->Client:401()
+end
+deactivate Enclave
+
+deactivate Client
+@enduml
+
+PlantUML version 1.2022.13(Sat Nov 19 13:22:17 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
