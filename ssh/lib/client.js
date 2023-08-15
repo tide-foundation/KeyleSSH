@@ -276,6 +276,10 @@ class Client extends EventEmitter {
     const pre_TideInfo = this.waitForSignal(this.config.clientSocket, 'returnedInfo');
     this.config.clientSocket.emit('getInfo', this.config.newUser);
     const TideInfo = await pre_TideInfo;
+    if(!TideInfo){
+      this.emit('end');
+      return;
+    } 
     //use publicKey from here
     this.config.privateKey = TideInfo.PublicKey; // lol!
                                                 // this should be a Buffer of oenssh public byes
@@ -487,6 +491,10 @@ class Client extends EventEmitter {
               const pre_signature = this.waitForSignal(this.config.clientSocket, 'returnedSignature');
               this.config.clientSocket.emit('getSignature', buf.toString('base64'));
               const signature = await pre_signature;
+              if(!signature){
+                this.emit('end');
+                return;
+              } 
               //
 
               if (signature instanceof Error) {

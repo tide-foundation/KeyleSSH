@@ -196,28 +196,38 @@ const config = {
   mode: "openssh",
 }
 
-const heimdall = new Heimdall(config)
+const container = document.createElement('div');
+container.style.position = 'fixed';
+container.style.top = '0';
+container.style.right = '0';
+container.style.bottom = '0';
+container.style.left = '0';
+container.style.display = 'flex';
+container.style.alignItems = 'center';
+container.style.justifyContent = 'center';
+container.style.zIndex = '1000'; // Ensure the container is above other elements
+// Create the button element
+const button = document.createElement('button');
+// Set the button text
+button.innerHTML = 'Lets go!';
+// Create the text box as a div element
+const textBox = document.createElement('textarea');
+// Apply some styling to the text box
+textBox.style.padding = '10px';
+textBox.style.border = '1px solid black';
+textBox.style.backgroundColor = 'white';
+textBox.cols = 95; // Characters wide
+textBox.rows = 5; // Lines tall
+textBox.style.color = 'black';
+textBox.style.overflow = 'hidden';
+textBox.style.resize = 'none';
+
+
+const heimdall = new Heimdall(config);
 socket.on('getInfo', async (createUser) => {
-  const container = document.createElement('div');
-  container.style.position = 'fixed';
-  container.style.top = '0';
-  container.style.right = '0';
-  container.style.bottom = '0';
-  container.style.left = '0';
-  container.style.display = 'flex';
-  container.style.alignItems = 'center';
-  container.style.justifyContent = 'center';
-  container.style.zIndex = '1000'; // Ensure the container is above other elements
-
-  // Create the button element
-  const button = document.createElement('button');
-
-  // Set the button text
-  button.innerHTML = 'Lets go!';
-
   // Add a click event listener to the button
   button.addEventListener('click', async function() {
-    document.body.removeChild(container);
+    container.removeChild(button);
     if(TideInfo == undefined){
       let result = (await heimdall.OpenEnclave());
       if('PublicKey' in result){
@@ -226,8 +236,10 @@ socket.on('getInfo', async (createUser) => {
           PublicKey: getOpenSSHPublicKey(result.PublicKey)
         };
         if(result.NewAccount){
-          term.write(`Provide this info to this system's administrator: \r\n==============================================================================================\r\n ${createUser ? "Username: " + TideInfo.Username + "\r\n" : ``} Public Key: ` + TideInfo.PublicKey + "\r\n" + "==============================================================================================\r\n"); 
+          textBox.value = `Provide this info to this system's administrator: \n==============================================================================================\n ${createUser ? "Username: " + TideInfo.Username + "\n" : ``} Public Key: ` + TideInfo.PublicKey + "\n" + "==============================================================================================\n";
+          container.appendChild(textBox);
           await heimdall.CompleteSignIn(); // user will fail to login in this event, but we want to complete their sign in process and show their public key for admin to add
+          socket.emit('returnedInfo', false);
           return;
         }
       }
@@ -236,11 +248,10 @@ socket.on('getInfo', async (createUser) => {
       }
     } 
     socket.emit('returnedInfo', TideInfo);
+    document.body.removeChild(container);
   });
-
   // Append the button to the container
   container.appendChild(button);
-
   // Append the container to the body of the document
   document.body.appendChild(container);
 })
@@ -250,6 +261,7 @@ socket.on('getSignature', async(dataToSign) => {
   if('ModelSig' in result){
     socket.emit('returnedSignature', Buffer.from(result.ModelSig, 'base64'));
   }else{
+    socket.emit('returnedSignature', false);
     throw Error();
   }
 });
