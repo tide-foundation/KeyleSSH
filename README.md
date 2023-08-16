@@ -7,6 +7,9 @@ Traditional SSH clients often require users to possess the authentication key st
 
 By having the authentication key remote, the SSH client has unprecedented flexibility to function from virtually anywhere. This innovative approach liberates users from the constraints of their physical devices and locations, redefining the realm of SSH client operations.
 
+### Requirements
+Node v14.x or above... 
+
 ### Installation Instructions for SSH Server:
 
 1. Install the SSH Webclient npm package by executing the appropriate installation command.
