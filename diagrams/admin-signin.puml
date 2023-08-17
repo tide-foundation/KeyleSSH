@@ -1,39 +1,80 @@
 @startuml Sign-in
+title Sign-in
 !include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/aws-orange-light/puml-theme-aws-orange-light.puml
 
+participant "SSH \nServer" as Server
+box "webSocket" #LightGray
+participant "SSH \nProxy" as Proxy
+participant "SSH \nClient" as Client
+end box
+participant "Enclave" as Enclave
+collections "Tide \nNetwork" as Tide
 
-title Sign-in
+group Pre-configured
+note over Server
+    VVK : SSH server key
+    gCVK : Public User key
+end note
+
 note over Client
-Web SSH Client with pre-configured settings
-(ssh server)
+    gVVK : Public SSH Server key
+    sURL : SSH Proxy URL signed by VVK
 end note
+
+note over Tide
+    userID : User ID
+    VUID : User ID
+    CVK : User Vendor key
+end note
+end group
+
 activate Client
-activate Server
-Client->Server: client key exchange init
-Server->Client: server key exchange init
-Client->Client: match encryption and hashing with server
-Client<->Server: Diffie-Hellman Key exchange
+Client-[#Gray]>Proxy : connect
+activate Proxy
+Client<-Proxy : getInfo
 
-Client->Enclave: request enclave 
+Client->Enclave: OpenEnclave(gVVK, sURL)
+activate Enclave
+
 note over Enclave
-Enclave requested from Home ORK
+    validate sURL ?
+    Tide Login
 end note
 
-activate Enclave
-Enclave->Enclave: sign-in
-Enclave->Enclave: validate
+Enclave<->Tide: PRISM auth
+Client<-Enclave: VUID, gCVK
+Client->Proxy: Username(VUID), \nPublic(gCVK)
 
+Proxy<-[#Gray]>Server: SSH Diffie-Hellman Key exchange
+activate Server
 
-alt sign && valid ?
-    Enclave->Client:userid, cvk.pub, signature
-    else
-    Enclave->Client:401()
-    deactivate Enclave
-end
+note over Proxy
+    Prep challenge
+end note
 
-Client->Server: ssh-userauth (userid, cvk.pub, signature)
-Server->Server: Compare received keys for authority
-Server->Client: userauth success
+Client<-Proxy: getSignature
+Client->Enclave: challenge
+
+Enclave->Tide: signSSH(challenge)
+
+activate Tide
+note over Tide
+    Validate challenge
+    Sign challenge
+end note
+
+Enclave<-Tide: signature
+deactivate Tide
+
+Enclave->Client: tideJWT, signature
+
+deactivate Enclave
+
+Client->Proxy: ReturnedSignature
+Proxy-[#Gray]>Server: ssh-userauth (userid, gCVK, signature)
+Server-[#Gray]>Server: Verify signature against gCVK
+Server<-[#Gray]>Proxy: Commence session
+Client<-[#Gray]>Proxy: Commence session
 deactivate Server
 
 
