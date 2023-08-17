@@ -210,6 +210,9 @@ container.style.zIndex = '1000'; // Ensure the container is above other elements
 const button = document.createElement('button');
 // Set the button text
 button.innerHTML = 'Lets go!';
+button.style.width: 100px;
+button.style.height: 30px;
+button.style.backgroundcolor: 'orange';
 // Create the text box as a div element
 const textBox = document.createElement('textarea');
 // Apply some styling to the text box
