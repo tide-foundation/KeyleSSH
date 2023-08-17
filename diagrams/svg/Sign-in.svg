@@ -1,40 +1,81 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="855.2083px" preserveAspectRatio="none" style="width:887px;height:855px;" version="1.1" viewBox="0 0 887 855" width="887.5px" zoomAndPan="magnify"><defs><linearGradient id="g1rrwnkpts59bi0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#CCCCCC"/></linearGradient><linearGradient id="g1rrwnkpts59bi1" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#F08E41"/><stop offset="100%" stop-color="#EC7211"/></linearGradient></defs><g><rect fill="url(#g1rrwnkpts59bi0)" height="45.0846" id="_title" rx="4.1667" ry="4.1667" style="stroke:#FFFFFF;stroke-width:1.0416666666666667;" width="102.0833" x="391.1458" y="10.4167"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="20.8333" font-weight="bold" lengthAdjust="spacing" textLength="81.25" x="401.5625" y="40.1713">Sign-in</text><rect fill="#BCC5CE" height="679.6549" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="158.8542" y="112.7604"/><rect fill="#BCC5CE" height="679.6549" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="475.5208" y="112.7604"/><rect fill="#BCC5CE" height="276.8555" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="746.3542" y="376.0742"/><rect fill="none" height="117.5781" rx="4.1667" ry="4.1667" style="stroke:#4E5D6C;stroke-width:1.5625;" width="759.8958" x="81.25" y="543.6849"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="163.5417" x2="163.5417" y1="102.3438" y2="811.1654"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="480.7292" x2="480.7292" y1="102.3438" y2="811.1654"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="751.5625" x2="751.5625" y1="102.3438" y2="811.1654"/><rect fill="url(#g1rrwnkpts59bi1)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="61.4583" x="133.3333" y="61.7513"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="36.4583" x="145.8333" y="85.8541">Client</text><rect fill="url(#g1rrwnkpts59bi1)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="61.4583" x="133.3333" y="810.1237"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="36.4583" x="145.8333" y="834.2265">Client</text><rect fill="url(#g1rrwnkpts59bi1)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="66.6667" x="447.3958" y="61.7513"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="41.6667" x="459.8958" y="85.8541">Server</text><rect fill="url(#g1rrwnkpts59bi1)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="66.6667" x="447.3958" y="810.1237"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="41.6667" x="459.8958" y="834.2265">Server</text><rect fill="url(#g1rrwnkpts59bi1)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="75" x="714.0625" y="61.7513"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="50" x="726.5625" y="85.8541">Enclave</text><rect fill="url(#g1rrwnkpts59bi1)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="75" x="714.0625" y="810.1237"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="50" x="726.5625" y="834.2265">Enclave</text><rect fill="#BCC5CE" height="679.6549" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="158.8542" y="112.7604"/><rect fill="#BCC5CE" height="679.6549" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="475.5208" y="112.7604"/><rect fill="#BCC5CE" height="276.8555" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="746.3542" y="376.0742"/><path d="M5.2083,122.1354 L5.2083,162.7604 A4.1667,4.1667 0 0 0 9.375,166.9271 L319.7917,166.9271 A4.1667,4.1667 0 0 0 323.9583,162.7604 L323.9583,128.3854 L313.5417,117.9688 L9.375,117.9688 A4.1667,4.1667 0 0 0 5.2083,122.1354 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><path d="M313.5417,117.9688 L313.5417,126.3021 A2.0833,2.0833 0 0 0 315.625,128.3854 L323.9583,128.3854 L313.5417,117.9688 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="286.4583" x="16.6667" y="139.9882">Web SSH Client with pre-configured settings</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="78.125" x="16.6667" y="154.539">(ssh server)</text><polygon fill="#EC7211" points="463.0208,200.1628,473.4375,204.3294,463.0208,208.4961,467.1875,204.3294" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="169.2708" x2="469.2708" y1="204.3294" y2="204.3294"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="153.125" x="181.7708" y="194.0898">client key exchange init</text><polygon fill="#EC7211" points="180.7292,239.7135,170.3125,243.8802,180.7292,248.0469,176.5625,243.8802" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="174.4792" x2="474.4792" y1="243.8802" y2="243.8802"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="158.3333" x="192.1875" y="233.6405">server key exchange init</text><line style="stroke:#EC7211;stroke-width:3.125;" x1="169.2708" x2="213.0208" y1="283.431" y2="283.431"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="213.0208" x2="213.0208" y1="283.431" y2="296.9727"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="170.3125" x2="213.0208" y1="296.9727" y2="296.9727"/><polygon fill="#EC7211" points="180.7292,292.806,170.3125,296.9727,180.7292,301.1393,176.5625,296.9727" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="273.9583" x="181.7708" y="273.1913">match encryption and hashing with server</text><polygon fill="#EC7211" points="180.7292,332.3568,170.3125,336.5234,180.7292,340.6901,176.5625,336.5234" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><polygon fill="#EC7211" points="463.0208,332.3568,473.4375,336.5234,463.0208,340.6901,467.1875,336.5234" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="174.4792" x2="469.2708" y1="336.5234" y2="336.5234"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="182.2917" x="192.1875" y="326.2838">Diffie-Hellman Key exchange</text><polygon fill="#EC7211" points="733.8542,371.9076,744.2708,376.0742,733.8542,380.2409,738.0208,376.0742" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="169.2708" x2="740.1042" y1="376.0742" y2="376.0742"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="105.2083" x="181.7708" y="365.8346">request enclave</text><path d="M621.875,393.7826 L621.875,419.8242 A4.1667,4.1667 0 0 0 626.0417,423.9909 L876.0417,423.9909 A4.1667,4.1667 0 0 0 880.2083,419.8242 L880.2083,400.0326 L869.7917,389.6159 L626.0417,389.6159 A4.1667,4.1667 0 0 0 621.875,393.7826 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><path d="M869.7917,389.6159 L869.7917,397.9492 A2.0833,2.0833 0 0 0 871.875,400.0326 L880.2083,400.0326 L869.7917,389.6159 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="226.0417" x="633.3333" y="411.6353">Enclave requested from Home ORK</text><line style="stroke:#EC7211;stroke-width:3.125;" x1="756.7708" x2="800.5208" y1="461.4258" y2="461.4258"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="800.5208" x2="800.5208" y1="461.4258" y2="474.9674"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="757.8125" x2="800.5208" y1="474.9674" y2="474.9674"/><polygon fill="#EC7211" points="768.2292,470.8008,757.8125,474.9674,768.2292,479.1341,764.0625,474.9674" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="42.7083" x="769.2708" y="451.1861">sign-in</text><line style="stroke:#EC7211;stroke-width:3.125;" x1="756.7708" x2="800.5208" y1="514.5182" y2="514.5182"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="800.5208" x2="800.5208" y1="514.5182" y2="528.0599"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="757.8125" x2="800.5208" y1="528.0599" y2="528.0599"/><polygon fill="#EC7211" points="768.2292,523.8932,757.8125,528.0599,768.2292,532.2266,764.0625,528.0599" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="51.0417" x="769.2708" y="504.2786">validate</text><path d="M85.4167,543.6849 L158.3333,543.6849 L158.3333,560.319 L147.9167,570.7357 L81.25,570.7357 L81.25,547.8516 A4.1667,4.1667 0 0 1 85.4167,543.6849 " fill="#FFFFFF" style="stroke:#4E5D6C;stroke-width:1.5625;"/><rect fill="none" height="117.5781" rx="4.1667" ry="4.1667" style="stroke:#4E5D6C;stroke-width:1.5625;" width="759.8958" x="81.25" y="543.6849"/><text fill="#0073BB" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="19.7917" x="102.0833" y="561.5377">alt</text><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="116.6667" x="179.1667" y="562.5793">[sign &amp;&amp; valid ?]</text><polygon fill="#EC7211" points="180.7292,607.1289,170.3125,611.2956,180.7292,615.4622,176.5625,611.2956" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="174.4792" x2="745.3125" y1="611.2956" y2="611.2956"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="169.7917" x="192.1875" y="601.0559">userid, cvk.pub, signature</text><line style="stroke:#4E5D6C;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" x1="81.25" x2="841.1458" y1="620.6706" y2="620.6706"/><polygon fill="#EC7211" points="180.7292,648.763,170.3125,652.9297,180.7292,657.0964,176.5625,652.9297" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="174.4792" x2="750.5208" y1="652.9297" y2="652.9297"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="35.4167" x="192.1875" y="642.69">401()</text><polygon fill="#EC7211" points="463.0208,695.6055,473.4375,699.7721,463.0208,703.9388,467.1875,699.7721" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="169.2708" x2="469.2708" y1="699.7721" y2="699.7721"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="270.8333" x="181.7708" y="689.5325">ssh-userauth (userid, cvk.pub, signature)</text><line style="stroke:#EC7211;stroke-width:3.125;" x1="485.9375" x2="529.6875" y1="739.3229" y2="739.3229"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="529.6875" x2="529.6875" y1="739.3229" y2="752.8646"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="486.9792" x2="529.6875" y1="752.8646" y2="752.8646"/><polygon fill="#EC7211" points="497.3958,748.6979,486.9792,752.8646,497.3958,757.0313,493.2292,752.8646" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="235.4167" x="498.4375" y="729.0833">Compare received keys for authority</text><polygon fill="#EC7211" points="175.5208,788.2487,165.1042,792.4154,175.5208,796.582,171.3542,792.4154" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="169.2708" x2="479.6875" y1="792.4154" y2="792.4154"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="116.6667" x="186.9792" y="782.1757">userauth success</text><!--MD5=[75f0707185d5d7c8909de2b23f3f2b19]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1340.625px" preserveAspectRatio="none" style="width:1063px;height:1340px;" version="1.1" viewBox="0 0 1063 1340" width="1063.5417px" zoomAndPan="magnify"><defs><linearGradient id="g1mk3cf8w97xtq0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#CCCCCC"/></linearGradient><linearGradient id="g1mk3cf8w97xtq1" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#F08E41"/><stop offset="100%" stop-color="#EC7211"/></linearGradient></defs><g><rect fill="url(#g1mk3cf8w97xtq0)" height="45.0846" id="_title" rx="4.1667" ry="4.1667" style="stroke:#FFFFFF;stroke-width:1.0416666666666667;" width="102.0833" x="482.2917" y="10.4167"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="20.8333" font-weight="bold" lengthAdjust="spacing" textLength="81.25" x="492.7083" y="40.1713">Sign-in</text><rect fill="#D3D3D3" height="1271.7448" rx="4.1667" ry="4.1667" style="stroke:#4E5D6C;stroke-width:0.5208333333333334;" width="323.9583" x="331.7708" y="62.793"/><text fill="#000000" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="81.25" x="453.125" y="79.6041">webSocket</text><rect fill="#BCC5CE" height="515.2018" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="103.125" y="738.151"/><rect fill="#BCC5CE" height="836.7839" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="402.0833" y="425.944"/><rect fill="#BCC5CE" height="1095.8659" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="573.9583" y="157.487"/><rect fill="#BCC5CE" height="537.0117" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="781.25" y="505.0456"/><rect fill="#BCC5CE" height="99.9023" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="953.6458" y="902.6042"/><rect fill="none" height="222.6563" rx="4.1667" ry="4.1667" style="stroke:#4E5D6C;stroke-width:1.5625;" width="1047.9167" x="9.375" y="164.7786"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="108.3333" x2="108.3333" y1="147.0703" y2="1272.1029"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="406.7708" x2="406.7708" y1="147.0703" y2="1272.1029"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="578.6458" x2="578.6458" y1="147.0703" y2="1272.1029"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="786.4583" x2="786.4583" y1="147.0703" y2="1272.1029"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="958.3333" x2="958.3333" y1="147.0703" y2="1272.1029"/><rect fill="url(#g1mk3cf8w97xtq1)" height="54.1016" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="66.6667" x="75" y="91.9271"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="26.0417" x="93.2292" y="116.0299">SSH</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="41.6667" x="87.5" y="130.5806">Server</text><rect fill="url(#g1mk3cf8w97xtq1)" height="54.1016" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="66.6667" x="75" y="1271.0612"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="26.0417" x="93.2292" y="1295.164">SSH</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="41.6667" x="87.5" y="1309.7148">Server</text><rect fill="url(#g1mk3cf8w97xtq1)" height="54.1016" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="59.375" x="377.6042" y="91.9271"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="26.0417" x="392.1875" y="116.0299">SSH</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="34.375" x="390.1042" y="130.5806">Proxy</text><rect fill="url(#g1mk3cf8w97xtq1)" height="54.1016" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="59.375" x="377.6042" y="1271.0612"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="26.0417" x="392.1875" y="1295.164">SSH</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="34.375" x="390.1042" y="1309.7148">Proxy</text><rect fill="url(#g1mk3cf8w97xtq1)" height="54.1016" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="61.4583" x="548.4375" y="91.9271"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="26.0417" x="564.0625" y="116.0299">SSH</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="36.4583" x="560.9375" y="130.5806">Client</text><rect fill="url(#g1mk3cf8w97xtq1)" height="54.1016" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="61.4583" x="548.4375" y="1271.0612"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="26.0417" x="564.0625" y="1295.164">SSH</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="36.4583" x="560.9375" y="1309.7148">Client</text><rect fill="url(#g1mk3cf8w97xtq1)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="75" x="748.9583" y="106.4779"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="50" x="761.4583" y="130.5806">Enclave</text><rect fill="url(#g1mk3cf8w97xtq1)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="75" x="748.9583" y="1271.0612"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="50" x="761.4583" y="1295.164">Enclave</text><rect fill="url(#g1mk3cf8w97xtq1)" height="54.1016" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="78.125" x="921.875" y="87.7604"/><rect fill="url(#g1mk3cf8w97xtq1)" height="54.1016" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="78.125" x="917.7083" y="91.9271"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="27.0833" x="941.1458" y="116.0299">Tide</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="53.125" x="930.2083" y="130.5806">Network</text><rect fill="url(#g1mk3cf8w97xtq1)" height="54.1016" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="78.125" x="921.875" y="1271.0612"/><rect fill="url(#g1mk3cf8w97xtq1)" height="54.1016" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="78.125" x="917.7083" y="1275.2279"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="27.0833" x="941.1458" y="1299.3306">Tide</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="53.125" x="930.2083" y="1313.8814">Network</text><rect fill="#BCC5CE" height="515.2018" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="103.125" y="738.151"/><rect fill="#BCC5CE" height="836.7839" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="402.0833" y="425.944"/><rect fill="#BCC5CE" height="1095.8659" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="573.9583" y="157.487"/><rect fill="#BCC5CE" height="537.0117" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="781.25" y="505.0456"/><rect fill="#BCC5CE" height="99.9023" style="stroke:#ABB6C2;stroke-width:1.0416666666666667;" width="10.4167" x="953.6458" y="902.6042"/><path d="M13.5417,164.7786 L176.0417,164.7786 L176.0417,181.4128 L165.625,191.8294 L9.375,191.8294 L9.375,168.9453 A4.1667,4.1667 0 0 1 13.5417,164.7786 " fill="#FFFFFF" style="stroke:#4E5D6C;stroke-width:1.5625;"/><rect fill="none" height="222.6563" rx="4.1667" ry="4.1667" style="stroke:#4E5D6C;stroke-width:1.5625;" width="1047.9167" x="9.375" y="164.7786"/><text fill="#0073BB" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="109.375" x="30.2083" y="182.6314">Pre-configured</text><path d="M19.7917,201.2044 L19.7917,241.8294 A4.1667,4.1667 0 0 0 23.9583,245.9961 L191.6667,245.9961 A4.1667,4.1667 0 0 0 195.8333,241.8294 L195.8333,207.4544 L185.4167,197.0378 L23.9583,197.0378 A4.1667,4.1667 0 0 0 19.7917,201.2044 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><path d="M185.4167,197.0378 L185.4167,205.3711 A2.0833,2.0833 0 0 0 187.5,207.4544 L195.8333,207.4544 L185.4167,197.0378 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="133.3333" x="31.25" y="219.0572">VVK : SSH server key</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="143.75" x="31.25" y="233.608">gCVK : Public User key</text><path d="M446.875,261.556 L446.875,302.181 A4.1667,4.1667 0 0 0 451.0417,306.3477 L706.25,306.3477 A4.1667,4.1667 0 0 0 710.4167,302.181 L710.4167,267.806 L700,257.3893 L451.0417,257.3893 A4.1667,4.1667 0 0 0 446.875,261.556 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><path d="M700,257.3893 L700,265.7227 A2.0833,2.0833 0 0 0 702.0833,267.806 L710.4167,267.806 L700,257.3893 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="185.4167" x="458.3333" y="279.4088">gVVK : Public SSH Server key</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="231.25" x="458.3333" y="293.9596">sURL : SSH Proxy URL signed by VVK</text><path d="M870.8333,321.9076 L870.8333,377.1159 A4.1667,4.1667 0 0 0 875,381.2826 L1042.7083,381.2826 A4.1667,4.1667 0 0 0 1046.875,377.1159 L1046.875,328.1576 L1036.4583,317.7409 L875,317.7409 A4.1667,4.1667 0 0 0 870.8333,321.9076 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><path d="M1036.4583,317.7409 L1036.4583,326.0742 A2.0833,2.0833 0 0 0 1038.5417,328.1576 L1046.875,328.1576 L1036.4583,317.7409 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="101.0417" x="882.2917" y="339.7603">userID : User ID</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="89.5833" x="882.2917" y="354.3111">VUID : User ID</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="143.75" x="882.2917" y="368.8619">CVK : User Vendor key</text><polygon fill="#808080" points="423.9583,421.7773,413.5417,425.944,423.9583,430.1107,419.7917,425.944" style="stroke:#808080;stroke-width:1.0416666666666667;"/><line style="stroke:#808080;stroke-width:3.125;" x1="417.7083" x2="572.9167" y1="425.944" y2="425.944"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="53.125" x="435.4167" y="415.7043">connect</text><polygon fill="#EC7211" points="561.4583,461.3281,571.875,465.4948,561.4583,469.6615,565.625,465.4948" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="412.5" x2="567.7083" y1="465.4948" y2="465.4948"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="45.8333" x="425" y="455.2551">getInfo</text><polygon fill="#EC7211" points="768.75,500.8789,779.1667,505.0456,768.75,509.2122,772.9167,505.0456" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="584.375" x2="775" y1="505.0456" y2="505.0456"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="166.6667" x="596.875" y="494.8059">OpenEnclave(gVVK, sURL)</text><path d="M721.875,522.7539 L721.875,563.3789 A4.1667,4.1667 0 0 0 726.0417,567.5456 L846.875,567.5456 A4.1667,4.1667 0 0 0 851.0417,563.3789 L851.0417,529.0039 L840.625,518.5872 L726.0417,518.5872 A4.1667,4.1667 0 0 0 721.875,522.7539 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><path d="M840.625,518.5872 L840.625,526.9206 A2.0833,2.0833 0 0 0 842.7083,529.0039 L851.0417,529.0039 L840.625,518.5872 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="96.875" x="733.3333" y="540.6067">validate sURL ?</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="65.625" x="733.3333" y="555.1575">Tide Login</text><polygon fill="#EC7211" points="803.125,600.7813,792.7083,604.9479,803.125,609.1146,798.9583,604.9479" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><polygon fill="#EC7211" points="946.3542,600.7813,956.7708,604.9479,946.3542,609.1146,950.5208,604.9479" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="796.875" x2="952.6042" y1="604.9479" y2="604.9479"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="72.9167" x="814.5833" y="594.7083">PRISM auth</text><polygon fill="#EC7211" points="595.8333,640.332,585.4167,644.4987,595.8333,648.6654,591.6667,644.4987" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="589.5833" x2="780.2083" y1="644.4987" y2="644.4987"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="70.8333" x="607.2917" y="634.259">VUID, gCVK</text><polygon fill="#EC7211" points="423.9583,694.4336,413.5417,698.6003,423.9583,702.7669,419.7917,698.6003" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="417.7083" x2="572.9167" y1="698.6003" y2="698.6003"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="111.4583" x="435.4167" y="673.8098">Username(VUID),</text><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="81.25" x="435.4167" y="688.3606">Public(gCVK)</text><polygon fill="#808080" points="125,733.9844,114.5833,738.151,125,742.3177,120.8333,738.151" style="stroke:#808080;stroke-width:1.0416666666666667;"/><polygon fill="#808080" points="389.5833,733.9844,400,738.151,389.5833,742.3177,393.75,738.151" style="stroke:#808080;stroke-width:1.0416666666666667;"/><line style="stroke:#808080;stroke-width:3.125;" x1="118.75" x2="395.8333" y1="738.151" y2="738.151"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="212.5" x="136.4583" y="727.9114">SSH Diffie-Hellman Key exchange</text><path d="M341.6667,755.8594 L341.6667,781.901 A4.1667,4.1667 0 0 0 345.8333,786.0677 L467.7083,786.0677 A4.1667,4.1667 0 0 0 471.875,781.901 L471.875,762.1094 L461.4583,751.6927 L345.8333,751.6927 A4.1667,4.1667 0 0 0 341.6667,755.8594 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><path d="M461.4583,751.6927 L461.4583,760.026 A2.0833,2.0833 0 0 0 463.5417,762.1094 L471.875,762.1094 L461.4583,751.6927 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="97.9167" x="353.125" y="773.7122">Prep challenge</text><polygon fill="#EC7211" points="561.4583,819.3359,571.875,823.5026,561.4583,827.6693,565.625,823.5026" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="412.5" x2="567.7083" y1="823.5026" y2="823.5026"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="85.4167" x="425" y="813.2629">getSignature</text><polygon fill="#EC7211" points="768.75,858.8867,779.1667,863.0534,768.75,867.2201,772.9167,863.0534" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="584.375" x2="775" y1="863.0534" y2="863.0534"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="63.5417" x="596.875" y="852.8137">challenge</text><polygon fill="#EC7211" points="941.1458,898.4375,951.5625,902.6042,941.1458,906.7708,945.3125,902.6042" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="791.6667" x2="947.3958" y1="902.6042" y2="902.6042"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="127.0833" x="804.1667" y="892.3645">signSSH(challenge)</text><path d="M882.2917,920.3125 L882.2917,960.9375 A4.1667,4.1667 0 0 0 886.4583,965.1042 L1031.25,965.1042 A4.1667,4.1667 0 0 0 1035.4167,960.9375 L1035.4167,926.5625 L1025,916.1458 L886.4583,916.1458 A4.1667,4.1667 0 0 0 882.2917,920.3125 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><path d="M1025,916.1458 L1025,924.4792 A2.0833,2.0833 0 0 0 1027.0833,926.5625 L1035.4167,926.5625 L1025,916.1458 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="120.8333" x="893.75" y="938.1653">Validate challenge</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="95.8333" x="893.75" y="952.7161">Sign challenge</text><polygon fill="#EC7211" points="803.125,998.3398,792.7083,1002.5065,803.125,1006.6732,798.9583,1002.5065" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="796.875" x2="957.8125" y1="1002.5065" y2="1002.5065"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="62.5" x="814.5833" y="992.2668">signature</text><polygon fill="#EC7211" points="595.8333,1037.8906,585.4167,1042.0573,595.8333,1046.224,591.6667,1042.0573" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="589.5833" x2="785.4167" y1="1042.0573" y2="1042.0573"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="117.7083" x="607.2917" y="1031.8176">tideJWT, signature</text><polygon fill="#EC7211" points="423.9583,1077.4414,413.5417,1081.6081,423.9583,1085.7747,419.7917,1081.6081" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="417.7083" x2="572.9167" y1="1081.6081" y2="1081.6081"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="123.9583" x="435.4167" y="1071.3684">ReturnedSignature</text><polygon fill="#808080" points="125,1116.9922,114.5833,1121.1589,125,1125.3255,120.8333,1121.1589" style="stroke:#808080;stroke-width:1.0416666666666667;"/><line style="stroke:#808080;stroke-width:3.125;" x1="118.75" x2="401.0417" y1="1121.1589" y2="1121.1589"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="253.125" x="136.4583" y="1110.9192">ssh-userauth (userid, gCVK, signature)</text><line style="stroke:#808080;stroke-width:3.125;" x1="113.5417" x2="157.2917" y1="1160.7096" y2="1160.7096"/><line style="stroke:#808080;stroke-width:3.125;" x1="157.2917" x2="157.2917" y1="1160.7096" y2="1174.2513"/><line style="stroke:#808080;stroke-width:3.125;" x1="114.5833" x2="157.2917" y1="1174.2513" y2="1174.2513"/><polygon fill="#808080" points="125,1170.0846,114.5833,1174.2513,125,1178.418,120.8333,1174.2513" style="stroke:#808080;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="191.6667" x="126.0417" y="1150.47">Verify signature against gCVK</text><polygon fill="#808080" points="125,1209.6354,114.5833,1213.8021,125,1217.9688,120.8333,1213.8021" style="stroke:#808080;stroke-width:1.0416666666666667;"/><polygon fill="#808080" points="389.5833,1209.6354,400,1213.8021,389.5833,1217.9688,393.75,1213.8021" style="stroke:#808080;stroke-width:1.0416666666666667;"/><line style="stroke:#808080;stroke-width:3.125;" x1="118.75" x2="395.8333" y1="1213.8021" y2="1213.8021"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="126.0417" x="136.4583" y="1203.5624">Commence session</text><polygon fill="#808080" points="423.9583,1249.1862,413.5417,1253.3529,423.9583,1257.5195,419.7917,1253.3529" style="stroke:#808080;stroke-width:1.0416666666666667;"/><polygon fill="#808080" points="566.6667,1249.1862,577.0833,1253.3529,566.6667,1257.5195,570.8333,1253.3529" style="stroke:#808080;stroke-width:1.0416666666666667;"/><line style="stroke:#808080;stroke-width:3.125;" x1="417.7083" x2="572.9167" y1="1253.3529" y2="1253.3529"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="126.0417" x="435.4167" y="1243.1132">Commence session</text><!--MD5=[22967b1b7a2d510be075c691786d151f]
 @startuml Sign-in
+title Sign-in
 !include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/aws-orange-light/puml-theme-aws-orange-light.puml
 
+participant "SSH \nServer" as Server
+box "webSocket" #LightGray
+participant "SSH \nProxy" as Proxy
+participant "SSH \nClient" as Client
+end box
+participant "Enclave" as Enclave
+collections "Tide \nNetwork" as Tide
 
-title Sign-in
+group Pre-configured
+note over Server
+    VVK : SSH server key
+    gCVK : Public User key
+end note
+
 note over Client
-Web SSH Client with pre-configured settings
-(ssh server)
+    gVVK : Public SSH Server key
+    sURL : SSH Proxy URL signed by VVK
 end note
+
+note over Tide
+    userID : User ID
+    VUID : User ID
+    CVK : User Vendor key
+end note
+end group
+
 activate Client
-activate Server
-Client->Server: client key exchange init
-Server->Client: server key exchange init
-Client->Client: match encryption and hashing with server
-Client<->Server: Diffie-Hellman Key exchange
+Client-[#Gray]>Proxy : connect
+activate Proxy
+Client<-Proxy : getInfo
 
-Client->Enclave: request enclave 
+Client->Enclave: OpenEnclave(gVVK, sURL)
+activate Enclave
+
 note over Enclave
-Enclave requested from Home ORK
+    validate sURL ?
+    Tide Login
 end note
 
-activate Enclave
-Enclave->Enclave: sign-in
-Enclave->Enclave: validate
+Enclave<->Tide: PRISM auth
+Client<-Enclave: VUID, gCVK
+Client->Proxy: Username(VUID), \nPublic(gCVK)
 
+Proxy<-[#Gray]>Server: SSH Diffie-Hellman Key exchange
+activate Server
 
-alt sign && valid ?
-    Enclave->Client:userid, cvk.pub, signature
-    else
-    Enclave->Client:401()
-    deactivate Enclave
-end
+note over Proxy
+    Prep challenge
+end note
 
-Client->Server: ssh-userauth (userid, cvk.pub, signature)
-Server->Server: Compare received keys for authority
-Server->Client: userauth success
+Client<-Proxy: getSignature
+Client->Enclave: challenge
+
+Enclave->Tide: signSSH(challenge)
+
+activate Tide
+note over Tide
+    Validate challenge
+    Sign challenge
+end note
+
+Enclave<-Tide: signature
+deactivate Tide
+
+Enclave->Client: tideJWT, signature
+
+deactivate Enclave
+
+Client->Proxy: ReturnedSignature
+Proxy-[#Gray]>Server: ssh-userauth (userid, gCVK, signature)
+Server-[#Gray]>Server: Verify signature against gCVK
+Server<-[#Gray]>Proxy: Commence session
+Client<-[#Gray]>Proxy: Commence session
 deactivate Server
 
 
@@ -42,6 +83,7 @@ deactivate Client
 @enduml
 
 @startuml Sign-in
+title Sign-in
 
 
 
@@ -347,39 +389,79 @@ skinparam stack {
 }
 
 
+participant "SSH \nServer" as Server
+box "webSocket" #LightGray
+participant "SSH \nProxy" as Proxy
+participant "SSH \nClient" as Client
+end box
+participant "Enclave" as Enclave
+collections "Tide \nNetwork" as Tide
 
-title Sign-in
+group Pre-configured
+note over Server
+    VVK : SSH server key
+    gCVK : Public User key
+end note
+
 note over Client
-Web SSH Client with pre-configured settings
-(ssh server)
+    gVVK : Public SSH Server key
+    sURL : SSH Proxy URL signed by VVK
 end note
+
+note over Tide
+    userID : User ID
+    VUID : User ID
+    CVK : User Vendor key
+end note
+end group
+
 activate Client
-activate Server
-Client->Server: client key exchange init
-Server->Client: server key exchange init
-Client->Client: match encryption and hashing with server
-Client<->Server: Diffie-Hellman Key exchange
+Client-[#Gray]>Proxy : connect
+activate Proxy
+Client<-Proxy : getInfo
 
-Client->Enclave: request enclave 
+Client->Enclave: OpenEnclave(gVVK, sURL)
+activate Enclave
+
 note over Enclave
-Enclave requested from Home ORK
+    validate sURL ?
+    Tide Login
 end note
 
-activate Enclave
-Enclave->Enclave: sign-in
-Enclave->Enclave: validate
+Enclave<->Tide: PRISM auth
+Client<-Enclave: VUID, gCVK
+Client->Proxy: Username(VUID), \nPublic(gCVK)
 
+Proxy<-[#Gray]>Server: SSH Diffie-Hellman Key exchange
+activate Server
 
-alt sign && valid ?
-    Enclave->Client:userid, cvk.pub, signature
-    else
-    Enclave->Client:401()
-    deactivate Enclave
-end
+note over Proxy
+    Prep challenge
+end note
 
-Client->Server: ssh-userauth (userid, cvk.pub, signature)
-Server->Server: Compare received keys for authority
-Server->Client: userauth success
+Client<-Proxy: getSignature
+Client->Enclave: challenge
+
+Enclave->Tide: signSSH(challenge)
+
+activate Tide
+note over Tide
+    Validate challenge
+    Sign challenge
+end note
+
+Enclave<-Tide: signature
+deactivate Tide
+
+Enclave->Client: tideJWT, signature
+
+deactivate Enclave
+
+Client->Proxy: ReturnedSignature
+Proxy-[#Gray]>Server: ssh-userauth (userid, gCVK, signature)
+Server-[#Gray]>Server: Verify signature against gCVK
+Server<-[#Gray]>Proxy: Commence session
+Client<-[#Gray]>Proxy: Commence session
 deactivate Server
 
 
