@@ -1,0 +1,53 @@
+@startuml Sign-up
+title Sign-up
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/aws-orange-light/puml-theme-aws-orange-light.puml
+
+actor "Admin" as Adm
+participant "SSH \nServer" as Server
+participant "SSH \nClient" as Client
+participant "Enclave" as Enclave
+collections "Tide \nNetwork" as Tide
+actor "User" as User
+
+group Pre-configured
+note over Client
+    gVVK : Public SSH Server key
+    sURL : SSH Proxy URL signed by VVK
+end note
+end group
+
+User-[#Gray]>Client : Open page
+
+activate Client
+User->Client : Press login button
+
+Client->Enclave: OpenEnclave(gVVK, sURL)
+activate Enclave
+
+note over Enclave
+    validate sURL ?
+end note
+
+alt New Tide user
+    Enclave<->Tide: Generate PRISM auth
+else Existing Tide user
+    Enclave<->Tide: PRISM auth
+end
+
+Enclave<->Tide: Generate CVK
+
+Client<-Enclave: NewUserMsg, VUID, gCVK
+deactivate Enclave
+
+note over Client
+    Present VUID and gCVK
+end note
+
+User<-Client : Prompt user to act
+deactivate Client
+
+User-->Adm : Send username(VUID), public(gCVK)
+
+Adm->Server: Add new SSH key
+
+@enduml
