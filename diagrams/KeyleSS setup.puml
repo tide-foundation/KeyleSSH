@@ -1,0 +1,30 @@
+@startuml Set-up
+title Set-up
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/aws-orange-light/puml-theme-aws-orange-light.puml
+
+actor "Admin" as Adm
+participant "SSH \nProxy" as Proxy
+
+group Pre-configured
+note over Adm
+    URL : SSH Proxy URL
+    SSHIP : SSH Server IP address
+end note
+end group
+
+Adm->Proxy: root access
+note over Proxy
+    Deploy webssh2
+    Deploy KeyleSSH
+    Generate VVK
+    Sign SSH Proxy URL with VVK (sURL)
+    Configure mmm.txt with VVK public (gVVK)
+    Configure mmm.txt with signed URL (sURL)
+    Configure mmm.txt with SSH Server IP
+    Configure mmm.txt with Tide home-ORK URL
+    Test sign-up
+    Test sign-in
+end note
+
+
+@enduml
