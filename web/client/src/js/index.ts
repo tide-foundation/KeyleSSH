@@ -219,11 +219,21 @@ const textBox = document.createElement('textarea');
 textBox.style.padding = '10px';
 textBox.style.border = '1px solid black';
 textBox.style.backgroundColor = 'white';
-textBox.cols = 195; // Characters wide
-textBox.rows = 25; // Lines tall
+textBox.cols = 95; // Characters wide
+textBox.rows = 5; // Lines tall
 textBox.style.color = 'black';
 textBox.style.overflow = 'hidden';
 textBox.style.resize = 'none';
+
+var boxShown = false;
+
+function showInfo(createUser, error=false){
+  if(boxShown) return;
+  if(!TideInfo.Username || !TideInfo.PublicKey) return;
+  textBox.value = `${error ? "An error occured: " : ""}Provide this info to this system's administrator: \n==============================================================================================\n ${createUser ? "Username: " + TideInfo.Username + "\n" : ``} Public Key: ` + TideInfo.PublicKey + "\n" + "==============================================================================================\n";
+  container.appendChild(textBox);
+  boxShown = true;
+}
 
 
 const heimdall = new Heimdall(config);
@@ -239,8 +249,7 @@ socket.on('getInfo', async (createUser) => {
           PublicKey: getOpenSSHPublicKey(result.PublicKey)
         };
         if(result.NewAccount){
-          textBox.value = `Provide this info to this system's administrator: \n==============================================================================================\n ${createUser ? "Username: " + TideInfo.Username + "\n" : ``} Public Key: ` + TideInfo.PublicKey + "\n" + "==============================================================================================\n";
-          container.appendChild(textBox);
+          showInfo(createUser);
           await heimdall.CompleteSignIn(); // user will fail to login in this event, but we want to complete their sign in process and show their public key for admin to add
           socket.emit('returnedInfo', false);
           return;
@@ -307,6 +316,7 @@ socket.on('status', (data: string) => {
 });
 
 socket.on('ssherror', (data: string) => {
+  showInfo(true, true);
   status.innerHTML = data;
   status.style.backgroundColor = 'red';
   errorExists = true;
