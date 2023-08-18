@@ -12,7 +12,6 @@ collections "Tide \nNetwork" as Tide
 
 group Pre-configured
 note over Server
-    VVK : SSH server key
     gCVK : Public User key
 end note
 
@@ -32,6 +31,10 @@ activate Client
 Client-[#Gray]>Proxy : connect
 activate Proxy
 Client<-Proxy : getInfo
+
+note over Client
+    User presses button
+end note
 
 Client->Enclave: OpenEnclave(gVVK, sURL)
 activate Enclave
