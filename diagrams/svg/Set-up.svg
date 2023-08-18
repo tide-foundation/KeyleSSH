@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="580.2083px" preserveAspectRatio="none" style="width:410px;height:580px;" version="1.1" viewBox="0 0 410 580" width="410.4167px" zoomAndPan="magnify"><defs><linearGradient id="gmz3x7uieo55m0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#CCCCCC"/></linearGradient><linearGradient id="gmz3x7uieo55m1" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#F08E41"/><stop offset="100%" stop-color="#EC7211"/></linearGradient></defs><g><rect fill="url(#gmz3x7uieo55m0)" height="45.0846" id="_title" rx="4.1667" ry="4.1667" style="stroke:#FFFFFF;stroke-width:1.0416666666666667;" width="97.9167" x="155.2083" y="10.4167"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="20.8333" font-weight="bold" lengthAdjust="spacing" textLength="77.0833" x="165.625" y="40.1713">Set-up</text><rect fill="none" height="87.4023" rx="4.1667" ry="4.1667" style="stroke:#4E5D6C;stroke-width:1.5625;" width="247.9167" x="10.4167" y="166.9271"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="134.375" x2="134.375" y1="149.2188" y2="488.3464"/><line style="stroke:#ABB6C2;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="246.3542" x2="246.3542" y1="149.2188" y2="488.3464"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="39.5833" x="111.4583" y="141.0624">Admin</text><ellipse cx="134.375" cy="70.6055" fill="url(#gmz3x7uieo55m1)" rx="8.3333" ry="8.3333" style="stroke:#EC7211;stroke-width:0.5208333333333334;"/><path d="M134.375,78.9388 L134.375,107.0638 M120.8333,87.2721 L147.9167,87.2721 M134.375,107.0638 L120.8333,122.6888 M134.375,107.0638 L147.9167,122.6888 " fill="none" style="stroke:#EC7211;stroke-width:0.5208333333333334;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="39.5833" x="111.4583" y="504.1158">Admin</text><ellipse cx="134.375" cy="521.1263" fill="url(#gmz3x7uieo55m1)" rx="8.3333" ry="8.3333" style="stroke:#EC7211;stroke-width:0.5208333333333334;"/><path d="M134.375,529.4596 L134.375,557.5846 M120.8333,537.793 L147.9167,537.793 M134.375,557.5846 L120.8333,573.2096 M134.375,557.5846 L147.9167,573.2096 " fill="none" style="stroke:#EC7211;stroke-width:0.5208333333333334;"/><rect fill="url(#gmz3x7uieo55m1)" height="54.1016" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="59.375" x="217.1875" y="94.0755"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="26.0417" x="231.7708" y="118.1783">SSH</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="34.375" x="229.6875" y="132.7291">Proxy</text><rect fill="url(#gmz3x7uieo55m1)" height="54.1016" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="59.375" x="217.1875" y="487.3047"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="26.0417" x="231.7708" y="511.4075">SSH</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="34.375" x="229.6875" y="525.9583">Proxy</text><path d="M14.5833,166.9271 L177.0833,166.9271 L177.0833,183.5612 L166.6667,193.9779 L10.4167,193.9779 L10.4167,171.0938 A4.1667,4.1667 0 0 1 14.5833,166.9271 " fill="#FFFFFF" style="stroke:#4E5D6C;stroke-width:1.5625;"/><rect fill="none" height="87.4023" rx="4.1667" ry="4.1667" style="stroke:#4E5D6C;stroke-width:1.5625;" width="247.9167" x="10.4167" y="166.9271"/><text fill="#0073BB" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="109.375" x="31.25" y="184.7799">Pre-configured</text><path d="M20.8333,203.3529 L20.8333,243.9779 A4.1667,4.1667 0 0 0 25,248.1445 L243.75,248.1445 A4.1667,4.1667 0 0 0 247.9167,243.9779 L247.9167,209.6029 L237.5,199.1862 L25,199.1862 A4.1667,4.1667 0 0 0 20.8333,203.3529 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><path d="M237.5,199.1862 L237.5,207.5195 A2.0833,2.0833 0 0 0 239.5833,209.6029 L247.9167,209.6029 L237.5,199.1862 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="129.1667" x="32.2917" y="221.2056">URL : SSH Proxy URL</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="194.7917" x="32.2917" y="235.7564">SSHIP : SSH Server IP address</text><polygon fill="#EC7211" points="234.375,288.6719,244.7917,292.8385,234.375,297.0052,238.5417,292.8385" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="134.375" x2="240.625" y1="292.8385" y2="292.8385"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="77.0833" x="146.875" y="282.5989">root access</text><path d="M89.5833,310.5469 L89.5833,467.8385 A4.1667,4.1667 0 0 0 93.75,472.0052 L398.9583,472.0052 A4.1667,4.1667 0 0 0 403.125,467.8385 L403.125,316.7969 L392.7083,306.3802 L93.75,306.3802 A4.1667,4.1667 0 0 0 89.5833,310.5469 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><path d="M392.7083,306.3802 L392.7083,314.7135 A2.0833,2.0833 0 0 0 394.7917,316.7969 L403.125,316.7969 L392.7083,306.3802 " fill="#0073BB" style="stroke:#181818;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="105.2083" x="101.0417" y="328.3997">Deploy webssh2</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="107.2917" x="101.0417" y="342.9504">Deploy KeyleSSH</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="89.5833" x="101.0417" y="357.5012">Generate VVK</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="229.1667" x="101.0417" y="372.052">Sign SSH Proxy URL with VVK (sURL)</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="269.7917" x="101.0417" y="386.6028">Configure mmm.txt with VVK public (gVVK)</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="273.9583" x="101.0417" y="401.1536">Configure mmm.txt with signed URL (sURL)</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="243.75" x="101.0417" y="415.7043">Configure mmm.txt with SSH Server IP</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="281.25" x="101.0417" y="430.2551">Configure mmm.txt with Tide home-ORK URL</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="80.2083" x="101.0417" y="444.8059">Test sign-up</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="75" x="101.0417" y="459.3567">Test sign-in</text><!--MD5=[d909c267afaa0ca1f2966ba1efa3dd5a]
+@startuml Set-up
+title Set-up
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/aws-orange-light/puml-theme-aws-orange-light.puml
+
+actor "Admin" as Adm
+participant "SSH \nProxy" as Proxy
+
+group Pre-configured
+note over Adm
+    URL : SSH Proxy URL
+    SSHIP : SSH Server IP address
+end note
+end group
+
+Adm->Proxy: root access
+note over Proxy
+    Deploy webssh2
+    Deploy KeyleSSH
+    Generate VVK
+    Sign SSH Proxy URL with VVK (sURL)
+    Configure mmm.txt with VVK public (gVVK)
+    Configure mmm.txt with signed URL (sURL)
+    Configure mmm.txt with SSH Server IP
+    Configure mmm.txt with Tide home-ORK URL
+    Test sign-up
+    Test sign-in
+end note
+
+
+@enduml
+
+@startuml Set-up
+title Set-up
+
+
+
+skinparam backgroundColor transparent
+
+
+
+
+
+
+
+
+
+
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               5
+skinparam ArrowColor            #4E5D6C
+skinparam stereotype {
+    CBackgroundColor #ffffff
+    CBorderColor #cccccc
+    ABackgroundColor #4a9a35
+    ABorderColor #176702
+    IBackgroundColor #da5b41
+    IBorderColor #a7280e
+    EBackgroundColor #f08e41
+    EBorderColor #bd5b0e
+    NBackgroundColor #338fc9
+    NBorderColor #005c96
+}
+skinparam title {
+	FontColor	                 #4E5D6C
+	BorderColor	                 #FFFFFF
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              #FFFFFF-#cccccc
+}
+
+skinparam legend {
+	BackgroundColor #FFFFFF
+	BorderColor #cccccc
+	FontColor #abb6c2
+}
+
+skinparam swimlane {
+	BorderColor #0073bb
+	BorderThickness 2
+	TitleBackgroundColor  #FFFFFF-#cccccc
+	TitleFontColor #EC7211
+}
+
+
+skinparam activity {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	BarColor #1D8102
+	StartColor #0073bb
+	EndColor #0073bb
+	DiamondBackgroundColor #ffffff
+  	DiamondBorderColor #cccccc
+  	DiamondFontColor #4E5D6C
+}
+
+skinparam participant {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	ParticipantBorderThickness 2
+}
+
+skinparam actor {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam arrow {
+	Thickness 3
+	Color #EC7211
+	FontColor #4E5D6C
+}
+
+skinparam sequence {
+	ArrowThickness 3
+	BorderColor #EC7211
+	TitleFontColor #EC7211
+	BackgroundColor transparent
+	StartColor #EC7211
+	EndColor #EC7211
+	BoxBackgroundColor transparent
+	BoxBorderColor #4E5D6C
+	BoxFontColor #4E5D6C
+	DelayFontColor #4E5D6C
+	LifeLineBorderColor #abb6c2
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #bcc5ce
+	GroupBorderColor #4E5D6C
+	GroupFontColor #4E5D6C
+	GroupHeaderFontColor #0073bb
+	GroupBackgroundColor #FFFFFF
+	GroupBodyBackgroundColor transparent
+	GroupHeaderBackgroundColor transparent
+	DividerBackgroundColor #4E5D6C
+    DividerBorderColor #4E5D6C
+    DividerBorderThickness 2
+    DividerFontColor #abb6c2
+	ReferenceBackgroundColor transparent
+	ReferenceBorderColor #4E5D6C
+	ReferenceFontColor #4E5D6C
+	ReferenceHeaderFontColor #0073bb
+	ReferenceHeaderBackgroundColor #FFFFFF
+	StereotypeFontColor #FFF
+}
+
+skinparam partition {
+	BorderColor #EC7211
+	FontColor #EC7211
+	BackgroundColor transparent
+}
+
+skinparam collections {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+}
+
+skinparam control {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam entity {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam boundary {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam agent {
+	BackgroundColor #EC7211
+	BorderColor #f08e41
+	FontColor #4E5D6C
+}
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #0073bb
+	BorderColor #005c96
+	FontColor #FFF
+}
+
+skinparam artifact {
+	BackgroundColor #4E5D6C
+	BorderColor #717d89
+	FontColor #abb6c2
+}
+
+skinparam component {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+}
+
+skinparam interface {
+	BackgroundColor  #a7280e
+	BorderColor  #d13212
+	FontColor #4E5D6C
+}
+
+skinparam storage {
+	BackgroundColor #EC7211
+  	BorderColor #bd5b0e
+	FontColor #FFF
+}
+
+skinparam node {
+	BackgroundColor  transparent
+	BorderColor #abb6c2
+	FontColor #abb6c2
+}
+
+skinparam cloud {
+	BackgroundColor transparent
+	BorderColor #4E5D6C
+	FontColor #abb6c2
+}
+
+skinparam database {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam class {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	HeaderBackgroundColor #f08e41
+	StereotypeFontColor #4E5D6C
+	BorderThickness 1
+	AttributeFontColor #FFF
+	AttributeFontSize 11
+}
+
+skinparam object {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	StereotypeFontColor #4E5D6C
+	BorderThickness 1
+	AttributeFontColor #FFF
+	AttributeFontSize 11
+}
+
+skinparam usecase {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	BorderThickness 2
+	StereotypeFontColor #EC7211
+}
+
+skinparam rectangle {
+	BackgroundColor transparent
+	FontColor #4E5D6C
+	BorderColor #4E5D6C
+	BorderThickness 2
+	StereotypeFontColor #abb6c2
+}
+
+skinparam package {
+	BackgroundColor #FFFFFF
+  	BorderColor #4E5D6C
+	FontColor #4E5D6C
+	BorderThickness 2
+}
+
+skinparam folder {
+	BackgroundColor #ffffff
+  	BorderColor #EC7211
+	FontColor #EC7211
+	BorderThickness 2
+}
+
+skinparam frame {
+	BackgroundColor #ffffff
+  	BorderColor #0073bb
+	FontColor #0073bb
+	BorderThickness 2
+}
+
+skinparam state {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	StartColor #0073bb
+	EndColor #0073bb
+	AttributeFontColor #4E5D6C
+	AttributeFontSize 11
+}
+
+skinparam queue {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+}
+
+skinparam card {
+	BackgroundColor #0073bb
+	BorderColor #005c96
+	FontColor #FFF
+}
+
+skinparam file {
+	BackgroundColor #cccccc
+	BorderColor #abb6c2
+	FontColor #4E5D6C
+}
+
+
+skinparam stack {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+}
+
+
+actor "Admin" as Adm
+participant "SSH \nProxy" as Proxy
+
+group Pre-configured
+note over Adm
+    URL : SSH Proxy URL
+    SSHIP : SSH Server IP address
+end note
+end group
+
+Adm->Proxy: root access
+note over Proxy
+    Deploy webssh2
+    Deploy KeyleSSH
+    Generate VVK
+    Sign SSH Proxy URL with VVK (sURL)
+    Configure mmm.txt with VVK public (gVVK)
+    Configure mmm.txt with signed URL (sURL)
+    Configure mmm.txt with SSH Server IP
+    Configure mmm.txt with Tide home-ORK URL
+    Test sign-up
+    Test sign-in
+end note
+
+
+@enduml
+
+PlantUML version 1.2022.13(Sat Nov 19 13:22:17 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
