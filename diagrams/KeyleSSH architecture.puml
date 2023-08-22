@@ -34,7 +34,7 @@ frame "Web browser" as browser {
     [SSH Client] <-> [Tide Enclave] : Tide\nHeimdall SDK
 }
 
-[Tide Enclave] <-right-> [user] #grey
+[Tide Enclave] <-right-> [user] #grey : Press button\nLog in\nSSH session
 
 cloud "Tide Network" #orange {
     node "ORK node" {
