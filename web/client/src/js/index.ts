@@ -192,7 +192,7 @@ var TideInfo = undefined;
 const config = {
   vendorPublic: "j1tL3xpgcuNEV/+biWUuaDiWNyH9+Uyr8tYoB784OGE=",
   vendorUrlSignature: "e5MsoSUYzRgQ8J5MIGnFagOMbxMHDtTp7RJSW3d1xBwnmUmbYYELpJV0KyaiBSQYRsp3hPY/oqTVDjJfKyeWBQ==",
-  homeORKUrl: "https://prod-ork1.azurewebsites.net",
+  homeORKUrl: "http://localhost:1001",
   mode: "openssh",
 }
 
@@ -224,14 +224,21 @@ textBox.rows = 5; // Lines tall
 textBox.style.color = 'black';
 textBox.style.overflow = 'hidden';
 textBox.style.resize = 'none';
+textBox.spellcheck = false;
 
 var boxShown = false;
 
 function showInfo(createUser, error=false){
   if(boxShown) return;
   if(!TideInfo.Username || !TideInfo.PublicKey) return;
-  textBox.value = `${error ? "An error occured: " : ""}Provide this info to this system's administrator: \n==============================================================================================\n ${createUser ? "Username: " + TideInfo.Username + "\n" : ``} Public Key: ` + TideInfo.PublicKey + "\n" + "==============================================================================================\n";
+  document.body.appendChild(container);
+  if(error){
+    heimdall.CloseEnclave();
+    textBox.style.color = 'red';
+  }
+  textBox.value = `${error ? "AN ERROR OCCURRED: " : ""}Provide this info to this system's administrator: \n==============================================================================================\n ${createUser ? "Username: " + TideInfo.Username + "\n" : ``} Public Key: ` + TideInfo.PublicKey + "\n" + "==============================================================================================\n";
   container.appendChild(textBox);
+  
   boxShown = true;
 }
 
@@ -271,6 +278,7 @@ socket.on('getInfo', async (createUser) => {
 socket.on('getSignature', async(dataToSign) => {
   let result = await heimdall.CompleteSignIn(dataToSign);
   if('ModelSig' in result){
+    boxShown = true; // so it doesn't appear when connection closes
     socket.emit('returnedSignature', Buffer.from(result.ModelSig, 'base64'));
   }else{
     socket.emit('returnedSignature', false);
@@ -377,6 +385,7 @@ socket.on('disconnect', (err: any) => {
 });
 
 socket.on('error', (err: any) => {
+  showInfo(true, true);
   if (!errorExists) {
     status.style.backgroundColor = 'red';
     status.innerHTML = `ERROR: ${err}`;
