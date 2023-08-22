@@ -1,0 +1,50 @@
+@startuml KeyleSSH Architecture
+title KeyleSSH Architecture
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/aws-orange-light/puml-theme-aws-orange-light.puml
+
+node "Linux" {
+    [SSH Server] - SSH2
+    folder "authorized_keys" {
+        [public key] as cvkpub
+    }
+}
+[SSH Server] --> [cvkpub]
+
+node "SSH Proxy" {
+    Websocket - [WebSSH2]
+    interface "HTTP" as http1
+    [Landing page] - http1
+}
+[WebSSH2] --> [SSH2]
+
+frame "Web browser" {
+    node "Web client" {
+        [SSH Client]
+        [Tide Enclave]
+    }
+    [http1] <-- [SSH Client] : Download client
+    [SSH Client] -> [Websocket] : SSH session
+    [SSH Client] <-> [Tide Enclave] : Tide\nbutton
+}
+
+cloud "Tide Network" {
+    node "ORK node" {
+        interface "HTTP" as http2
+        interface "API" as 0
+        interface "API" as 1
+        http2 -[Enclave host]
+        0 -[PRISM auth]
+        1 - [Verify and Sign]
+        database "key store" {
+            [Private key\nshard] as cvk
+            [PRISM\nshard] as pss
+        }   
+        [Verify and Sign] -down-> [cvk]
+        [PRISM auth] -down-> [pss]
+    }
+}
+
+[Tide Enclave] -down-> [http2] : Download\nenclave
+[Tide Enclave] -> [0] : Password\nauthentication
+[Tide Enclave] -> [1] : Sign
+@enduml
