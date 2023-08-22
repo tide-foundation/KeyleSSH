@@ -18,7 +18,7 @@ node "SSH Proxy" {
     interface Websocket #blue
     component [WebSSH2] #Blue
     Websocket - [WebSSH2] #blue
-    interface "HTTP" as http1 #blue
+    interface "HTML" as http1 #blue
     component [Landing page] #blue
     [Landing page] - http1 #blue
 }
@@ -38,9 +38,9 @@ frame "Web browser" as browser {
 
 cloud "Tide Network" #orange {
     node "ORK node" {
-        interface "HTTP" as http2
-        interface "API" as 0
-        interface "API" as 1
+        interface "HTML" as http2
+        interface "HTTP API" as 0
+        interface "HTTP API" as 1
         http2 -[Enclave host]
         0 -[PRISM auth]
         1 - [Verify and Sign]
