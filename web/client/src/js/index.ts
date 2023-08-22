@@ -208,11 +208,27 @@ container.style.justifyContent = 'center';
 container.style.zIndex = '1000'; // Ensure the container is above other elements
 // Create the button element
 const button = document.createElement('button');
-// Set the button text
-button.innerHTML = 'Lets go!';
-button.style.width = "100px";
-button.style.height = "30px";
+// Set the inner text
+button.innerHTML = 'TIDE LOGIN';
+// Style the button
 button.style.backgroundColor = 'orange';
+button.style.border = 'none';
+button.style.color = 'blue';
+button.style.fontFamily = 'sans-serif';
+button.style.fontWeight = 'bold';
+button.style.fontSize = '25px';
+button.style.padding = '10px 20px';
+button.style.textAlign = 'center';
+button.style.borderRadius = '7px';
+button.style.cursor = 'pointer';
+button.style.display = 'inline-block';
+// Add hover effect
+button.onmouseover = function () {
+    button.style.backgroundColor = 'darkorange';
+};
+button.onmouseout = function () {
+    button.style.backgroundColor = 'orange';
+};
 // Create the text box as a div element
 const textBox = document.createElement('textarea');
 // Apply some styling to the text box
