@@ -18,6 +18,10 @@ node "SSH Proxy" {
     interface Websocket #blue
     component [WebSSH2] #Blue
     Websocket - [WebSSH2] #blue
+    folder "config.json" #grey {
+        component "Host IP" as config #grey
+    }
+    [config] <- [WebSSH2] #black
     interface "HTML" as http1 #blue
     component [Landing page] #blue
     [Landing page] - http1 #blue
