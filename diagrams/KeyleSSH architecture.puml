@@ -2,36 +2,45 @@
 title KeyleSSH Architecture
 !include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/aws-orange-light/puml-theme-aws-orange-light.puml
 
-node "Linux" {
-    [SSH Server] - SSH2
-    folder "authorized_keys" {
-        [public key] as cvkpub
+actor "User" as user #grey
+
+node "Host" {
+    interface SSH2 #grey
+    component [SSH Server] #grey
+    [SSH Server] - SSH2 #grey 
+    folder "authorized_keys" #grey {
+        [public key] as cvkpub #grey
     }
 }
-[SSH Server] --> [cvkpub]
+[SSH Server] --> [cvkpub] #black
 
 node "SSH Proxy" {
-    Websocket - [WebSSH2]
-    interface "HTTP" as http1
-    [Landing page] - http1
+    interface Websocket #blue
+    component [WebSSH2] #Blue
+    Websocket - [WebSSH2] #blue
+    interface "HTML" as http1 #blue
+    component [Landing page] #blue
+    [Landing page] - http1 #blue
 }
-[WebSSH2] --> [SSH2]
+[WebSSH2] --> [SSH2] #grey : ssh
 
-frame "Web browser" {
-    node "Web client" {
-        [SSH Client]
+frame "Web browser" as browser {
+    node "Web client" as webclient {
+        component [SSH Client] #blue
         [Tide Enclave]
     }
-    [http1] <-- [SSH Client] : Download client
-    [SSH Client] -> [Websocket] : SSH session
-    [SSH Client] <-> [Tide Enclave] : Tide\nbutton
+    [http1] <-- [SSH Client] #grey : Download client 
+    [SSH Client] -> [Websocket] #blue : SSH session
+    [SSH Client] <-> [Tide Enclave] : Tide\nHeimdall SDK
 }
 
-cloud "Tide Network" {
+[Tide Enclave] <-right-> [user] #grey : Press button\nLog in\nSSH session
+
+cloud "Tide Network" #orange {
     node "ORK node" {
-        interface "HTTP" as http2
-        interface "API" as 0
-        interface "API" as 1
+        interface "HTML" as http2
+        interface "HTTP API" as 0
+        interface "HTTP API" as 1
         http2 -[Enclave host]
         0 -[PRISM auth]
         1 - [Verify and Sign]
@@ -47,4 +56,12 @@ cloud "Tide Network" {
 [Tide Enclave] -down-> [http2] : Download\nenclave
 [Tide Enclave] -> [0] : Password\nauthentication
 [Tide Enclave] -> [1] : Sign
+
+legend
+    Grey : Untouched modules
+    ====
+    Blue : Tidified modules
+    ====
+    Orange : Tide modules
+endlegend
 @enduml
