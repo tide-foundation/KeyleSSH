@@ -8,7 +8,7 @@
 // private
 const debug = require('debug');
 const debugWebSSH2 = require('debug')('WebSSH2');
-const SSH = require('../../ssh/lib').Client;
+const SSH = require('tide-ssh2').Client;
 const CIDRMatcher = require('cidr-matcher');
 const validator = require('validator');
 const dnsPromises = require('dns').promises;
