@@ -4,7 +4,7 @@ title KeyleSSH Architecture
 
 node "Linux" {
     [SSH Server] - SSH2
-    folder "authorised_keys" {
+    folder "authorized_keys" {
         [public key] as cvkpub
     }
 }
