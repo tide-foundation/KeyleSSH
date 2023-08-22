@@ -209,11 +209,11 @@ container.style.zIndex = '1000'; // Ensure the container is above other elements
 // Create the button element
 const button = document.createElement('button');
 // Set the inner text
-button.innerHTML = 'TIDE LOGIN';
+button.innerHTML = 'LOGIN';
 // Style the button
 button.style.backgroundColor = 'orange';
 button.style.border = 'none';
-button.style.color = 'blue';
+button.style.color = 'black';
 button.style.fontFamily = 'sans-serif';
 button.style.fontWeight = 'bold';
 button.style.fontSize = '25px';
