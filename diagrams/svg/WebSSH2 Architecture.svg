@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="787.5px" preserveAspectRatio="none" style="width:768px;height:787px;" version="1.1" viewBox="0 0 768 787" width="768.75px" zoomAndPan="magnify"><defs><linearGradient id="gvcz4xjd8xkuv0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#CCCCCC"/></linearGradient></defs><g><rect fill="url(#gvcz4xjd8xkuv0)" height="45.0846" id="_title" rx="4.1667" ry="4.1667" style="stroke:#FFFFFF;stroke-width:1.0416666666666667;" width="289.5833" x="232.2917" y="5.2083"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="20.8333" font-weight="bold" lengthAdjust="spacing" textLength="268.75" x="242.7083" y="34.963">WebSSH2 Architecture</text><!--MD5=[c018863fe2304e0ca952616611326b6e]
+cluster Host--><g id="cluster_Host"><polygon fill="#FFFFFF" points="16.6667,457.3138,27.0833,446.8971,230.2083,446.8971,230.2083,759.3971,219.7917,769.8138,16.6667,769.8138,16.6667,457.3138" style="stroke:#4E5D6C;stroke-width:1.0416666666666667;"/><line style="stroke:#4E5D6C;stroke-width:1.0416666666666667;" x1="219.7917" x2="230.2083" y1="457.3138" y2="446.8971"/><line style="stroke:#4E5D6C;stroke-width:1.0416666666666667;" x1="16.6667" x2="219.7917" y1="457.3138" y2="457.3138"/><line style="stroke:#4E5D6C;stroke-width:1.0416666666666667;" x1="219.7917" x2="219.7917" y1="457.3138" y2="769.8138"/><text fill="#ABB6C2" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="34.375" x="102.0833" y="477.2499">Host</text></g><!--MD5=[1da3f15a6c55a172e77f9f97c8321ea7]
+cluster authorized_keys--><g id="cluster_authorized_keys"><path d="M45.8333,628.1471 L176.0417,628.1471 A6.25,6.25 0 0 1 180.2083,632.3138 L187.5,659.3646 L187.5,659.3646 A4.1667,4.1667 0 0 1 191.6667,663.5313 L191.6667,740.6471 A4.1667,4.1667 0 0 1 187.5,744.8138 L45.8333,744.8138 A4.1667,4.1667 0 0 1 41.6667,740.6471 L41.6667,632.3138 A4.1667,4.1667 0 0 1 45.8333,628.1471 " fill="#808080" style="stroke:#EC7211;stroke-width:2.0833333333333335;"/><line style="stroke:#EC7211;stroke-width:2.0833333333333335;" x1="41.6667" x2="187.5" y1="659.3646" y2="659.3646"/><text fill="#EC7211" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="121.875" x="51.0417" y="647.0416">authorized_keys</text></g><!--MD5=[c029c475a76b5c07dab1932cfede9797]
+cluster SSH Proxy--><g id="cluster_SSH Proxy"><polygon fill="#FFFFFF" points="130.2083,117.7305,140.625,107.3138,751.0417,107.3138,751.0417,325.0221,740.625,335.4388,130.2083,335.4388,130.2083,117.7305" style="stroke:#4E5D6C;stroke-width:1.0416666666666667;"/><line style="stroke:#4E5D6C;stroke-width:1.0416666666666667;" x1="740.625" x2="751.0417" y1="117.7305" y2="107.3138"/><line style="stroke:#4E5D6C;stroke-width:1.0416666666666667;" x1="130.2083" x2="740.625" y1="117.7305" y2="117.7305"/><line style="stroke:#4E5D6C;stroke-width:1.0416666666666667;" x1="740.625" x2="740.625" y1="117.7305" y2="335.4388"/><text fill="#ABB6C2" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="73.9583" x="399.4792" y="137.6666">SSH Proxy</text></g><!--MD5=[c7a30d43103b3452cf0668fb83d02415]
+cluster config.json--><g id="cluster_config.json"><path d="M573.9583,164.6055 L663.5417,164.6055 A6.25,6.25 0 0 1 667.7083,168.7721 L675,195.8229 L721.875,195.8229 A4.1667,4.1667 0 0 1 726.0417,199.9896 L726.0417,306.2721 A4.1667,4.1667 0 0 1 721.875,310.4388 L573.9583,310.4388 A4.1667,4.1667 0 0 1 569.7917,306.2721 L569.7917,168.7721 A4.1667,4.1667 0 0 1 573.9583,164.6055 " fill="#808080" style="stroke:#EC7211;stroke-width:2.0833333333333335;"/><line style="stroke:#EC7211;stroke-width:2.0833333333333335;" x1="569.7917" x2="675" y1="195.8229" y2="195.8229"/><text fill="#EC7211" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="81.25" x="579.1667" y="183.4999">config.json</text></g><!--MD5=[2de28e47f9582cb6df153deeec479525]
+cluster browser--><g id="cluster_browser"><rect fill="#FFFFFF" height="198.9583" rx="4.1667" ry="4.1667" style="stroke:#0073BB;stroke-width:2.0833333333333335;" width="217.7083" x="331.25" y="394.8138"/><path d="M451.0417,394.8138 L451.0417,412.4896 L440.625,422.9063 L331.25,422.9063 " fill="none" style="stroke:#0073BB;stroke-width:2.0833333333333335;"/><text fill="#0073BB" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="98.9583" x="339.5833" y="412.6666">Web browser</text></g><!--MD5=[492b10dc70086493f7c7984987389bf1]
+cluster webclient--><g id="cluster_webclient"><polygon fill="#FFFFFF" points="356.25,457.3138,366.6667,446.8971,523.9583,446.8971,523.9583,558.3555,513.5417,568.7721,356.25,568.7721,356.25,457.3138" style="stroke:#4E5D6C;stroke-width:1.0416666666666667;"/><line style="stroke:#4E5D6C;stroke-width:1.0416666666666667;" x1="513.5417" x2="523.9583" y1="457.3138" y2="446.8971"/><line style="stroke:#4E5D6C;stroke-width:1.0416666666666667;" x1="356.25" x2="513.5417" y1="457.3138" y2="457.3138"/><line style="stroke:#4E5D6C;stroke-width:1.0416666666666667;" x1="513.5417" x2="513.5417" y1="457.3138" y2="568.7721"/><text fill="#ABB6C2" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="78.125" x="396.875" y="477.2499">Web client</text></g><!--MD5=[d49a6ffc90cc181bcf2dc517b98ee2de]
+entity SSH2--><g id="elem_SSH2"><ellipse cx="204.1667" cy="523.9805" fill="#808080" rx="8.3333" ry="8.3333" style="stroke:#D13212;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="34.375" x="186.9792" y="558.4999">SSH2</text></g><!--MD5=[f3e45af04af82bc01a18143ea0004290]
+entity SSH Server--><g id="elem_SSH Server"><rect fill="#808080" height="56.2174" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="123.9583" x="33.8542" y="495.8555"/><rect fill="#808080" height="10.4167" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="15.625" x="136.9792" y="501.0638"/><rect fill="#808080" height="2.0833" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="4.1667" x="134.8958" y="503.1471"/><rect fill="#808080" height="2.0833" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="4.1667" x="134.8958" y="507.3138"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="71.875" x="54.6875" y="533.4999">SSH Server</text></g><!--MD5=[c5c33892bce9263157e580e9d476a61d]
+entity cvkpub--><g id="elem_cvkpub"><rect fill="#808080" height="56.2174" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="116.6667" x="58.3333" y="671.8971"/><rect fill="#808080" height="10.4167" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="15.625" x="154.1667" y="677.1055"/><rect fill="#808080" height="2.0833" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="4.1667" x="152.0833" y="679.1888"/><rect fill="#808080" height="2.0833" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="4.1667" x="152.0833" y="683.3555"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="64.5833" x="79.1667" y="709.5416">public key</text></g><!--MD5=[a557437c1e1cd5068c5decf476ad89c1]
+entity Websocket--><g id="elem_Websocket"><ellipse cx="307.2917" cy="251.0638" fill="#808080" rx="8.3333" ry="8.3333" style="stroke:#D13212;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="71.875" x="271.3542" y="285.5833">Websocket</text></g><!--MD5=[3d0aa6425748b5166ad63f061495f8e8]
+entity WebSSH2--><g id="elem_WebSSH2"><rect fill="#808080" height="56.2174" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="114.5833" x="146.875" y="222.9388"/><rect fill="#808080" height="10.4167" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="15.625" x="240.625" y="228.1471"/><rect fill="#808080" height="2.0833" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="4.1667" x="238.5417" y="230.2305"/><rect fill="#808080" height="2.0833" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="4.1667" x="238.5417" y="234.3971"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="62.5" x="167.7083" y="260.5833">WebSSH2</text></g><!--MD5=[9f65eaf450943a4c14297c25da91a260]
+entity http1--><g id="elem_http1"><ellipse cx="540.625" cy="251.0638" fill="#808080" rx="8.3333" ry="8.3333" style="stroke:#D13212;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="33.3333" x="523.9583" y="285.5833">HTML</text></g><!--MD5=[b2ae5b9214bc8a56cc3dbb49819eb234]
+entity Landing page--><g id="elem_Landing page"><rect fill="#808080" height="56.2174" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="140.625" x="353.6458" y="222.9388"/><rect fill="#808080" height="10.4167" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="15.625" x="473.4375" y="228.1471"/><rect fill="#808080" height="2.0833" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="4.1667" x="471.3542" y="230.2305"/><rect fill="#808080" height="2.0833" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="4.1667" x="471.3542" y="234.3971"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="88.5417" x="374.4792" y="260.5833">Landing page</text></g><!--MD5=[caf660ac2a54b55a5c31b5515889e628]
+entity config--><g id="elem_config"><rect fill="#808080" height="85.319" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="122.9167" x="586.4583" y="208.3555"/><rect fill="#808080" height="10.4167" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="15.625" x="688.5417" y="213.5638"/><rect fill="#808080" height="2.0833" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="4.1667" x="686.4583" y="215.6471"/><rect fill="#808080" height="2.0833" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="4.1667" x="686.4583" y="219.8138"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="66.6667" x="607.2917" y="245.9999">Username</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="70.8333" x="607.2917" y="260.5507">Private key</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="45.8333" x="607.2917" y="275.1015">Host IP</text></g><!--MD5=[a20af944864ab8011ad321fa6cf5eda6]
+entity SSH Client--><g id="elem_SSH Client"><rect fill="#808080" height="56.2174" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="118.75" x="380.2083" y="495.8555"/><rect fill="#808080" height="10.4167" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="15.625" x="478.125" y="501.0638"/><rect fill="#808080" height="2.0833" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="4.1667" x="476.0417" y="503.1471"/><rect fill="#808080" height="2.0833" style="stroke:#EC7211;stroke-width:1.0416666666666667;" width="4.1667" x="476.0417" y="507.3138"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="66.6667" x="401.0417" y="533.4999">SSH Client</text></g><!--MD5=[8fc3522a43f8c7199df5e09e5bb0188e]
+entity user--><g id="elem_user"><ellipse cx="647.9167" cy="489.0846" fill="#808080" rx="8.3333" ry="8.3333" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><path d="M647.9167,497.418 L647.9167,525.543 M634.375,505.7513 L661.4583,505.7513 M647.9167,525.543 L634.375,541.168 M647.9167,525.543 L661.4583,541.168 " fill="none" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="30.2083" x="632.8125" y="560.0624">User</text></g><!--MD5=[177083ca7625ce3bc2f7f4aca3b44f24]
+link SSH Server to SSH2--><g id="link_SSH Server_SSH2"><path d="M158.0417,523.9805 C170.1771,523.9805 182.3021,523.9805 194.4375,523.9805 " fill="none" id="SSH Server-SSH2" style="stroke:#808080;stroke-width:3.125;"/></g><!--MD5=[0ceaac2743612477a60cb878417aac7a]
+link SSH Server to cvkpub--><g id="link_SSH Server_cvkpub"><path d="M99.0833,552.1992 C102.7813,583.0013 108.7917,633.1992 112.7396,666.168 " fill="none" id="SSH Server-to-cvkpub" style="stroke:#000000;stroke-width:3.125;"/><polygon fill="#000000" points="113.3958,671.6992,116.4092,661.8925,112.7718,666.5284,108.1359,662.891,113.3958,671.6992" style="stroke:#000000;stroke-width:3.125;"/></g><!--MD5=[298504b0d48ed5a66a388d26936c4816]
+link Websocket to WebSSH2--><g id="link_Websocket_WebSSH2"><path d="M297.6875,251.0638 C285.7188,251.0638 273.7396,251.0638 261.7708,251.0638 " fill="none" id="Websocket-WebSSH2" style="stroke:#808080;stroke-width:3.125;"/></g><!--MD5=[69bb8913481c5e5c6a6897e074723e1a]
+reverse link config to WebSSH2--><g id="link_config_WebSSH2"><path d="M641.4375,202.8763 C632.5729,159.8763 611.8854,101.043 564.0625,83.3555 C508.4792,62.793 352.9792,62.793 297.3958,83.3555 C240.375,104.4492 217.2708,180.6992 208.7083,222.7409 " fill="none" id="config-backto-WebSSH2" style="stroke:#000000;stroke-width:3.125;"/><polygon fill="#000000" points="642.4583,208.0326,644.7279,198.0275,641.4483,202.9231,636.5527,199.6435,642.4583,208.0326" style="stroke:#000000;stroke-width:3.125;"/></g><!--MD5=[3289d4923d63544a8b7b9be05159fad2]
+link Landing page to http1--><g id="link_Landing page_http1"><path d="M494.5938,251.0638 C506.6979,251.0638 518.8125,251.0638 530.9167,251.0638 " fill="none" id="Landing page-http1" style="stroke:#808080;stroke-width:3.125;"/></g><!--MD5=[303bba857e46cc54639241fffef1e9a4]
+link WebSSH2 to SSH2--><g id="link_WebSSH2_SSH2"><path d="M204.1667,279.5638 C204.1667,336.4701 204.1667,465.5742 204.1667,508.6471 " fill="none" id="WebSSH2-to-SSH2" style="stroke:#808080;stroke-width:3.125;"/><polygon fill="#808080" points="204.1667,514.3555,208.3333,504.9805,204.1667,509.1471,200,504.9805,204.1667,514.3555" style="stroke:#808080;stroke-width:3.125;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="22.9167" x="210.4167" y="369.9583">ssh</text></g><!--MD5=[91f15a169ca6d3bbec4aaae09fd97850]
+reverse link http1 to SSH Client--><g id="link_http1_SSH Client"><path d="M536.8125,265.8971 C531.7188,283.9388 522.2188,316.4805 512.5,343.7721 C493.0625,398.3451 466.7188,460.7201 451.5938,495.6055 " fill="none" id="http1-backto-SSH Client" style="stroke:#808080;stroke-width:3.125;"/><polygon fill="#808080" points="538.2396,260.7826,531.6855,268.6754,536.8264,265.7955,539.7063,270.9364,538.2396,260.7826" style="stroke:#808080;stroke-width:3.125;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="103.125" x="514.5833" y="369.9583">Download client</text></g><!--MD5=[39812a450e8c867f955055890e6c7ac5]
+link SSH Client to Websocket--><g id="link_SSH Client_Websocket"><path d="M421.1042,495.7409 C398.4896,461.5013 360.1354,400.3138 335.4167,343.7721 C323.8125,317.2305 314.9896,284.418 310.5313,266.1263 " fill="none" id="SSH Client-to-Websocket" style="stroke:#808080;stroke-width:3.125;"/><polygon fill="#808080" points="309.2813,260.9388,307.4287,271.0294,310.5024,266.002,315.5298,269.0756,309.2813,260.9388" style="stroke:#808080;stroke-width:3.125;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="80.2083" x="355.2083" y="369.9583">SSH session</text></g><!--MD5=[da7ca7c053ca1c2ab8c37797b6f6361b]
+link SSH Client to user--><g id="link_SSH Client_user"><path d="M504.625,523.9805 C544.3229,523.9805 592.8958,523.9805 622.0729,523.9805 " fill="none" id="SSH Client-user" style="stroke:#808080;stroke-width:3.125;"/><polygon fill="#808080" points="499,523.9805,508.375,528.1471,504.2083,523.9805,508.375,519.8138,499,523.9805" style="stroke:#808080;stroke-width:3.125;"/><polygon fill="#808080" points="627.2917,523.9805,617.9167,519.8138,622.0833,523.9805,617.9167,528.1471,627.2917,523.9805" style="stroke:#808080;stroke-width:3.125;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="80.2083" x="523.1771" y="512.6666">SSH session</text></g><!--MD5=[18c1771aacba9608f17650b0d1cc2952]
+@startuml WebSSH2 Architecture
+title WebSSH2 Architecture
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/aws-orange-light/puml-theme-aws-orange-light.puml
+
+actor "User" as user #grey
+
+node "Host" {
+    interface SSH2 #grey
+    component [SSH Server] #grey
+    [SSH Server] - SSH2 #grey 
+    folder "authorized_keys" #grey {
+        [public key] as cvkpub #grey
+    }
+}
+[SSH Server] - -> [cvkpub] #black
+
+node "SSH Proxy" {
+    folder "config.json" #grey {
+        component "Username\nPrivate key\nHost IP" as config #grey
+    }
+    interface Websocket #grey
+    component [WebSSH2] #grey
+    Websocket - [WebSSH2] #grey
+    [config] <- [WebSSH2] #black
+    interface "HTML" as http1 #grey
+    component [Landing page] #grey
+    [Landing page] - http1 #grey
+}
+[WebSSH2] - -> [SSH2] #grey : ssh
+
+frame "Web browser" as browser {
+    node "Web client" as webclient {
+        component [SSH Client] #grey
+    }
+    [http1] <- - [SSH Client] #grey : Download client 
+    [SSH Client] -> [Websocket] #grey : SSH session
+}
+
+[SSH Client] <-right-> [user] #grey : SSH session
+
+@enduml
+
+@startuml WebSSH2 Architecture
+title WebSSH2 Architecture
+
+
+
+skinparam backgroundColor transparent
+
+
+
+
+
+
+
+
+
+
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               5
+skinparam ArrowColor            #4E5D6C
+skinparam stereotype {
+    CBackgroundColor #ffffff
+    CBorderColor #cccccc
+    ABackgroundColor #4a9a35
+    ABorderColor #176702
+    IBackgroundColor #da5b41
+    IBorderColor #a7280e
+    EBackgroundColor #f08e41
+    EBorderColor #bd5b0e
+    NBackgroundColor #338fc9
+    NBorderColor #005c96
+}
+skinparam title {
+	FontColor	                 #4E5D6C
+	BorderColor	                 #FFFFFF
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              #FFFFFF-#cccccc
+}
+
+skinparam legend {
+	BackgroundColor #FFFFFF
+	BorderColor #cccccc
+	FontColor #abb6c2
+}
+
+skinparam swimlane {
+	BorderColor #0073bb
+	BorderThickness 2
+	TitleBackgroundColor  #FFFFFF-#cccccc
+	TitleFontColor #EC7211
+}
+
+
+skinparam activity {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	BarColor #1D8102
+	StartColor #0073bb
+	EndColor #0073bb
+	DiamondBackgroundColor #ffffff
+  	DiamondBorderColor #cccccc
+  	DiamondFontColor #4E5D6C
+}
+
+skinparam participant {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	ParticipantBorderThickness 2
+}
+
+skinparam actor {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam arrow {
+	Thickness 3
+	Color #EC7211
+	FontColor #4E5D6C
+}
+
+skinparam sequence {
+	ArrowThickness 3
+	BorderColor #EC7211
+	TitleFontColor #EC7211
+	BackgroundColor transparent
+	StartColor #EC7211
+	EndColor #EC7211
+	BoxBackgroundColor transparent
+	BoxBorderColor #4E5D6C
+	BoxFontColor #4E5D6C
+	DelayFontColor #4E5D6C
+	LifeLineBorderColor #abb6c2
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #bcc5ce
+	GroupBorderColor #4E5D6C
+	GroupFontColor #4E5D6C
+	GroupHeaderFontColor #0073bb
+	GroupBackgroundColor #FFFFFF
+	GroupBodyBackgroundColor transparent
+	GroupHeaderBackgroundColor transparent
+	DividerBackgroundColor #4E5D6C
+    DividerBorderColor #4E5D6C
+    DividerBorderThickness 2
+    DividerFontColor #abb6c2
+	ReferenceBackgroundColor transparent
+	ReferenceBorderColor #4E5D6C
+	ReferenceFontColor #4E5D6C
+	ReferenceHeaderFontColor #0073bb
+	ReferenceHeaderBackgroundColor #FFFFFF
+	StereotypeFontColor #FFF
+}
+
+skinparam partition {
+	BorderColor #EC7211
+	FontColor #EC7211
+	BackgroundColor transparent
+}
+
+skinparam collections {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+}
+
+skinparam control {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam entity {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam boundary {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam agent {
+	BackgroundColor #EC7211
+	BorderColor #f08e41
+	FontColor #4E5D6C
+}
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #0073bb
+	BorderColor #005c96
+	FontColor #FFF
+}
+
+skinparam artifact {
+	BackgroundColor #4E5D6C
+	BorderColor #717d89
+	FontColor #abb6c2
+}
+
+skinparam component {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+}
+
+skinparam interface {
+	BackgroundColor  #a7280e
+	BorderColor  #d13212
+	FontColor #4E5D6C
+}
+
+skinparam storage {
+	BackgroundColor #EC7211
+  	BorderColor #bd5b0e
+	FontColor #FFF
+}
+
+skinparam node {
+	BackgroundColor  transparent
+	BorderColor #abb6c2
+	FontColor #abb6c2
+}
+
+skinparam cloud {
+	BackgroundColor transparent
+	BorderColor #4E5D6C
+	FontColor #abb6c2
+}
+
+skinparam database {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam class {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	HeaderBackgroundColor #f08e41
+	StereotypeFontColor #4E5D6C
+	BorderThickness 1
+	AttributeFontColor #FFF
+	AttributeFontSize 11
+}
+
+skinparam object {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	StereotypeFontColor #4E5D6C
+	BorderThickness 1
+	AttributeFontColor #FFF
+	AttributeFontSize 11
+}
+
+skinparam usecase {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	BorderThickness 2
+	StereotypeFontColor #EC7211
+}
+
+skinparam rectangle {
+	BackgroundColor transparent
+	FontColor #4E5D6C
+	BorderColor #4E5D6C
+	BorderThickness 2
+	StereotypeFontColor #abb6c2
+}
+
+skinparam package {
+	BackgroundColor #FFFFFF
+  	BorderColor #4E5D6C
+	FontColor #4E5D6C
+	BorderThickness 2
+}
+
+skinparam folder {
+	BackgroundColor #ffffff
+  	BorderColor #EC7211
+	FontColor #EC7211
+	BorderThickness 2
+}
+
+skinparam frame {
+	BackgroundColor #ffffff
+  	BorderColor #0073bb
+	FontColor #0073bb
+	BorderThickness 2
+}
+
+skinparam state {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	StartColor #0073bb
+	EndColor #0073bb
+	AttributeFontColor #4E5D6C
+	AttributeFontSize 11
+}
+
+skinparam queue {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+}
+
+skinparam card {
+	BackgroundColor #0073bb
+	BorderColor #005c96
+	FontColor #FFF
+}
+
+skinparam file {
+	BackgroundColor #cccccc
+	BorderColor #abb6c2
+	FontColor #4E5D6C
+}
+
+
+skinparam stack {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+}
+
+
+actor "User" as user #grey
+
+node "Host" {
+    interface SSH2 #grey
+    component [SSH Server] #grey
+    [SSH Server] - SSH2 #grey 
+    folder "authorized_keys" #grey {
+        [public key] as cvkpub #grey
+    }
+}
+[SSH Server] - -> [cvkpub] #black
+
+node "SSH Proxy" {
+    folder "config.json" #grey {
+        component "Username\nPrivate key\nHost IP" as config #grey
+    }
+    interface Websocket #grey
+    component [WebSSH2] #grey
+    Websocket - [WebSSH2] #grey
+    [config] <- [WebSSH2] #black
+    interface "HTML" as http1 #grey
+    component [Landing page] #grey
+    [Landing page] - http1 #grey
+}
+[WebSSH2] - -> [SSH2] #grey : ssh
+
+frame "Web browser" as browser {
+    node "Web client" as webclient {
+        component [SSH Client] #grey
+    }
+    [http1] <- - [SSH Client] #grey : Download client 
+    [SSH Client] -> [Websocket] #grey : SSH session
+}
+
+[SSH Client] <-right-> [user] #grey : SSH session
+
+@enduml
+
+PlantUML version 1.2022.13(Sat Nov 19 13:22:17 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
