@@ -20,7 +20,7 @@ Node v14.x or above...
 
 1. Install the SSH Webclient npm package by executing the appropriate installation command.
 2. Using a web browser, navigate to your chosen IP address and port (e.g., `mysshserver.io:8000/ssh/host`).
-3. Create a Tide account through the login window on the displayed page. ![Sign-up Flow.](https://github.com/tide-foundation/KeyleSSH/blob/main/diagrams/svg/admin-signup.svg)
+3. Create a Tide account through the login window on the displayed page. ![Sign-up Flow.](https://github.com/tide-foundation/KeyleSSH/blob/main/diagrams/svg/Sign-up.svg)
 4. Make note of the provided username and public key after successfully creating the account.
 5. Update the `authorized_keys` file by adding the acquired username and public key.
 
