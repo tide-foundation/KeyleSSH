@@ -43,7 +43,7 @@ Follow these steps to install KeyleSSH on your server:
    npm install
    ```
 
-5. Visit [this JSFiddle link](https://jsfiddle.net/NotMyDog/vos0eLbq/7/) and replace the variable `YourSiteURL` with your site's origin. The origin is the base URL without any path or query parameters. For example, if your full URL is `https://example.com:8000/maps?location=10`, the origin is `https://example.com:8000`. Check the console on the JSFiddle page to find `vendorPublic` and `vendorUrlSignature` values. Save these for later use.
+5. Visit [this JSFiddle link](https://jsfiddle.net/NotMyDog/vos0eLbq/8/) and replace the variable `YourSiteURL` with your site's origin. The origin is the base URL without any path or query parameters. For example, if your full URL is `https://example.com:8000/maps?location=10`, the origin is `https://example.com:8000`. Check the console on the JSFiddle page to find `vendorPublic` and `vendorUrlSignature` values. Save these for later use.
 
 6. On your server, navigate to `Tide-SSH/web/client/src/js/index.ts`.
 
