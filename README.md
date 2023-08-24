@@ -72,7 +72,7 @@ Follow these steps to install KeyleSSH on your server:
 These steps will guide you through the process of installing and configuring KeyleSSH on your server.
 
 ## Creating your Tide Account
-1. Using a web browser, navigate to your chosen IP address and port (e.g., `mysshserver.io:8000/ssh/host`).
+1. Using a web browser, navigate to your chosen IP address and port (e.g., `mysshserver.io:8000`).
 2. Create a Tide account through the login window on the displayed page. 
 3. Take note of the provided username and public key after successfully creating the account. This will need to be added to the SSH server by you or the SSH administrator
 4. Update the `authorized_keys` file by adding the acquired username and public key.
@@ -81,7 +81,7 @@ These steps will guide you through the process of installing and configuring Key
 
 ### How to Use the Web Client:
 
-1. Access the Web Client by entering your SSH server's address in a web browser (e.g., `mysshserver.io:8000/ssh/host`). 
+1. Access the Web Client by entering your SSH server's address in a web browser (e.g., `mysshserver.io:8000`). 
 2. Sign in using your Tide credentials.  
 
 ![Sign-in Flow.](https://github.com/tide-foundation/KeyleSSH/blob/main/diagrams/svg/Sign-in.svg)
