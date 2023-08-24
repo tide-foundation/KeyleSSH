@@ -1,0 +1,41 @@
+@startuml WebSSH2 Architecture
+title WebSSH2 Architecture
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/aws-orange-light/puml-theme-aws-orange-light.puml
+
+actor "User" as user #grey
+
+node "Host" {
+    interface SSH2 #grey
+    component [SSH Server] #grey
+    [SSH Server] - SSH2 #grey 
+    folder "authorized_keys" #grey {
+        [public key] as cvkpub #grey
+    }
+}
+[SSH Server] --> [cvkpub] #black
+
+node "SSH Proxy" {
+    folder "config.json" #grey {
+        component "Username\nPrivate key\nHost IP" as config #grey
+    }
+    interface Websocket #grey
+    component [WebSSH2] #grey
+    Websocket - [WebSSH2] #grey
+    [config] <- [WebSSH2] #black
+    interface "HTML" as http1 #grey
+    component [Landing page] #grey
+    [Landing page] - http1 #grey
+}
+[WebSSH2] --> [SSH2] #grey : ssh
+
+frame "Web browser" as browser {
+    node "Web client" as webclient {
+        component [SSH Client] #grey
+    }
+    [http1] <-- [SSH Client] #grey : Download client 
+    [SSH Client] -> [Websocket] #grey : SSH session
+}
+
+[SSH Client] <-right-> [user] #grey : SSH session
+
+@enduml

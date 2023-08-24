@@ -7,14 +7,20 @@ Traditional SSH clients often require users to possess the authentication key st
 
 By having the authentication key remote, the SSH client has unprecedented flexibility to function from virtually anywhere. This innovative approach liberates users from the constraints of their physical devices and locations, redefining the realm of SSH client operations.
 
-### Requirements
+### Architecture
+
+![Architecture.](https://github.com/tide-foundation/KeyleSSH/blob/main/diagrams/svg/KeyleSSH%20Architecture.svg)
+
+### Installation
+
+## Requirements
 Node v14.x or above... 
 
-### Installation Instructions for SSH Server:
+## Web SSH Server
 
 1. Install the SSH Webclient npm package by executing the appropriate installation command.
 2. Using a web browser, navigate to your chosen IP address and port (e.g., `mysshserver.io:8000/ssh/host`).
-3. Create a Tide account through the login window on the displayed page. ![Sign-up Flow.](https://github.com/tide-foundation/KeyleSSH/blob/main/diagrams/svg/admin-signup.svg)
+3. Create a Tide account through the login window on the displayed page. ![Sign-up Flow.](https://github.com/tide-foundation/KeyleSSH/blob/main/diagrams/svg/Sign-up.svg)
 4. Make note of the provided username and public key after successfully creating the account.
 5. Update the `authorized_keys` file by adding the acquired username and public key.
 
