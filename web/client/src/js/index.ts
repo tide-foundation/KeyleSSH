@@ -189,17 +189,10 @@ function getUsername(hex){
 }
 
 var TideInfo = undefined;
-const config1 = {
+const config = {
   vendorPublic: "0QSriJ6Me5e8P86V3IqYo/blyC9djXCqNAOPZrdddoY=",
   vendorUrlSignature: "BEUKHLmDpJ1mG5j4st021iP1ewLHwyv20qBxqMr1VbeiWc3OnbsCeIfzuRsUtROh8A9z4A8XVJb7fbLIepyDAw==",
-  homeORKUrl: "http://localhost:1001",
-  mode: "openssh",
-}
-
-const config2 = {
-  vendorPublic: "D9jzcqK5p55tgaef5dh8T7zS0KJgMYfLmz5akRqLeMk=",
-  vendorUrlSignature: "Xhx6QNaw3cfXYI8EFG4uE7NUMQne5tFwJN574UEYZMkmLcH2sr0SnuZzDCtwoVXufqd2A3KTfQVZnojGTsMxDQ==",
-  homeORKUrl: "http://localhost:1001",
+  homeORKUrl: "https://prod-ork1.azurewebsites.net",
   mode: "openssh",
 }
 
@@ -236,30 +229,6 @@ button.onmouseover = function () {
 button.onmouseout = function () {
     button.style.backgroundColor = 'orange';
 };
-
-const button2 = document.createElement('button2');
-// Set the inner text
-button2.innerHTML = 'LOGIN 2';
-// Style the button2
-button2.style.backgroundColor = 'orange';
-button2.style.border = 'none';
-button2.style.color = 'black';
-button2.style.fontFamily = 'sans-serif';
-button2.style.fontWeight = 'bold';
-button2.style.fontSize = '25px';
-button2.style.padding = '10px 20px';
-button2.style.textAlign = 'center';
-button2.style.borderRadius = '7px';
-button2.style.cursor = 'pointer';
-button2.style.display = 'inline-block';
-// Add hover effect
-button2.onmouseover = function () {
-    button2.style.backgroundColor = 'darkorange';
-};
-button2.onmouseout = function () {
-    button2.style.backgroundColor = 'orange';
-};
-button2.style.margin = "30px";
 // Create the text box as a div element
 const textBox = document.createElement('textarea');
 // Apply some styling to the text box
@@ -291,7 +260,6 @@ function showInfo(createUser, error=false){
 
 async function getInfo(createUser){
   container.removeChild(button);
-  container.removeChild(button2);
     if(TideInfo == undefined){
       let result = (await heimdall.OpenEnclave());
       if('PublicKey' in result){
@@ -319,16 +287,11 @@ let heimdall = undefined;
 socket.on('getInfo', async (createUser) => {
   // Add a click event listener to the button
   button.addEventListener('click', async function() {
-    heimdall = new Heimdall(config1);
-    await getInfo(createUser);
-  });
-  button2.addEventListener('click', async function() {
-    heimdall = new Heimdall(config2);
+    heimdall = new Heimdall(config);
     await getInfo(createUser);
   });
   // Append the button to the container
   container.appendChild(button);
-  container.appendChild(button2);
   // Append the container to the body of the document
   document.body.appendChild(container);
 })
