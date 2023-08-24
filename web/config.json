@@ -30,7 +30,7 @@
     "bellStyle": "sound"
   },
   "header": {
-    "text": "SSHecure",
+    "text": "KeyleSSH",
     "background": "blue"
   },
   "session": {
