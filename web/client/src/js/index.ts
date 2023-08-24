@@ -243,8 +243,9 @@ textBox.style.resize = 'none';
 textBox.spellcheck = false;
 
 var boxShown = false;
+var createUsername = undefined;
 
-function showInfo(createUser, error=false){
+function showInfo(error=false){
   if(boxShown) return;
   if(!TideInfo.Username || !TideInfo.PublicKey) return;
   document.body.appendChild(container);
@@ -252,13 +253,13 @@ function showInfo(createUser, error=false){
     heimdall.CloseEnclave();
     textBox.style.color = 'red';
   }
-  textBox.value = `${error ? "AN ERROR OCCURRED: " : ""}Provide this info to this system's administrator: \n==============================================================================================\n ${createUser ? "Username: " + TideInfo.Username + "\n" : ``} Public Key: ` + TideInfo.PublicKey + "\n" + "==============================================================================================\n";
+  textBox.value = `${error ? "AN ERROR OCCURRED: " : ""}Provide this info to this system's administrator: \n==============================================================================================\n ${createUsername ? "Username: " + TideInfo.Username + "\n" : ``} Public Key: ` + TideInfo.PublicKey + "\n" + "==============================================================================================\n";
   container.appendChild(textBox);
   
   boxShown = true;
 }
 
-async function getInfo(createUser){
+async function getInfo(){
   container.removeChild(button);
     if(TideInfo == undefined){
       let result = (await heimdall.OpenEnclave());
@@ -268,7 +269,7 @@ async function getInfo(createUser){
           PublicKey: getOpenSSHPublicKey(result.PublicKey)
         };
         if(result.NewAccount){
-          showInfo(createUser);
+          showInfo();
           await heimdall.CompleteSignIn(); // user will fail to login in this event, but we want to complete their sign in process and show their public key for admin to add
           socket.emit('returnedInfo', false);
           return;
@@ -285,10 +286,11 @@ async function getInfo(createUser){
 
 let heimdall = undefined;
 socket.on('getInfo', async (createUser) => {
+  createUsername = createUser;
   // Add a click event listener to the button
   button.addEventListener('click', async function() {
     heimdall = new Heimdall(config);
-    await getInfo(createUser);
+    await getInfo();
   });
   // Append the button to the container
   container.appendChild(button);
@@ -345,7 +347,7 @@ socket.on('status', (data: string) => {
 });
 
 socket.on('ssherror', (data: string) => {
-  showInfo(true, true);
+  showInfo(true);
   status.innerHTML = data;
   status.style.backgroundColor = 'red';
   errorExists = true;
@@ -406,7 +408,7 @@ socket.on('disconnect', (err: any) => {
 });
 
 socket.on('error', (err: any) => {
-  showInfo(true, true);
+  showInfo(true);
   if (!errorExists) {
     status.style.backgroundColor = 'red';
     status.innerHTML = `ERROR: ${err}`;
