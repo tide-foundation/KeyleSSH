@@ -3,9 +3,11 @@ A keyless SSH Web client made possible by Tide
 
 ### What Makes It Different from Other SSH Clients?
 
-Traditional SSH clients often require users to possess the authentication key stored locally. In contrast, Tide revolutionizes the concept of SSH clients by eliminating the need for locally stored keys, resulting in a significantly heightened level of security. Notably, Tide ensures that the authentication key is never assembled at any point in time, bolstering its security measures even further.
+Secure Shell (SSH) is a cryptographic network protocol that enables secure communication between two systems over an unsecured network. It is widely used by system administrators to manage servers and network devices remotely. SSH provides a secure channel over which data can be exchanged, using various encryption techniques to ensure confidentiality and integrity.
 
-By having the authentication key remote, the SSH client has unprecedented flexibility to function from virtually anywhere. This innovative approach liberates users from the constraints of their physical devices and locations, redefining the realm of SSH client operations.
+Traditionally, SSH authentication has been done using just a username and password. However, this method has many limitations and vulnerabilities. The most secure approach is considered to be using cryptographic keys, specifically Public Key Infrastructure (PKI). Unfortunately, this secure approach often requires users to possess the authentication key to be stored locally or somewhere centrally, which has proven time and again to be comrpomised. In contrast, Tide revolutionizes the concept of SSH client authentication by eliminating the need for locally stored keys, resulting in a significantly hardened level of security. Notably, Tide ensures that the authentication key is never stored, accessed or assembled at any point in time, bolstering its security measures even further and making it a keyless solution that forever prevents the compromise of a private key.
+
+By having the authentication key managed remotely, the SSH client has unprecedented flexibility to function from virtually anywhere. This innovative approach liberates users from the constraints of their physical devices and locations, redefining the realm of SSH client operations.
 
 ### Architecture
 
@@ -13,9 +15,9 @@ By having the authentication key remote, the SSH client has unprecedented flexib
 
 ### The building blocks
 
-Builds on the projects [WebSSH2](https://github.com/billchurch/webssh2) and [SSH2](https://github.com/mscdex/ssh2/tree/master) to incorporate the Tide flow into their user authentication mechanisms.
+Builds on the Open-Source projects [WebSSH2](https://github.com/billchurch/webssh2) and [SSH2](https://github.com/mscdex/ssh2/tree/master) to incorporate the Tide flow into their user authentication mechanisms.
 
-We needed to make two changes to the process: firstly, we shifted the sourcing of the public key from the front-end (previously located in config.json), and secondly, we now generate a signature from the front-end instead of constructing it in the backend.
+We needed to make two changes to the process: firstly, we shifted the sourcing of the public key from the SSH Proxy's front-end (previously located in config.json), and secondly, we now generate a signature from the front-end instead of constructing it in the backend - without accessing the full private key.
 
 ### Installation
 
@@ -24,7 +26,7 @@ Node v14.x which can be downloaded [here](https://nodejs.org/en).
 
 ## Installing KeyleSSH
 
-Follow these steps to install KeyleSSH on your server:
+Follow these steps to install KeyleSSH on your SSH Proxy server:
 
 1. Clone the KeyleSSH repository:
    ```
@@ -36,7 +38,7 @@ Follow these steps to install KeyleSSH on your server:
    cd Tide-SSH/web/
    ```
 
-3. Configure the `config.json` file according to your server's specific needs. Refer to the [config file options guide](https://github.com/billchurch/webssh2/blob/main/README.md#config-file-options) for assistance. Note that for this project, you do not need to include a username or public key.
+3. Configure the `config.json` file according to your server's specific needs. Refer to the [config file options guide](https://github.com/billchurch/webssh2/blob/main/README.md#config-file-options) for assistance. Note that for this project, you must not include the username or privateKey.
 
 4. Install the necessary dependencies using npm:
    ```
@@ -69,7 +71,7 @@ Follow these steps to install KeyleSSH on your server:
     npm start
     ```
 
-These steps will guide you through the process of installing and configuring KeyleSSH on your server.
+These steps will guide you through the process of installing and configuring KeyleSSH on your SSH Proxy server.
 
 ## Creating your Tide Account
 1. Using a web browser, navigate to your chosen IP address and port (e.g., `mysshserver.io:8000`).
@@ -81,7 +83,7 @@ These steps will guide you through the process of installing and configuring Key
 
 ### How to Use the Web Client:
 
-1. Access the Web Client by entering your SSH server's address in a web browser (e.g., `mysshserver.io:8000`). 
+1. Access the Web Client by entering your SSH Proxy server's address in a web browser (e.g., `mysshserver.io:8000`). 
 2. Sign in using your Tide credentials.  
 
 ![Sign-in Flow.](https://github.com/tide-foundation/KeyleSSH/blob/main/diagrams/svg/Sign-in.svg)
