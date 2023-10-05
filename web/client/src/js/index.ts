@@ -190,10 +190,13 @@ function getUsername(hex){
 
 var TideInfo = undefined;
 const config = {
-  vendorPublic: "0QSriJ6Me5e8P86V3IqYo/blyC9djXCqNAOPZrdddoY=",
-  vendorUrlSignature: "BEUKHLmDpJ1mG5j4st021iP1ewLHwyv20qBxqMr1VbeiWc3OnbsCeIfzuRsUtROh8A9z4A8XVJb7fbLIepyDAw==",
-  homeORKUrl: "https://prod-ork1.azurewebsites.net",
-  mode: "openssh",
+  vendorPublic: "kjrCV35ulCwsOjgqh/fKkz2j64QtD5KC4kn/P1IAevU=",
+  vendorUrlSignature: "3Cf35tItXJcOR65bz5ciFCX4sWO38holGNi+IQErRqPab+oCD8gt/TaSsJlpKWZsWJIy75UZizWETn48xK4EBQ==",
+  homeORKUrl: "http://localhost:1001",
+  enclaveRequest: {
+    refreshToken: true,
+    getUserInfoFirst: true
+  }
 }
 
 const container = document.createElement('div');
@@ -299,7 +302,11 @@ socket.on('getInfo', async (createUser) => {
 })
 
 socket.on('getSignature', async(dataToSign) => {
-  let result = await heimdall.CompleteSignIn(dataToSign);
+  const customModel = {
+    name: "openssh",
+    data: dataToSign
+  }
+  let result = await heimdall.CompleteSignIn(customModel);
   if('ModelSig' in result){
     boxShown = true; // so it doesn't appear when connection closes
     socket.emit('returnedSignature', Buffer.from(result.ModelSig, 'base64'));
