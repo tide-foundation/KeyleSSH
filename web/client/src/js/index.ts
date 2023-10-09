@@ -303,10 +303,11 @@ socket.on('getInfo', async (createUser) => {
 
 socket.on('getSignature', async(dataToSign) => {
   const customModel = {
-    name: "openssh",
-    data: dataToSign
+    Name: "OpenSSH",
+    Data: dataToSign
   }
   let result = await heimdall.CompleteSignIn(customModel);
+  console.log(result);
   if('ModelSig' in result){
     boxShown = true; // so it doesn't appear when connection closes
     socket.emit('returnedSignature', Buffer.from(result.ModelSig, 'base64'));
