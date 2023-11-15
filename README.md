@@ -47,13 +47,13 @@ Follow these steps to install KeyleSSH on your SSH Proxy server:
 
 5. Go to web/vendorSign.mjs and replace the variable `yourURL` with your site's origin. The origin is the base URL without any path or query parameters. For example, if your full URL is `https://example.com:8000/maps?location=10`, the origin is `https://example.com:8000`. Run the file and save the public key and signature values provided for later use.
 
-7. On your server, navigate to `Tide-SSH/web/client/src/js/index.ts`.
+7. On your server, navigate to `KeyleSSH/web/client/src/js/index.ts`.
 
 8. Locate the `config` object within the file. Inside this object, you'll find fields for `vendorPublic` and `vendorUrlSignature`. Insert the values you copied from before into these fields.
 
-9. Go back to the `Tide-SSH/web/client/src/` directory:
+9. Go back to the `KeyleSSH/web/client/src/` directory:
    ```
-   cd Tide-SSH/web/client/src/
+   cd KeyleSSH/web/client/src/
    ```
 
 10. Build the project:
@@ -61,9 +61,9 @@ Follow these steps to install KeyleSSH on your SSH Proxy server:
    npm run build
    ```
 
-11. Return to the `Tide-SSH/web/` directory:
+11. Return to the `KeyleSSH/web/` directory:
     ```
-    cd Tide-SSH/web/
+    cd KeyleSSH/web/
     ```
 
 12. Start the KeyleSSH server:
