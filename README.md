@@ -49,7 +49,7 @@ Follow these steps to install KeyleSSH on your SSH Proxy server:
 
 7. On your server, navigate to `Tide-SSH/web/client/src/js/index.ts`.
 
-8. Locate the `config` object within the file. Inside this object, you'll find fields for `vendorPublic` and `vendorUrlSignature`. Insert the values you copied from the JSFiddle page into these fields.
+8. Locate the `config` object within the file. Inside this object, you'll find fields for `vendorPublic` and `vendorUrlSignature`. Insert the values you copied from before into these fields.
 
 9. Go back to the `Tide-SSH/web/client/src/` directory:
    ```
