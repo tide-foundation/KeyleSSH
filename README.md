@@ -35,7 +35,7 @@ Follow these steps to install KeyleSSH on your SSH Proxy server:
 
 2. Navigate to the KeyleSSH web directory:
    ```
-   cd Tide-SSH/web/
+   cd KeyleSSH/web/
    ```
 
 3. Configure the `config.json` file according to your server's specific needs. Refer to the [config file options guide](https://github.com/billchurch/webssh2/blob/main/README.md#config-file-options) for assistance. Note that for this project, you must not include the username or privateKey.
