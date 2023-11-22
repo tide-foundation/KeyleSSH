@@ -4,7 +4,7 @@ import { Terminal } from 'xterm';
 import { FitAddon } from 'xterm-addon-fit';
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
 import { faBars, faClipboard, faDownload, faKey, faCog } from '@fortawesome/free-solid-svg-icons';
-import Heimdall from "heimdall-tide";
+import {Heimdall, TidePromise} from "heimdall-tide";
 import { Buffer } from 'buffer';
 window.Buffer = Buffer;
 
@@ -194,7 +194,7 @@ const config = {
   vendorUrlSignature: "3Cf35tItXJcOR65bz5ciFCX4sWO38holGNi+IQErRqPab+oCD8gt/TaSsJlpKWZsWJIy75UZizWETn48xK4EBQ==",
   homeORKUrl: "http://localhost:1001",
   enclaveRequest: {
-    refreshToken: true,
+    refreshToken: false,
     getUserInfoFirst: true
   }
 }
@@ -210,28 +210,7 @@ container.style.alignItems = 'center';
 container.style.justifyContent = 'center';
 container.style.zIndex = '1000'; // Ensure the container is above other elements
 // Create the button element
-const button = document.createElement('button');
-// Set the inner text
-button.innerHTML = 'LOGIN';
-// Style the button
-button.style.backgroundColor = 'orange';
-button.style.border = 'none';
-button.style.color = 'black';
-button.style.fontFamily = 'sans-serif';
-button.style.fontWeight = 'bold';
-button.style.fontSize = '25px';
-button.style.padding = '10px 20px';
-button.style.textAlign = 'center';
-button.style.borderRadius = '7px';
-button.style.cursor = 'pointer';
-button.style.display = 'inline-block';
-// Add hover effect
-button.onmouseover = function () {
-    button.style.backgroundColor = 'darkorange';
-};
-button.onmouseout = function () {
-    button.style.backgroundColor = 'orange';
-};
+let tideButton = null;
 // Create the text box as a div element
 const textBox = document.createElement('textarea');
 // Apply some styling to the text box
@@ -248,6 +227,56 @@ textBox.spellcheck = false;
 var boxShown = false;
 var createUsername = undefined;
 
+async function waitForSignal(socket, signalName) {
+  return new Promise((resolve) => {
+    const handler = (event) => {
+      socket.off(signalName, handler)
+      resolve(event);
+    }
+    socket.on(signalName, handler);
+  });
+}
+
+const heimdall = new Heimdall(config);
+const vendorAction = async (userInfo) => {
+  container.removeChild(tideButton);
+  // 1. Send userInfo to backend (so it can create dataToSign)
+  // 2. Await the return of dataToSign from backend
+  TideInfo = {
+    Username: getUsername(userInfo.UID),
+    PublicKey: getOpenSSHPublicKey(userInfo.PublicKey)
+  };
+  const pre_dataToSign = waitForSignal(socket, "getSignature");
+  if(userInfo.NewAccount){ // if new acc, abort backend process
+    showInfo();
+    socket.emit('returnedInfo', false);
+    return null;
+  }else{
+    socket.emit('returnedInfo', TideInfo); // 1
+  }
+  const dataToSign = await pre_dataToSign; // 2
+  const customModel = {
+    Name: "OpenSSH",
+    Data: dataToSign
+  }
+  document.body.removeChild(container);
+  return customModel;
+}
+const tidePromise = new TidePromise(vendorAction);
+
+const tideButtonAction = (promise) => {
+  return heimdall.GetCompleted(promise);
+}
+
+socket.on('getInfo', async (createUser) => {
+  createUsername = createUser;
+  tideButton = heimdall.AddTideButton(tideButtonAction, tidePromise);
+  // Append the button to the container
+  container.appendChild(tideButton);
+  // Append the container to the body of the document
+  document.body.appendChild(container);
+});
+
 function showInfo(error=false){
   if(boxShown) return;
   if(!TideInfo.Username || !TideInfo.PublicKey) return;
@@ -262,51 +291,9 @@ function showInfo(error=false){
   boxShown = true;
 }
 
-async function getInfo(){
-  container.removeChild(button);
-    if(TideInfo == undefined){
-      let result = (await heimdall.OpenEnclave());
-      if('PublicKey' in result){
-        TideInfo = {
-          Username: getUsername(result.UID),
-          PublicKey: getOpenSSHPublicKey(result.PublicKey)
-        };
-        if(result.NewAccount){
-          showInfo();
-          await heimdall.CompleteSignIn(); // user will fail to login in this event, but we want to complete their sign in process and show their public key for admin to add
-          socket.emit('returnedInfo', false);
-          return;
-        }
-      }
-      else{
-        throw Error();
-      }
-    } 
-    socket.emit('returnedInfo', TideInfo);
-    document.body.removeChild(container);
-}
-
-
-let heimdall = undefined;
-socket.on('getInfo', async (createUser) => {
-  createUsername = createUser;
-  // Add a click event listener to the button
-  button.addEventListener('click', async function() {
-    heimdall = new Heimdall(config);
-    await getInfo();
-  });
-  // Append the button to the container
-  container.appendChild(button);
-  // Append the container to the body of the document
-  document.body.appendChild(container);
-})
-
-socket.on('getSignature', async(dataToSign) => {
-  const customModel = {
-    Name: "OpenSSH",
-    Data: dataToSign
-  }
-  let result = await heimdall.CompleteSignIn(customModel);
+socket.on('getSignature', async () => {
+  console.log("before result");
+  let result = await tidePromise.promise;
   console.log(result);
   if('ModelSig' in result){
     boxShown = true; // so it doesn't appear when connection closes
@@ -316,10 +303,6 @@ socket.on('getSignature', async(dataToSign) => {
     throw Error();
   }
 });
- 
-
-
-
 
 socket.on('data', (data: string | Uint8Array) => {
   term.write(data);
