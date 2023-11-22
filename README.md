@@ -35,7 +35,7 @@ Follow these steps to install KeyleSSH on your SSH Proxy server:
 
 2. Navigate to the KeyleSSH web directory:
    ```
-   cd Tide-SSH/web/
+   cd KeyleSSH/web/
    ```
 
 3. Configure the `config.json` file according to your server's specific needs. Refer to the [config file options guide](https://github.com/billchurch/webssh2/blob/main/README.md#config-file-options) for assistance. Note that for this project, you must not include the username or privateKey.
@@ -45,28 +45,28 @@ Follow these steps to install KeyleSSH on your SSH Proxy server:
    npm install
    ```
 
-5. Visit [this JSFiddle link](https://jsfiddle.net/NotMyDog/vos0eLbq/8/) and replace the variable `YourSiteURL` with your site's origin. The origin is the base URL without any path or query parameters. For example, if your full URL is `https://example.com:8000/maps?location=10`, the origin is `https://example.com:8000`. Run the script and check the console on the JSFiddle page to find `vendorPublic` and `vendorUrlSignature` values. Save these for later use.
+5. Go to web/vendorSign.mjs and replace the variable `yourURL` with your site's origin. The origin is the base URL without any path or query parameters. For example, if your full URL is `https://example.com:8000/maps?location=10`, the origin is `https://example.com:8000`. Run the file and save the public key and signature values provided for later use.
 
-6. On your server, navigate to `Tide-SSH/web/client/src/js/index.ts`.
+7. On your server, navigate to `KeyleSSH/web/client/src/js/index.ts`.
 
-7. Locate the `config` object within the file. Inside this object, you'll find fields for `vendorPublic` and `vendorUrlSignature`. Insert the values you copied from the JSFiddle page into these fields.
+8. Locate the `config` object within the file. Inside this object, you'll find fields for `vendorPublic` and `vendorUrlSignature`. Insert the values you copied from before into these fields.
 
-8. Go back to the `Tide-SSH/web/client/src/` directory:
+9. Go back to the `KeyleSSH/web/client/src/` directory:
    ```
-   cd Tide-SSH/web/client/src/
+   cd KeyleSSH/web/client/src/
    ```
 
-9. Build the project:
+10. Build the project:
    ```
    npm run build
    ```
 
-10. Return to the `Tide-SSH/web/` directory:
+11. Return to the `KeyleSSH/web/` directory:
     ```
-    cd Tide-SSH/web/
+    cd KeyleSSH/web/
     ```
 
-11. Start the KeyleSSH server:
+12. Start the KeyleSSH server:
     ```
     npm start
     ```
