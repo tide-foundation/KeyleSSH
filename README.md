@@ -30,7 +30,7 @@ Follow these steps to install KeyleSSH on your SSH Proxy server:
 
 1. Clone the KeyleSSH repository:
    ```
-   git clone https://github.com/tide-foundation/Tide-SSH
+   git clone https://github.com/tide-foundation/KeyleSSH
    ```
 
 2. Navigate to the KeyleSSH web directory:
