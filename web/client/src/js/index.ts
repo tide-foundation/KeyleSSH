@@ -191,7 +191,7 @@ function getUsername(hex){
 var TideInfo = undefined;
 const config = {
   vendorPublic: "kjrCV35ulCwsOjgqh/fKkz2j64QtD5KC4kn/P1IAevU=",
-  vendorUrlSignature: "3Cf35tItXJcOR65bz5ciFCX4sWO38holGNi+IQErRqPab+oCD8gt/TaSsJlpKWZsWJIy75UZizWETn48xK4EBQ==",
+  vendorLocationSignature: "3Cf35tItXJcOR65bz5ciFCX4sWO38holGNi+IQErRqPab+oCD8gt/TaSsJlpKWZsWJIy75UZizWETn48xK4EBQ==",
   homeORKUrl: "http://localhost:1001",
   enclaveRequest: {
     refreshToken: false,
