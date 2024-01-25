@@ -44,7 +44,7 @@
     "debug": "^4.3.2",
     "express": "~4.17.1",
     "express-session": "~1.17.1",
-    "heimdall-tide": "^0.0.49-test",
+    "heimdall-tide": "^0.0.55-test",
     "morgan": "~1.10.0",
     "read-config-ng": "^3.0.5",
     "serve-favicon": "^2.5.0",
