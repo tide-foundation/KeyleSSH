@@ -190,12 +190,11 @@ function getUsername(hex){
 
 var TideInfo = undefined;
 const config = {
-  vendorPublic: "kjrCV35ulCwsOjgqh/fKkz2j64QtD5KC4kn/P1IAevU=",
-  vendorLocationSignature: "3Cf35tItXJcOR65bz5ciFCX4sWO38holGNi+IQErRqPab+oCD8gt/TaSsJlpKWZsWJIy75UZizWETn48xK4EBQ==",
-  homeORKUrl: "https://prod-ork1.azurewebsites.net",
+  vendorPublic: "5oh+XKNH3qT0f8b6EMuvWXdKr9SgZY8U3DNduRHHALc=",
+  vendorLocationSignature: "h/EL6G8+Mt5hX1iw1VIHEAXPUbfjfwDTFepNEjUrBdrRWfhU+Io/SDtZmJNQ3LxAyevLXnTLnUCgltpaAKY+Dw==",
+  homeORKUrl: "http://localhost:1001",
   enclaveRequest: {
     refreshToken: false,
-    getUserInfoFirst: true
   }
 }
 
